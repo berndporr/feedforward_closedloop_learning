@@ -46,7 +46,7 @@ After compilation, an FCL run can be started using:
 Example:
 
 ```bash
-./build/linefollower/linefollower 0 0.0008 42 9,6,6 DataFCL
+./build/linefollower/linefollower 0 0.01 42 9,6,6 DataFCL
 ```
 
 ### CLDL single-run interface
@@ -310,7 +310,7 @@ Before starting the full sweep, run one FCL configuration:
 cd build/linefollower
 ./linefollower \
     0 \
-    0.0001 \
+    0.01 \
     42 \
     9,6,6 \
     TestFCL
