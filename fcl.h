@@ -77,11 +77,6 @@ public:
          **/
 	void setDecay(double decay);
 
-	/** Sets the global momentum for all layers
-         * \param momentum Defines the intertia of the weight change over time.
-         **/
-	void setMomentum(double momentum);
-
 	/** Sets the activation function of the Neuron
          **/
 	void setActivationFunction(FCLNeuron::ActivationFunction _activationFunction);

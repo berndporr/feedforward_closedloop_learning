@@ -156,17 +156,6 @@ void FeedforwardClosedloopLearning::setLearningRate(double rate) {
 	}
 }
 
-void FeedforwardClosedloopLearning::setMomentum(double momentum) {
-	for (unsigned i=0; i<n_neurons_per_layer.size(); i++) {
-#ifdef DEBUG_FCL
-		fprintf(stderr,"setMomentum in layer %d\n",i);
-#endif
-		layers[i]->setMomentum(momentum);
-	}
-}
-
-
-
 void FeedforwardClosedloopLearning::initWeights(double max, int initBias, FCLNeuron::WeightInitMethod weightInitMethod) {
 	for (unsigned i=0; i<n_neurons_per_layer.size(); i++) {
 		layers[i]->initWeights(max,initBias,weightInitMethod);

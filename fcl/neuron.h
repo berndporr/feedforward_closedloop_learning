@@ -189,12 +189,6 @@ public:
          **/
 	inline void setLearningRate( double _learningrate) { learningRate = _learningrate; };
 
-	/** Sets the momentum.
-         * Sets the inertia of the learning.
-         * \param  _momentum The new momentum
-         **/
-	inline void setMomentum( double _momentum) { momentum = _momentum; };
-
 	/** Sets the weight decay over time.
          * \param _decay The larger the faster the weight decay.
          **/
@@ -328,7 +322,6 @@ private:
 	double error = 0;
 	double learningRate = 0;
 	double learningRateFactor = 1;
-	double momentum = 0;
 	int width = 0;
 	int height = 0;
 	int maxDet = 0;

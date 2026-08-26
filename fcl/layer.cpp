@@ -203,12 +203,6 @@ void FCLLayer::setLearningRate( double _learningRate) {
 	}
 }
 
-void FCLLayer::setMomentum( double _momentum) {
-	for(int i=0;i<nNeurons;i++) {
-		neurons[i]->setMomentum(_momentum);
-	}
-}
-
 void FCLLayer::setActivationFunction(FCLNeuron::ActivationFunction _activationFunction) {
 	for(int i=0;i<nNeurons;i++) {
 		neurons[i]->setActivationFunction(_activationFunction);

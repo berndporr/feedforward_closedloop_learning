@@ -197,11 +197,6 @@ public:
          **/
 	void setActivationFunction(FCLNeuron::ActivationFunction _activationFunction);
 
-	/** Set the momentum of all neurons in this layer
-         * \param _momentum The momentum for all neurons in this layer.
-         **/
-	void setMomentum( double _momentum);
-
 	/** Sets the weight decay scaled by the learning rate
          * \param _decay The decay rate of the weights
          **/
