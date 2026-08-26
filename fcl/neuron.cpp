@@ -20,7 +20,6 @@ FCLNeuron::FCLNeuron(int _nInputs) {
 	mask = new unsigned char[nInputs];
 	weights = new double[nInputs];
 	initialWeights = new double[nInputs];
-	weightChange = new double[nInputs];
 	inputs = new double[nInputs];
 	sum = 0;
 	output = 0;
@@ -29,7 +28,6 @@ FCLNeuron::FCLNeuron(int _nInputs) {
 	for(int i=0;i<nInputs;i++) {
 		weights[i] = 0;
 		initialWeights[i] = 0;
-		weightChange[i] = 0;
 		inputs[i] = 0;
 		mask[i] = 1;
 	}	
@@ -38,7 +36,6 @@ FCLNeuron::FCLNeuron(int _nInputs) {
 FCLNeuron::~FCLNeuron() {
 	delete [] weights;
 	delete [] initialWeights;
-	delete [] weightChange;
 	delete [] inputs;
 	delete [] mask;
 }
@@ -150,24 +147,14 @@ double FCLNeuron::dActivation() {
 void FCLNeuron::doLearning() {
 	double* inputsp = inputs;
 	double* weightsp = weights;
-	double* weightschp = weightChange;
 	unsigned char * maskp = mask;
 	maxDet = 0;
 	for(int i=0;i<nInputs;i++) {
 		assert((mask+i) == maskp);
 		assert((weights+i) == weightsp);
 		assert((inputs+i) == inputsp);
-		assert((weightChange+i) == weightschp);
 		if (*maskp) {
-			// *weightschp = momentum * (*weightschp) +
-			// 	(*inputsp) * error * learningRate * learningRateFactor -
-			// 	(*weightsp) * decay * learningRate * fabs(error);
-			
-			// The following weight change is based on Oja's rule and eliminates deviation in weights after learning.
-			// But abs(error) is higher than 0.001.
-			*weightschp = learningRate*((*inputsp)*error - output*output*(*weightsp));
-			
-			*weightsp = *weightsp + *weightschp;
+			*weightsp = *weightsp + learningRate*((*inputsp)*error - output*output*(*weightsp));
 #ifdef DEBUG
 			if (isnan(sum) || isnan(weights[i]) || isnan(inputs[i]) || (fabs(sum)>SUM_ERR_THRES)) {
 				fprintf(stderr,"Out of range Neuron::%s step=%ld, L=%d, N=%d, %f, %f, %f, %d\n",
@@ -178,7 +165,6 @@ void FCLNeuron::doLearning() {
 		inputsp++;
 		maskp++;
 		weightsp++;
-		weightschp++;
 	}
 	biasweight = biasweight + bias * error * learningRate - biasweight * decay * learningRate;
 }

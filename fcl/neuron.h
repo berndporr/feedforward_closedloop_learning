@@ -318,7 +318,6 @@ private:
 	unsigned char* mask = 0;
 	double* weights = 0;
 	double* initialWeights = 0;
-	double* weightChange = 0;
 	double decay = 0;
 	double biasweight = 0;
 	double biasweightChange = 0;
