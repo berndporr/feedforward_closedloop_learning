@@ -1,19 +1,22 @@
+#include "Linefollower.h"
 #include "Racer.h"
 #include "fcl_util.h"
 #include <QApplication>
 #include <QtGui>
+#include <cstdio>
+#include <numeric>
+#include <vector>
 #include <viewer/Viewer.h>
-
-#include "Linefollower.h"
 
 using namespace Enki;
 using namespace std;
 
-class LineFollower : public ViewerWidget
+class LineFollower
 {
   protected:
     // The robot
     Racer *racer;
+    bool simulationRunning = true;
 
     // Is set by the learning rate setter. Do not change here!
     double learningRate = 0;
@@ -40,8 +43,7 @@ class LineFollower : public ViewerWidget
     int trackCompletedCtr = 5000;
 
   public:
-    LineFollower (World *world, QWidget *parent = 0)
-        : ViewerWidget (world, parent)
+    LineFollower (World *world)
     {
 
         flog = fopen ("flog.tsv", "wt");
@@ -63,7 +65,7 @@ class LineFollower : public ViewerWidget
             nInputs, nNeuronsInLayers, nFiltersInput, minT, maxT);
 
         fcl->initWeights (1, 0, FCLNeuron::MAX_OUTPUT_RANDOM);
-        fcl->setLearningRate (learningRate);
+        fcl->setLearningRate (0);
         fcl->setLearningRateDiscountFactor (1);
         fcl->setBias (1);
         fcl->setActivationFunction (FCLNeuron::TANH);
@@ -78,8 +80,6 @@ class LineFollower : public ViewerWidget
 
     void setLearningRate (double _learningRate)
     {
-        if (_learningRate < 0)
-            return;
         learningRate = _learningRate;
         fcl->setLearningRate (learningRate);
     }
@@ -90,14 +90,17 @@ class LineFollower : public ViewerWidget
 
     // here we do all the behavioural computations
     // as an example: line following and obstacle avoidance
-    virtual void sceneCompletedHook ()
+    virtual void sceneCompleted (const bool consoleDebug = true)
     {
         double leftGround = racer->groundSensorLeft.getValue ();
         double rightGround = racer->groundSensorRight.getValue ();
         double leftGround2 = racer->groundSensorLeft2.getValue ();
         double rightGround2 = racer->groundSensorRight2.getValue ();
 
-        fprintf (stderr, "%e\t", racer->pos.x);
+        if (consoleDebug)
+        {
+            fprintf (stderr, "%07ld\t", step);
+        }
         fprintf (fcoord, "%e\t%e\n", racer->pos.x, racer->pos.y);
         // check if we've bumped into a wall
         if ((racer->pos.x < 75) || (racer->pos.x > (maxx - border))
@@ -117,9 +120,13 @@ class LineFollower : public ViewerWidget
         {
             // been off the track for a long time!
             step = MAX_STEPS;
-            qApp->quit ();
+            simulationRunning = false;
+            fprintf(stderr,"Off track!\n");
         }
-        fprintf (stderr, "%d ", learningOff);
+        if (consoleDebug)
+        {
+            fprintf (stderr, "%d ", learningOff);
+        }
         if (learningOff > 0)
         {
             fcl->setLearningRate (0);
@@ -129,16 +136,17 @@ class LineFollower : public ViewerWidget
         {
             fcl->setLearningRate (learningRate);
         }
-
-        fprintf (stderr, "%e %e %e %e ", leftGround, rightGround, leftGround2,
-                 rightGround2);
-        for (int i = 0; i < racer->getNsensors (); i++)
+        if (consoleDebug)
         {
-            pred[i] = -(racer->getSensorArrayValue (i)) * 10;
+            fprintf (stderr, "%e %e %e %e ", leftGround, rightGround,
+                     leftGround2, rightGround2);
+        }
+        for (unsigned int i = 0; (int)i < racer->getNsensors (); i++)
+        {
+            pred[i] = -(racer->getSensorArrayValue ((int)i)) * 10;
             // workaround of a bug in Enki
             if (pred[i] < 0)
                 pred[i] = 0;
-            //if (i>=racer->getNsensors()/2) fprintf(stderr,"%e ",pred[i]);
         }
         double error = (leftGround + leftGround2 * 2)
                        - (rightGround + rightGround2 * 2);
@@ -164,10 +172,13 @@ class LineFollower : public ViewerWidget
                             * 2);
 
         double erroramp = error * fbgain;
-        fprintf (stderr, "%e ", erroramp);
-        fprintf (stderr, "%e ", vL);
-        fprintf (stderr, "%e ", vR);
-        fprintf (stderr, "\n");
+        if (consoleDebug)
+        {
+            fprintf (stderr, "%e ", erroramp);
+            fprintf (stderr, "%e ", vL);
+            fprintf (stderr, "%e ", vR);
+            fprintf (stderr, "\n");
+        }
         racer->leftSpeed = speed + erroramp + vL;
         racer->rightSpeed = speed - erroramp + vR;
 
@@ -188,17 +199,18 @@ class LineFollower : public ViewerWidget
         }
         if (successCtr > STEPS_BELOW_ERR_THRESHOLD)
         {
-            qApp->quit ();
+            simulationRunning = false;
         }
         if (step > MAX_STEPS)
         {
-            qApp->quit ();
+            simulationRunning = false;
+            fprintf(stderr,"Reached max steps.\n");
         }
 
         fprintf (flog, "%e\t", error);
         fprintf (flog, "%e\t", avgError);
         fprintf (flog, "%e\t%e", vL, vR);
-        for (int i = 0; i < fcl->getNumLayers (); i++)
+        for (unsigned int i = 0; (int)i < fcl->getNumLayers (); i++)
         {
             fprintf (
                 flog, "\t%e",
@@ -208,7 +220,7 @@ class LineFollower : public ViewerWidget
 
         if ((step % 100) == 0)
         {
-            for (int i = 0; i < fcl->getNumLayers (); i++)
+            for (unsigned int i = 0; (int)i < fcl->getNumLayers (); i++)
             {
                 char tmp[256];
                 sprintf (tmp, "layer%d.dat", i);
@@ -220,7 +232,52 @@ class LineFollower : public ViewerWidget
     }
 };
 
-void singleRun (int argc, char *argv[], float learningrate, FILE *f = NULL)
+class QTSimulator : public ViewerWidget, public LineFollower
+{
+  public:
+    QTSimulator (Enki::World *w) : ViewerWidget (w), LineFollower (w) {}
+    virtual void sceneCompletedHook () override
+    {
+        sceneCompleted ();
+        if (!simulationRunning)
+        {
+            this->close ();
+        }
+    }
+};
+
+class HeadlessSimulator : public LineFollower
+{
+  public:
+    HeadlessSimulator (Enki::World *w) : LineFollower (w) { world = w; }
+
+    void run ()
+    {
+        const double dt
+            = 0.05; // Simulation step size (typically 50ms in Enki)
+        while (simulationRunning)
+        {
+            // Step the physical world forward without rendering anything
+            world->step (dt);
+            sceneCompleted (false);
+            ctr++;
+            if (ctr >= 100)
+            {
+                fprintf (stderr, "step: %06ld\r", getStep ());
+                fflush (stderr);
+                ctr = 0;
+            }
+        }
+        fprintf (stderr, "\n");
+    }
+
+  private:
+    bool checkCompletionCondition () { return true; }
+    Enki::World *world;
+    int ctr = 0;
+};
+
+void singleRun (int argc, char *argv[], float learningrate)
 {
     QApplication app (argc, argv);
     QString filename ("loop.png");
@@ -233,31 +290,52 @@ void singleRun (int argc, char *argv[], float learningrate, FILE *f = NULL)
     }
     const uint32_t *bitmap = (const uint32_t *)loopImage.constBits ();
     World world (maxx, maxy, Color (1000, 1000, 100),
-                 World::GroundTexture (loopImage.width (), loopImage.height (),
-                                       bitmap));
-    LineFollower linefollower (&world);
+                 World::GroundTexture ((unsigned)loopImage.width (),
+                                       (unsigned)loopImage.height (), bitmap));
+    QTSimulator linefollower (&world);
     linefollower.setLearningRate (learningrate);
     linefollower.show ();
     app.exec ();
     fprintf (stderr, "Finished.\n");
-    if (f)
-    {
-        fprintf (f, "%e %ld %e\n", learningrate, linefollower.getStep (),
-                 linefollower.getAvgError ());
-    }
 }
 
-void statsRun (int argc, char *argv[])
+void statsRun ()
 {
-    FILE *f = fopen ("stats.dat", "wt");
-    for (float learningRate = 0.00001f; learningRate < 0.1;
-         learningRate = learningRate * 1.25f)
+    QString filename ("loop.png");
+    QImage loopImage;
+    loopImage = QGLWidget::convertToGLFormat (QImage (filename));
+    if (loopImage.isNull ())
     {
-        srandom (1);
-        singleRun (argc, argv, learningRate, f);
-        fflush (f);
-        srandom (42);
-        singleRun (argc, argv, learningRate, f);
+        fprintf (stderr, "Racetrack file not found\n");
+        exit (1);
+    }
+    const uint32_t *bitmap = (const uint32_t *)loopImage.constBits ();
+    FILE *f = fopen ("stats.dat", "wt");
+    for (float learningRate = 0.001f; learningRate < 1;
+         learningRate = learningRate * 1.1f)
+    {
+        fprintf (stderr, "Learning rate = %f\n", learningRate);
+        std::vector<long> steps;
+        for (unsigned int seed = 42; seed <= (42 * 4); seed = seed * 2)
+        {
+            srandom (seed);
+            fprintf (stderr, "Seed = %u\n", seed);
+            World world (maxx, maxy, Color (1000, 1000, 100),
+                         World::GroundTexture ((unsigned)loopImage.width (),
+                                               (unsigned)loopImage.height (),
+                                               bitmap));
+            HeadlessSimulator linefollower (&world);
+            linefollower.setLearningRate (learningRate);
+            linefollower.run ();
+            long nSteps = linefollower.getStep ();
+            fprintf (stderr, "nSteps = %ld\n", nSteps);
+            steps.push_back (nSteps);
+            fprintf (stderr, "Finished.\n");
+        }
+        long avgStep = std::accumulate (steps.begin (), steps.end (), 0)
+                       / (long)steps.size ();
+        fprintf (stderr, "avg nSteps = %ld\n", avgStep);
+        fprintf (f, "%f\t%ld\n", learningRate, avgStep);
         fflush (f);
     }
     fclose (f);
@@ -282,7 +360,7 @@ int main (int argc, char *argv[])
         singleRun (argc, argv, 0.01f);
         break;
     case 1:
-        statsRun (argc, argv);
+        statsRun ();
         break;
     }
     return 0;

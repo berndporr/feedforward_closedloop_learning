@@ -1,6 +1,7 @@
 #ifndef LINEFOLLOWER_H
 #define LINEFOLLOWER_H
 
+#include <vector>
 const double speed = 90;
 const double fbgain = 300;
 
@@ -23,15 +24,15 @@ const double minT = 2;
 const double maxT = 30;
 
 // size of the playground
-double	maxx = 300;
-double	maxy = 300;
+const double maxx = 300;
+const double maxy = 300;
 
 // for stats
-#define SQ_ERROR_THRES 0.001
+#define SQ_ERROR_THRES 0.002
 #define STEPS_BELOW_ERR_THRESHOLD 1000
 
 // max number of steps to terminate
-#define MAX_STEPS 200000
+#define MAX_STEPS 50000
 
 // terminates if the agent won't turn after these steps
 #define STEPS_OFF_TRACK 1000
