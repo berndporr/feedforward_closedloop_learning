@@ -1,13 +1,9 @@
 #ifndef __FEEDFORWARD_CLOSEDLOOP_LEARNING_UTIL_H_
 #define __FEEDFORWARD_CLOSEDLOOP_LEARNING_UTIL_H_
 
-#include "fcl/globals.h"
-#include "fcl/layer.h"
-#include "fcl/neuron.h"
-#include "fcl/bandpass.h"
+#include "fcl/trace.h"
 #include "fcl.h"
 
-#include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #include <assert.h>
@@ -54,7 +50,7 @@ public:
 	double getFilterOutput(int inputIdx, int filterIdx) {
 		const int idx = inputIdx * nFiltersPerInput + filterIdx;
 		assert((idx >= 0) || (idx < (nFiltersPerInput * nInputs)));
-		return filterbankOutputs[idx];
+		return filterbankOutputs[(unsigned)idx];
 	}
 
 	int getNFiltersPerInput() {
@@ -63,7 +59,7 @@ public:
 
 private:
 	const double dampingCoeff = 0.51;
-	FCLBandpass ***bandpass = 0;
+	FCLTrace ***fclTrace = 0;
 	std::vector<double> errors;
 	std::vector<double> filterbankOutputs;
 	int nFiltersPerInput = 0;

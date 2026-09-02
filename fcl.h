@@ -4,7 +4,7 @@
 #include "fcl/globals.h"
 #include "fcl/layer.h"
 #include "fcl/neuron.h"
-#include "fcl/bandpass.h"
+#include "fcl/trace.h"
 
 #include <stdio.h>
 #include <stdlib.h>

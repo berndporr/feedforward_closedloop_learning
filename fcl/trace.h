@@ -1,22 +1,19 @@
-class FCLBandpass;
+class FCLTrace;
 
 #ifndef _Bandpass
 #define _Bandpass
 
 #include <assert.h>
 
-#include "globals.h"
-
-
 /**
  * Creates memory traces at specified length. It's a 2nd order IIR filter.
  **/
-class FCLBandpass {
+class FCLTrace {
 public:
 	/**
 	 * Constructor
 	 **/
-	FCLBandpass();
+	FCLTrace();
 	
 	/**
 	 * Filter
@@ -37,17 +34,12 @@ public:
 	/**
 	 * Generates an acsii file with the impulse response of the filter.
 	 **/
-	void impulse(char* name);
+	void impulse(const char* name);
 
 	/**
          * Normalises the output with f
          **/
 	void calcNorm(double f);
-
-	/**
-	 * Generates an ASCII file with the transfer function
-	 **/
-	void transfer(char* name);
 
 	/**
 	 * Gets the output of the filter. Same as the return value

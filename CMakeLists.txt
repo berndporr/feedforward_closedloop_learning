@@ -1,9 +1,12 @@
-cmake_minimum_required(VERSION 3.11.0)
+cmake_minimum_required(VERSION 3.20.0)
 
-project(fcl VERSION 2.2.0 LANGUAGES CXX)
+project(fcl VERSION 3.0.0 LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+set (CMAKE_EXPORT_COMPILE_COMMANDS 1)
+
+enable_testing()
 
 if(NOT CMAKE_BUILD_TYPE AND NOT CMAKE_CONFIGURATION_TYPES)
   set(CMAKE_BUILD_TYPE "RelWithDebInfo")
@@ -30,7 +33,7 @@ endif()
 
 set(LIBSRC
   fcl/neuron.cpp
-  fcl/bandpass.cpp
+  fcl/trace.cpp
   fcl/layer.cpp
   fcl.cpp
   fcl_util.cpp
@@ -59,7 +62,7 @@ if(UNIX)
   target_include_directories(fcl PRIVATE fcl)
   
   set_target_properties(fcl PROPERTIES
-    SOVERSION 2
+    SOVERSION 3
     VERSION ${PROJECT_VERSION}
     PUBLIC_HEADER "${PUBLICHEADERS}"
     PRIVATE_HEADER "${PRIVATEHEADERS}")
