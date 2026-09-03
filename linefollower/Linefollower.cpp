@@ -75,7 +75,6 @@ class LineFollower
         fclose (flog);
         fclose (fcoord);
         delete fcl;
-	delete racer;
     }
 
     void setLearningRate (double _learningRate)
