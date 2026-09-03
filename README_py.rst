@@ -11,12 +11,4 @@ The Python documentation can be obtained with::
 
 The Python API is identical to the C++ API: The documentation can be
 found here:
-https://glasgowneuro.github.io/feedforward_closedloop_learning/
-
-The best way to get started is to look at the script
-in `tests_py`:
-https://github.com/glasgowneuro/feedforward_closedloop_learning/tree/master/tests_py
-
-A full application using the Python API is our vizdoom
-agent:
-https://github.com/glasgowneuro/fcl_demos
+https://berndporr.github.io/feedforward_closedloop_learning/

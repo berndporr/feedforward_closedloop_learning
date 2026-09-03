@@ -1,12 +1,10 @@
 #ifndef __FEEDFORWARD_CLOSEDLOOP_LEARNING_H_
 #define __FEEDFORWARD_CLOSEDLOOP_LEARNING_H_
 
-#include "fcl/globals.h"
 #include "fcl/layer.h"
 #include "fcl/neuron.h"
 #include "fcl/trace.h"
 
-#include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 #include <assert.h>
@@ -93,7 +91,7 @@ public:
 	/** Seeds the random number generator
          * \param s An arbitratry number.
          **/
-	void seedRandom(int s) { srand(s); };
+	void seedRandom(unsigned int s) { srand(s); };
 
 	/** Sets globally the bias
          * \param _bias Sets globally the bias input to all neurons.

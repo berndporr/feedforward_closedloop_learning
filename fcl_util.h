@@ -1,25 +1,26 @@
 #ifndef __FEEDFORWARD_CLOSEDLOOP_LEARNING_UTIL_H_
 #define __FEEDFORWARD_CLOSEDLOOP_LEARNING_UTIL_H_
 
-#include "fcl/trace.h"
 #include "fcl.h"
+#include "fcl/trace.h"
 
-#include <stdlib.h>
-#include <math.h>
 #include <assert.h>
+#include <math.h>
+#include <stdlib.h>
 
 /**
  * Derived classes of the FeedforwardClosedloopLearning class
  * for special functionality
  **/
 
-
-class FeedforwardClosedloopLearningWithFilterbank : public FeedforwardClosedloopLearning {
-	/**
+class FeedforwardClosedloopLearningWithFilterbank
+    : public FeedforwardClosedloopLearning
+{
+    /**
 	 * FeedforwardClosedloopLearning with Filterbank at each input
 	 **/
-public:
-	/** Constructor: FCL with a filter bank at the input
+  public:
+    /** Constructor: FCL with a filter bank at the input
 	 * Every input feeds internally into a has a filter bank of num_filtersInput 
 	 * filters. This allows for a temporal distribution of the inputs.
 	 * \param num_of_inputs Number of inputs in the input layer
@@ -29,41 +30,39 @@ public:
 	 * \param _minT Minimum/first temporal duration of the 1st filter
 	 * \param _maxT Maximum/last temporal duration of the last filter
 	 **/
-	FeedforwardClosedloopLearningWithFilterbank(
-			const int num_of_inputs,
-			const std::vector<int> &num_of_neurons_per_layer,
-			const int num_filtersInput,
-			const double minT,
-			const double maxT);
+    FeedforwardClosedloopLearningWithFilterbank (
+        const int num_of_inputs,
+        const std::vector<int> &num_of_neurons_per_layer,
+        const int num_filtersInput, const double minT, const double maxT);
 
-	/**
+    /**
 	 * Destructor
 	 **/
-	~FeedforwardClosedloopLearningWithFilterbank();
+    ~FeedforwardClosedloopLearningWithFilterbank ();
 
-	/** Performs the simulation step
+    /** Performs the simulation step
          * \param input Array with the input values
          * \param error Array of the error signals
          **/
-	void doStep(const std::vector<double> &input, const std::vector<double> &error);
+    void doStep (const std::vector<double> &input,
+                 const std::vector<double> &error);
 
-	double getFilterOutput(int inputIdx, int filterIdx) {
-		const int idx = inputIdx * nFiltersPerInput + filterIdx;
-		assert((idx >= 0) || (idx < (nFiltersPerInput * nInputs)));
-		return filterbankOutputs[(unsigned)idx];
-	}
+    double getFilterOutput (int inputIdx, int filterIdx)
+    {
+        const int idx = inputIdx * nFiltersPerInput + filterIdx;
+        assert ((idx >= 0) || (idx < (nFiltersPerInput * nInputs)));
+        return filterbankOutputs[(unsigned)idx];
+    }
 
-	int getNFiltersPerInput() {
-		return nFiltersPerInput;
-	}
+    int getNFiltersPerInput () { return nFiltersPerInput; }
 
-private:
-	const double dampingCoeff = 0.51;
-	FCLTrace ***fclTrace = 0;
-	std::vector<double> errors;
-	std::vector<double> filterbankOutputs;
-	int nFiltersPerInput = 0;
-	int nInputs = 0;
+  private:
+    const double dampingCoeff = 0.51;
+    FCLTrace ***fclTrace = 0;
+    std::vector<double> errors;
+    std::vector<double> filterbankOutputs;
+    int nFiltersPerInput = 0;
+    int nInputs = 0;
 };
 
 #endif

@@ -38,6 +38,14 @@ Ubuntu LTS with swig installed.
 
 A classic line follower demo in [linefollower/](linefollower)`
 
+## Unit tests
+
+There are various unit tests for the neurons, layers and FCL itself. Run
+them by typing:
+```
+make test
+```
+
 ## Class reference
 
 The online documentation can be found here: https://berndporr.github.io/feedforward_closedloop_learning/

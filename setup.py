@@ -16,26 +16,26 @@ def read(fname):
 
 if platform == "linux" or platform == "linux2" or platform == "darwin":
     fcl_module = Extension('_feedforward_closedloop_learning',
-		       sources=['fcl.i','fcl.cpp','fcl_util.cpp','fcl/bandpass.cpp','fcl/layer.cpp','fcl/neuron.cpp'],
-		       extra_compile_args=['-std=c++11','-O3'],
+		       sources=['fcl.i','fcl.cpp','fcl_util.cpp','fcl/trace.cpp','fcl/layer.cpp','fcl/neuron.cpp'],
+		       extra_compile_args=['-std=c++17','-O3'],
                        include_dirs=[numpy.get_include()],
-                       swig_opts=['-c++','-py3']
+                       swig_opts=['-c++']
                        )
 elif platform == "win32":
     fcl_module = Extension('_feedforward_closedloop_learning',
 		       sources=['fcl.i','fcl.cpp','fcl_util.cpp','fcl/bandpass.cpp','fcl/layer.cpp','fcl/neuron.cpp'],
 		       extra_compile_args=['-D_CRT_SECURE_NO_WARNINGS'],
                        include_dirs=[numpy.get_include()],
-                       swig_opts=['-c++','-py3']
+                       swig_opts=['-c++']
                        )
 
 
 
 setup (name = 'feedforward_closedloop_learning',
-       version = '2.2.1',
+       version = '3.0.0',
        author      = "Bernd Porr, Paul Miller",
-       author_email = "bernd@glasgowneuro.tech",
-       url = "https://github.com/glasgowneuro/feedforward_closedloop_learning",
+       author_email = "mail@berndporr.me.uk",
+       url = "https://github.com/berndporr/feedforward_closedloop_learning",
        description = 'Feedforward Closedloop Learning (FCL)',
        long_description=read('README_py.rst'),
        ext_modules = [fcl_module],
