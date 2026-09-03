@@ -17,6 +17,9 @@ Comparison between FCL, backprop and ICO learning:
 
 ![alt tag](learning_units_comparison.png)
 
+Note that the code here has been evolved from the original one. In order
+to ensure stability the Oja rule is being applied on neuron level.
+
 ## Prerequisites (Linux)
 
 Ubuntu LTS with swig installed.
