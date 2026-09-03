@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['calcnorm_4',['calcNorm',['../classFCLBandpass.html#a1201fcf2ad8a44b6d7ac62daa59df628',1,'FCLBandpass']]],
-  ['calcoutput_5',['calcOutput',['../classFCLNeuron.html#a25c7b220c6d231f5d1d1ccb2057d95c2',1,'FCLNeuron::calcOutput()'],['../classfeedforward__closedloop__learning_1_1FCLNeuron.html#ab2e5989fd6f24ca5829e09b0b4c94b85',1,'feedforward_closedloop_learning.FCLNeuron.calcOutput()']]],
-  ['calcoutputs_6',['calcOutputs',['../classFCLLayer.html#a381cfbb78f4b130c125ecbb21df0a8e1',1,'FCLLayer::calcOutputs()'],['../classfeedforward__closedloop__learning_1_1FCLLayer.html#ad146cd241fd240049bec56704870631b',1,'feedforward_closedloop_learning.FCLLayer.calcOutputs()']]],
-  ['calcoutputthread_7',['calcOutputThread',['../classFCLNeuron.html#ab469b991983a61169f252c40833076e0',1,'FCLNeuron::calcOutputThread()'],['../classfeedforward__closedloop__learning_1_1FCLNeuron.html#a17461b9dad2670d3e0d8745c6e55d438',1,'feedforward_closedloop_learning.FCLNeuron.calcOutputThread()']]],
-  ['calcoutputthread_8',['CalcOutputThread',['../classfeedforward__closedloop__learning_1_1CalcOutputThread.html',1,'feedforward_closedloop_learning']]],
-  ['calcpoleszeros_9',['calcPolesZeros',['../classFCLBandpass.html#ae3e2e9025a0fa3e2152507aec8d5050d',1,'FCLBandpass']]]
+  ['dactivation_0',['dActivation',['../classFCLNeuron.html#ab9b8b61229eaae5450b15f172a9951ac',1,'FCLNeuron']]],
+  ['dolearning_1',['dolearning',['../classFCLLayer.html#a4797e73b863c914eb49cc88fb34e408d',1,'FCLLayer::doLearning()'],['../classFCLNeuron.html#a050e49d3cac2c9d7ae3c86b3bfc1448a',1,'FCLNeuron::doLearning()']]],
+  ['dolearningthread_2',['doLearningThread',['../classFCLNeuron.html#af5f19d2d012e984ec1df3d2a4219d835',1,'FCLNeuron']]],
+  ['domaxdet_3',['doMaxDet',['../classFCLNeuron.html#a75fda5f2f7ac514f1c4e569aadeecdba',1,'FCLNeuron']]],
+  ['domaxdetthread_4',['doMaxDetThread',['../classFCLNeuron.html#a88a7513acae7e2c1bca5ceff56bc8159',1,'FCLNeuron']]],
+  ['donormaliseweights_5',['doNormaliseWeights',['../classFCLLayer.html#a3b3e824037facd87f3c9e8074d8ade01',1,'FCLLayer']]],
+  ['dostep_6',['dostep',['../classFeedforwardClosedloopLearning.html#a03d39550cb770f69cef82d72f74fa6b9',1,'FeedforwardClosedloopLearning::doStep()'],['../classFeedforwardClosedloopLearningWithFilterbank.html#a54142195b7b597e1dacc6310b3572952',1,'FeedforwardClosedloopLearningWithFilterbank::doStep()']]]
 ];

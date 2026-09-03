@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['reset_60',['reset',['../classFCLBandpass.html#a7c84e519a58a33a85816dff75119d007',1,'FCLBandpass']]],
-  ['run_61',['run',['../classfeedforward__closedloop__learning_1_1LayerThread.html#a3dce40863889dccd66702a23c5af6046',1,'feedforward_closedloop_learning::LayerThread']]]
+  ['_7efcllayer_0',['~FCLLayer',['../classFCLLayer.html#a19cb197809f20a94244065ac5a6e72f6',1,'FCLLayer']]],
+  ['_7efclneuron_1',['~FCLNeuron',['../classFCLNeuron.html#a0b281d79601cd64f0757883ff189cbdb',1,'FCLNeuron']]],
+  ['_7efeedforwardclosedlooplearning_2',['~FeedforwardClosedloopLearning',['../classFeedforwardClosedloopLearning.html#afba7d6121341599d66e89ee11c25b676',1,'FeedforwardClosedloopLearning']]],
+  ['_7efeedforwardclosedlooplearningwithfilterbank_3',['~FeedforwardClosedloopLearningWithFilterbank',['../classFeedforwardClosedloopLearningWithFilterbank.html#af3db8782362dd911c95f5342cb6166f0',1,'FeedforwardClosedloopLearningWithFilterbank']]]
 ];

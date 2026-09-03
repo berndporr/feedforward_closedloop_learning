@@ -1,4 +1,27 @@
 var searchData=
 [
-  ['loadmodel_158',['loadModel',['../classFeedforwardClosedloopLearning.html#ac3c0528d774e70967513324da24586b0',1,'FeedforwardClosedloopLearning::loadModel()'],['../classfeedforward__closedloop__learning_1_1FeedforwardClosedloopLearning.html#a493df72f0a30439a1b8868b8a7523d62',1,'feedforward_closedloop_learning.FeedforwardClosedloopLearning.loadModel()']]]
+  ['saveinitialweights_0',['saveInitialWeights',['../classFCLNeuron.html#a22ded2a6fb1dcbd602f75256b2e1a677',1,'FCLNeuron']]],
+  ['savemodel_1',['saveModel',['../classFeedforwardClosedloopLearning.html#a1d43527c0f7f72f73b9f53bc4aefb30c',1,'FeedforwardClosedloopLearning']]],
+  ['saveweightmatrix_2',['saveWeightMatrix',['../classFCLLayer.html#a774996142bd397cf636035f94cf0e298',1,'FCLLayer']]],
+  ['seedrandom_3',['seedRandom',['../classFeedforwardClosedloopLearning.html#a538fd70979047bd731735a5969864a4c',1,'FeedforwardClosedloopLearning']]],
+  ['setactivationfunction_4',['setactivationfunction',['../classFeedforwardClosedloopLearning.html#aab686c9760c933fd40df7d751edd3d92',1,'FeedforwardClosedloopLearning::setActivationFunction()'],['../classFCLLayer.html#a350d3f13d596c0c13690433417b1ff5e',1,'FCLLayer::setActivationFunction()'],['../classFCLNeuron.html#aa02d0509e326ee51508f20ea47fa3325',1,'FCLNeuron::setActivationFunction()']]],
+  ['setbias_5',['setbias',['../classFeedforwardClosedloopLearning.html#a4008247ff9ce1a0f4a9ed2e2df914185',1,'FeedforwardClosedloopLearning::setBias()'],['../classFCLLayer.html#ac24b7e117a7a0ca0fd55bc9000927ade',1,'FCLLayer::setBias()'],['../classFCLNeuron.html#ac37bffbc09dd96379a390df0bca9c4da',1,'FCLNeuron::setBias(double _bias)']]],
+  ['setbiasweight_6',['setBiasWeight',['../classFCLNeuron.html#aebccc21ceed87e8eb132021d0c081206',1,'FCLNeuron']]],
+  ['setconvolution_7',['setconvolution',['../classFCLLayer.html#a753bbc40f537ffd4253fb7c6391f69cd',1,'FCLLayer::setConvolution(int width, int height)'],['../classFCLLayer.html#ad569019336c2a687b7701406c061b5b3',1,'FCLLayer::setConvolution(int width)']]],
+  ['setdebuginfo_8',['setdebuginfo',['../classFCLLayer.html#afbd707233ca671022fedb56c2a78b4be',1,'FCLLayer::setDebugInfo()'],['../classFCLNeuron.html#a46913ab4ea452b1ed5d4732b292c5118',1,'FCLNeuron::setDebugInfo()']]],
+  ['setdecay_9',['setdecay',['../classFeedforwardClosedloopLearning.html#a9d38e470d2cf81fa51667e3defad3a22',1,'FeedforwardClosedloopLearning::setDecay()'],['../classFCLLayer.html#ab4dca816f3eb446ad5548c4adf72c85e',1,'FCLLayer::setDecay()'],['../classFCLNeuron.html#a31af830d465e739f4f4825e99f185307',1,'FCLNeuron::setDecay(double _decay)']]],
+  ['seterror_10',['seterror',['../classFCLNeuron.html#a88e5b485ffc4206886ea7cd62a657c93',1,'FCLNeuron::setError()'],['../classFCLLayer.html#add09e850f6c52973f1f05f8d75c24902',1,'FCLLayer::setError(double _error)'],['../classFCLLayer.html#add4bc3f7600833563757a165e022ccd8',1,'FCLLayer::setError(int i, double _error)']]],
+  ['seterrors_11',['setErrors',['../classFCLLayer.html#a0c11f756afbd4f30c49c652097aefd09',1,'FCLLayer']]],
+  ['setgeometry_12',['setGeometry',['../classFCLNeuron.html#ae80c9bc82747296f727901354b5918f0',1,'FCLNeuron']]],
+  ['setinput_13',['setinput',['../classFCLLayer.html#a9209682b22bab888308c26b4a802ac2c',1,'FCLLayer::setInput()'],['../classFCLNeuron.html#ab9cf70567a42fb134882553f2cddde0b',1,'FCLNeuron::setInput()']]],
+  ['setinputs_14',['setInputs',['../classFCLLayer.html#aebec6624965eb2db9ff539d286689240',1,'FCLLayer']]],
+  ['setlearningrate_15',['setlearningrate',['../classFeedforwardClosedloopLearning.html#a1ba9f7595fa7f32c8747d56b93c21d09',1,'FeedforwardClosedloopLearning::setLearningRate()'],['../classFCLLayer.html#ae333876b923ec6568391aabd5044e633',1,'FCLLayer::setLearningRate()'],['../classFCLNeuron.html#a837c8226b7594f71aa2ebfa7cee8d327',1,'FCLNeuron::setLearningRate()']]],
+  ['setlearningratediscountfactor_16',['setLearningRateDiscountFactor',['../classFeedforwardClosedloopLearning.html#a5b0ad6f5548f9eeec8aa2a20a27fa8ee',1,'FeedforwardClosedloopLearning']]],
+  ['setmask_17',['setmask',['../classFCLNeuron.html#a17b302d86ed5a622d5eeedc9b7b88045',1,'FCLNeuron::setMask(int x, int y, unsigned char c)'],['../classFCLNeuron.html#a360746c3d8c3f45eca1f690e1efea753',1,'FCLNeuron::setMask(const int x, const unsigned char c)'],['../classFCLNeuron.html#a3802e2f9ee0f80f1fecebe6e19b3d2b3',1,'FCLNeuron::setMask(unsigned char c)']]],
+  ['setmaxdetlayer_18',['setMaxDetLayer',['../classFCLLayer.html#a3a7e5f1ca62128a1d7b938ca7efe5587',1,'FCLLayer']]],
+  ['setnormaliseweights_19',['setNormaliseWeights',['../classFCLLayer.html#a26c75d7fd6b286f75fdc070c6d97c573',1,'FCLLayer']]],
+  ['setparameters_20',['setParameters',['../classFCLTrace.html#a8c073d2bac2c17b0ae82926dd45e26fa',1,'FCLTrace']]],
+  ['setstep_21',['setstep',['../classFCLLayer.html#ae3abf36dfd578e69884f47ede3307c30',1,'FCLLayer::setStep()'],['../classFCLNeuron.html#a0f28380212dbfdd8ee60fd766339cd6e',1,'FCLNeuron::setStep()']]],
+  ['setusethreads_22',['setUseThreads',['../classFCLLayer.html#a443fa7cbc5bb8ea94584f53705f16fa8',1,'FCLLayer']]],
+  ['setweight_23',['setWeight',['../classFCLNeuron.html#aa4e106a329aad4963ad13421a9e02934',1,'FCLNeuron']]]
 ];

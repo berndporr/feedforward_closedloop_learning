@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['calcnorm_111',['calcNorm',['../classFCLBandpass.html#a1201fcf2ad8a44b6d7ac62daa59df628',1,'FCLBandpass']]],
-  ['calcoutput_112',['calcOutput',['../classFCLNeuron.html#a25c7b220c6d231f5d1d1ccb2057d95c2',1,'FCLNeuron::calcOutput()'],['../classfeedforward__closedloop__learning_1_1FCLNeuron.html#ab2e5989fd6f24ca5829e09b0b4c94b85',1,'feedforward_closedloop_learning.FCLNeuron.calcOutput()']]],
-  ['calcoutputs_113',['calcOutputs',['../classFCLLayer.html#a381cfbb78f4b130c125ecbb21df0a8e1',1,'FCLLayer::calcOutputs()'],['../classfeedforward__closedloop__learning_1_1FCLLayer.html#ad146cd241fd240049bec56704870631b',1,'feedforward_closedloop_learning.FCLLayer.calcOutputs()']]],
-  ['calcoutputthread_114',['calcOutputThread',['../classFCLNeuron.html#ab469b991983a61169f252c40833076e0',1,'FCLNeuron::calcOutputThread()'],['../classfeedforward__closedloop__learning_1_1FCLNeuron.html#a17461b9dad2670d3e0d8745c6e55d438',1,'feedforward_closedloop_learning.FCLNeuron.calcOutputThread()']]],
-  ['calcpoleszeros_115',['calcPolesZeros',['../classFCLBandpass.html#ae3e2e9025a0fa3e2152507aec8d5050d',1,'FCLBandpass']]]
+  ['fcllayer_0',['FCLLayer',['../classFCLLayer.html#a1076e15cfe534b5009bd90140ce8d4ca',1,'FCLLayer']]],
+  ['fclneuron_1',['FCLNeuron',['../classFCLNeuron.html#aa5d4322576040e2744497fcc2d0f89c4',1,'FCLNeuron']]],
+  ['fcltrace_2',['FCLTrace',['../classFCLTrace.html#ac5cd71ea7217993a31464e9e2f5b739b',1,'FCLTrace']]],
+  ['feedforwardclosedlooplearning_3',['FeedforwardClosedloopLearning',['../classFeedforwardClosedloopLearning.html#a4cfe39a5d2a897ab59c6625fd5e61371',1,'FeedforwardClosedloopLearning']]],
+  ['feedforwardclosedlooplearningwithfilterbank_4',['FeedforwardClosedloopLearningWithFilterbank',['../classFeedforwardClosedloopLearningWithFilterbank.html#a02416233014bef21a36ef31d5bd1dfc4',1,'FeedforwardClosedloopLearningWithFilterbank']]],
+  ['filter_5',['filter',['../classFCLTrace.html#a2aa0ba6d87a420ac5639f5f156be03d7',1,'FCLTrace']]]
 ];

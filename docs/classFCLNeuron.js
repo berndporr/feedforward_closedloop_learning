@@ -49,9 +49,9 @@ var classFCLNeuron =
     [ "setGeometry", "classFCLNeuron.html#ae80c9bc82747296f727901354b5918f0", null ],
     [ "setInput", "classFCLNeuron.html#ab9cf70567a42fb134882553f2cddde0b", null ],
     [ "setLearningRate", "classFCLNeuron.html#a837c8226b7594f71aa2ebfa7cee8d327", null ],
+    [ "setMask", "classFCLNeuron.html#a360746c3d8c3f45eca1f690e1efea753", null ],
     [ "setMask", "classFCLNeuron.html#a17b302d86ed5a622d5eeedc9b7b88045", null ],
     [ "setMask", "classFCLNeuron.html#a3802e2f9ee0f80f1fecebe6e19b3d2b3", null ],
-    [ "setMomentum", "classFCLNeuron.html#a4df04750b924c7fe00b5efc6457d287c", null ],
     [ "setStep", "classFCLNeuron.html#a0f28380212dbfdd8ee60fd766339cd6e", null ],
     [ "setWeight", "classFCLNeuron.html#aa4e106a329aad4963ad13421a9e02934", null ]
 ];

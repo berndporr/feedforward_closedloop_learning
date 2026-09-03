@@ -31,27 +31,13 @@ Ubuntu LTS with swig installed.
       ./setup.py install --user
 ```
 
-### Windows
-
-```
-cmake -G "Visual Studio 16 2019" -A x64 .
-```
-then start Visual Studio. See `cmake -G` for more target options.
-
-### From PyPi (Python only)
-
-https://pypi.org/project/feedforward_closedloop_learning/
-
 ## Demos
 
-   * A classic line follower demo in `linefollower/` and
-   * our vizdoom demo where our FCL agent fights against another automated agent: https://github.com/glasgowneuro/fcl_doom
+A classic line follower demo in [linefollower/](linefollower)`
 
 ## Class reference
 
-The online documentation can be found here: https://glasgowneuro.github.io/feedforward_closedloop_learning/
-
-The documentation is in the `docs` subdirectory in HTML, RTF and PDF.
+The online documentation can be found here: https://berndporr.github.io/feedforward_closedloop_learning/
 
 ## License
 

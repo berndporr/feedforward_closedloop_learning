@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['join_157',['join',['../classfeedforward__closedloop__learning_1_1LayerThread.html#a65564d9e400a50cdd6bde1b0f953221f',1,'feedforward_closedloop_learning::LayerThread']]]
+  ['reset_0',['reset',['../classFCLTrace.html#a8ffcd189b9a613623a05fc0aa241a1f1',1,'FCLTrace']]]
 ];

@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['normaliseweights_159',['normaliseWeights',['../classFCLNeuron.html#a9abbdef952a9ff38506d75922c21dcc9',1,'FCLNeuron::normaliseWeights()'],['../classfeedforward__closedloop__learning_1_1FCLNeuron.html#a576e2846758faa25c9c8589e2b713f96',1,'feedforward_closedloop_learning.FCLNeuron.normaliseWeights()']]]
+  ['_7efcllayer_0',['~FCLLayer',['../classFCLLayer.html#a19cb197809f20a94244065ac5a6e72f6',1,'FCLLayer']]],
+  ['_7efclneuron_1',['~FCLNeuron',['../classFCLNeuron.html#a0b281d79601cd64f0757883ff189cbdb',1,'FCLNeuron']]],
+  ['_7efeedforwardclosedlooplearning_2',['~FeedforwardClosedloopLearning',['../classFeedforwardClosedloopLearning.html#afba7d6121341599d66e89ee11c25b676',1,'FeedforwardClosedloopLearning']]],
+  ['_7efeedforwardclosedlooplearningwithfilterbank_3',['~FeedforwardClosedloopLearningWithFilterbank',['../classFeedforwardClosedloopLearningWithFilterbank.html#af3db8782362dd911c95f5342cb6166f0',1,'FeedforwardClosedloopLearningWithFilterbank']]]
 ];
