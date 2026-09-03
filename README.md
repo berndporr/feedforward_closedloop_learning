@@ -31,7 +31,7 @@ Ubuntu LTS with swig installed.
       cmake .
       make
       sudo make install
-      ./setup.py install --user
+      ./setup.py install
 ```
 
 ## Demos
