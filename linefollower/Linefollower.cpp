@@ -4,7 +4,6 @@
 #include <QApplication>
 #include <QtGui>
 #include <cstdio>
-#include <numeric>
 #include <vector>
 #include <viewer/Viewer.h>
 
@@ -43,7 +42,7 @@ class LineFollower
     int trackCompletedCtr = 5000;
 
   public:
-    LineFollower (World *world)
+    LineFollower (World &world)
     {
 
         flog = fopen ("flog.tsv", "wt");
@@ -55,7 +54,7 @@ class LineFollower
         racer->angle = 1;
         racer->leftSpeed = speed;
         racer->rightSpeed = speed;
-        world->addObject (racer);
+        world.addObject (racer);
 
         pred.resize (nInputs);
         err.resize (nInputs);
@@ -76,6 +75,7 @@ class LineFollower
         fclose (flog);
         fclose (fcoord);
         delete fcl;
+	delete racer;
     }
 
     void setLearningRate (double _learningRate)
@@ -235,7 +235,7 @@ class LineFollower
 class QTSimulator : public ViewerWidget, public LineFollower
 {
   public:
-    QTSimulator (Enki::World *w) : ViewerWidget (w), LineFollower (w) {}
+    QTSimulator (Enki::World &w) : ViewerWidget (&w), LineFollower (w) {}
     virtual void sceneCompletedHook () override
     {
         sceneCompleted ();
@@ -249,7 +249,7 @@ class QTSimulator : public ViewerWidget, public LineFollower
 class HeadlessSimulator : public LineFollower
 {
   public:
-    HeadlessSimulator (Enki::World *w) : LineFollower (w) { world = w; }
+    HeadlessSimulator (Enki::World &w) : LineFollower (w), world(w) {}
 
     void run ()
     {
@@ -257,7 +257,7 @@ class HeadlessSimulator : public LineFollower
         while (simulationRunning)
         {
             // Step the physical world forward without rendering anything
-            world->step (double (timerPeriodMs) / 1000., 3);
+            world.step (double (timerPeriodMs) / 1000., 3);
             sceneCompleted (false);
             ctr++;
             if (ctr >= 100)
@@ -272,7 +272,7 @@ class HeadlessSimulator : public LineFollower
 
   private:
     bool checkCompletionCondition () { return true; }
-    Enki::World *world;
+    Enki::World &world;
     int ctr = 0;
 };
 
@@ -291,7 +291,7 @@ void singleRun (int argc, char *argv[], float learningrate)
     World world (maxx, maxy, Color (1000, 1000, 100),
                  World::GroundTexture ((unsigned)loopImage.width (),
                                        (unsigned)loopImage.height (), bitmap));
-    QTSimulator linefollower (&world);
+    QTSimulator linefollower (world);
     linefollower.setLearningRate (learningrate);
     linefollower.show ();
     app.exec ();
@@ -310,11 +310,11 @@ void statsRun ()
     }
     const uint32_t *bitmap = (const uint32_t *)loopImage.constBits ();
     FILE *f = fopen ("stats.dat", "wt");
-    for (float learningRate = 0.0001f; learningRate < 1;
+    for (float learningRate = 0.0001f; learningRate < 0.1;
          learningRate = learningRate * 1.1f)
     {
         fprintf (stderr, "Learning rate = %f\n", learningRate);
-        for (unsigned int seed = 42; seed <= (42 * 4); seed = seed * 2)
+        for (unsigned int seed = 42; seed <= (42 * 2); seed = seed * 2)
         {
             srandom (seed);
             fprintf (stderr, "Seed = %u\n", seed);
@@ -322,13 +322,12 @@ void statsRun ()
                          World::GroundTexture ((unsigned)loopImage.width (),
                                                (unsigned)loopImage.height (),
                                                bitmap));
-            HeadlessSimulator linefollower (&world);
+            HeadlessSimulator linefollower (world);
             linefollower.setLearningRate (learningRate);
             linefollower.run ();
             long nSteps = linefollower.getStep ();
             fprintf (stderr, "nSteps = %ld\n", nSteps);
             fprintf (stderr, "Finished.\n");
-            fprintf (stderr, "avg nSteps = %ld\n", nSteps);
             fprintf (f, "%f\t%ld\n", learningRate, nSteps);
             fflush (f);
         }
