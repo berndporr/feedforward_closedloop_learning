@@ -29,7 +29,7 @@ const double maxy = 300;
 
 // for stats
 #define SQ_ERROR_THRES 0.002
-#define STEPS_BELOW_ERR_THRESHOLD 1000
+#define STEPS_BELOW_ERR_THRESHOLD 500
 
 // max number of steps to terminate
 #define MAX_STEPS 50000

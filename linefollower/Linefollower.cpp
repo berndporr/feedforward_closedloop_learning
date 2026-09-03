@@ -119,9 +119,9 @@ class LineFollower
         if (trackCompletedCtr < 1)
         {
             // been off the track for a long time!
-            step = MAX_STEPS;
+            step = 0;
             simulationRunning = false;
-            fprintf(stderr,"Off track!\n");
+            fprintf (stderr, "Off track!     \n");
         }
         if (consoleDebug)
         {
@@ -204,7 +204,7 @@ class LineFollower
         if (step > MAX_STEPS)
         {
             simulationRunning = false;
-            fprintf(stderr,"Reached max steps.\n");
+            fprintf (stderr, "Reached max steps.\n");
         }
 
         fprintf (flog, "%e\t", error);
@@ -253,11 +253,11 @@ class HeadlessSimulator : public LineFollower
 
     void run ()
     {
-	const double timerPeriodMs = 30;
+        const double timerPeriodMs = 30;
         while (simulationRunning)
         {
             // Step the physical world forward without rendering anything
-            world->step(double(timerPeriodMs)/1000., 3);
+            world->step (double (timerPeriodMs) / 1000., 3);
             sceneCompleted (false);
             ctr++;
             if (ctr >= 100)
@@ -310,11 +310,10 @@ void statsRun ()
     }
     const uint32_t *bitmap = (const uint32_t *)loopImage.constBits ();
     FILE *f = fopen ("stats.dat", "wt");
-    for (float learningRate = 0.001f; learningRate < 1;
+    for (float learningRate = 0.0001f; learningRate < 1;
          learningRate = learningRate * 1.1f)
     {
         fprintf (stderr, "Learning rate = %f\n", learningRate);
-        std::vector<long> steps;
         for (unsigned int seed = 42; seed <= (42 * 4); seed = seed * 2)
         {
             srandom (seed);
@@ -328,14 +327,11 @@ void statsRun ()
             linefollower.run ();
             long nSteps = linefollower.getStep ();
             fprintf (stderr, "nSteps = %ld\n", nSteps);
-            steps.push_back (nSteps);
             fprintf (stderr, "Finished.\n");
+            fprintf (stderr, "avg nSteps = %ld\n", nSteps);
+            fprintf (f, "%f\t%ld\n", learningRate, nSteps);
+            fflush (f);
         }
-        long avgStep = std::accumulate (steps.begin (), steps.end (), 0)
-                       / (long)steps.size ();
-        fprintf (stderr, "avg nSteps = %ld\n", avgStep);
-        fprintf (f, "%f\t%ld\n", learningRate, avgStep);
-        fflush (f);
     }
     fclose (f);
 }
