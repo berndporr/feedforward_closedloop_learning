@@ -253,12 +253,11 @@ class HeadlessSimulator : public LineFollower
 
     void run ()
     {
-        const double dt
-            = 0.05; // Simulation step size (typically 50ms in Enki)
+	const double timerPeriodMs = 30;
         while (simulationRunning)
         {
             // Step the physical world forward without rendering anything
-            world->step (dt);
+            world->step(double(timerPeriodMs)/1000., 3);
             sceneCompleted (false);
             ctr++;
             if (ctr >= 100)
