@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['normaliseweights_0',['normaliseWeights',['../classFCLNeuron.html#a9abbdef952a9ff38506d75922c21dcc9',1,'FCLNeuron']]]
+  ['join_0',['join',['../classfeedforward__closedloop__learning_1_1LayerThread.html#a4571e74256e51c9a446a1e1a869bf1ac',1,'feedforward_closedloop_learning::LayerThread']]]
 ];

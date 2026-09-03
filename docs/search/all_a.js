@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['weightinitmethod_0',['WeightInitMethod',['../classFCLNeuron.html#aff937a81f10951ffe98613751a4f8e22',1,'FCLNeuron']]],
-  ['weightnormalisation_1',['WeightNormalisation',['../classFCLLayer.html#a478b5bad203a8a6306a05d2a9c1719f9',1,'FCLLayer']]]
+  ['normaliseweights_0',['normaliseweights',['../classFCLNeuron.html#a9abbdef952a9ff38506d75922c21dcc9',1,'FCLNeuron::normaliseWeights()'],['../classfeedforward__closedloop__learning_1_1FCLNeuron.html#a36edffb464936f12d13fa6e84b725ee7',1,'feedforward_closedloop_learning.FCLNeuron.normaliseWeights()']]]
 ];

@@ -12,7 +12,7 @@ var classFeedforwardClosedloopLearning =
     [ "initWeights", "classFeedforwardClosedloopLearning.html#a03068dba70f396defe553e561b731155", null ],
     [ "loadModel", "classFeedforwardClosedloopLearning.html#ac3c0528d774e70967513324da24586b0", null ],
     [ "saveModel", "classFeedforwardClosedloopLearning.html#a1d43527c0f7f72f73b9f53bc4aefb30c", null ],
-    [ "seedRandom", "classFeedforwardClosedloopLearning.html#a538fd70979047bd731735a5969864a4c", null ],
+    [ "seedRandom", "classFeedforwardClosedloopLearning.html#a1c7e672a506b0cdfa2f9c7352e896c43", null ],
     [ "setActivationFunction", "classFeedforwardClosedloopLearning.html#aab686c9760c933fd40df7d751edd3d92", null ],
     [ "setBias", "classFeedforwardClosedloopLearning.html#a4008247ff9ce1a0f4a9ed2e2df914185", null ],
     [ "setDecay", "classFeedforwardClosedloopLearning.html#a9d38e470d2cf81fa51667e3defad3a22", null ],

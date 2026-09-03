@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['calcnorm_0',['calcNorm',['../classFCLTrace.html#a0dd369e18e5912f0ae25db5dc3684bde',1,'FCLTrace']]],
-  ['calcoutput_1',['calcOutput',['../classFCLNeuron.html#a25c7b220c6d231f5d1d1ccb2057d95c2',1,'FCLNeuron']]],
-  ['calcoutputs_2',['calcOutputs',['../classFCLLayer.html#a381cfbb78f4b130c125ecbb21df0a8e1',1,'FCLLayer']]],
-  ['calcoutputthread_3',['calcOutputThread',['../classFCLNeuron.html#aa9aa79271f760a0c86e09ea1a58883a4',1,'FCLNeuron']]],
-  ['calcpoleszeros_4',['calcPolesZeros',['../classFCLTrace.html#a6fb9b74463565ea1d1e86da5ff8410fa',1,'FCLTrace']]],
-  ['closedloop_20learning_20fcl_5',['Feedforward Closedloop Learning (FCL)',['../index.html',1,'']]]
+  ['activationfunction_0',['ActivationFunction',['../classFCLNeuron.html#a04b8c9d3c1dbd5a98ba8f5bdce360c9d',1,'FCLNeuron']]],
+  ['addneuron_1',['addNeuron',['../classfeedforward__closedloop__learning_1_1LayerThread.html#a932c06cb0bd486bf490e9f5971758edd',1,'feedforward_closedloop_learning::LayerThread']]]
 ];

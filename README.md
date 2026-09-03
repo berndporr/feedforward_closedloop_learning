@@ -17,12 +17,12 @@ Comparison between FCL, backprop and ICO learning:
 
 ![alt tag](learning_units_comparison.png)
 
-Note that the code here has been evolved from the original one. In order
+Note that the code here evolved from the original publication. In order
 to ensure stability the Oja rule is being applied on neuron level.
 
 ## Prerequisites (Linux)
 
-Ubuntu LTS with swig installed.
+Ubuntu LTS with SWIG installed.
 
 ## How to compile / install?
 
@@ -36,11 +36,13 @@ Ubuntu LTS with swig installed.
 
 ## Demos
 
-A classic line follower demo in [linefollower/](linefollower)`
+A classic line follower demo in [linefollower/](linefollower). This shows how
+a robot can learn to minimise its error while doing a classical line following
+by integrating images from a camera.
 
 ## Unit tests
 
-There are various unit tests for the neurons, layers and FCL itself. Run
+There are unit tests for the neurons, layers and the FCL itself. Run
 them by typing:
 ```
 make test
@@ -57,8 +59,9 @@ GNU GENERAL PUBLIC LICENSE
 Version 3, 29 June 2007
 
 ```
-(C) 2017-2022, Bernd Porr <bernd@glasgowneuro.tech>
-(C) 2017,2018, Paul Miller <paul@glasgowneuro.tech>
+(C) 2017-2026, Bernd Porr <mail@berndporr.me.uk>
+(C) 2017,2018, Paul Miller
+(C) 2025 Suraj Naranatt
 ```
 
 ## DOI of the Code

@@ -1,0 +1,25 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,213,68,238"/>
+<area shape="rect" id="Node000001" href="$classfeedforward__closedloop__learning_1_1DoubleVector.html" title=" " alt="" coords="146,5,325,45"/>
+<area shape="poly" id="edge2_Node000000_Node000001" title=" " alt="" coords="40,198,49,166,64,127,85,88,114,55,145,38,147,42,118,59,89,91,69,129,54,167,46,200"/>
+<area shape="rect" id="Node000002" href="$classfeedforward__closedloop__learning_1_1FCLLayer.html" title=" " alt="" coords="146,69,325,109"/>
+<area shape="poly" id="edge3_Node000000_Node000002" title=" " alt="" coords="48,199,75,158,93,137,115,119,144,104,147,109,117,124,97,141,79,161,52,202"/>
+<area shape="rect" id="Node000003" href="$classfeedforward__closedloop__learning_1_1FCLNeuron.html" title=" " alt="" coords="146,133,325,173"/>
+<area shape="poly" id="edge4_Node000000_Node000003" title=" " alt="" coords="71,204,115,183,151,171,152,176,117,188,73,208"/>
+<area shape="rect" id="Node000004" href="$classfeedforward__closedloop__learning_1_1FeedforwardClosedloopLearning.html" title=" " alt="" coords="116,198,355,253"/>
+<area shape="poly" id="edge5_Node000000_Node000004" title=" " alt="" coords="82,223,116,223,116,228,82,228"/>
+<area shape="rect" id="Node000006" href="$classfeedforward__closedloop__learning_1_1IntVector.html" title=" " alt="" coords="146,277,325,317"/>
+<area shape="poly" id="edge7_Node000000_Node000006" title=" " alt="" coords="74,242,117,262,156,275,154,280,115,266,72,247"/>
+<area shape="rect" id="Node000007" href="$classfeedforward__closedloop__learning_1_1LayerThread.html" title=" " alt="" coords="146,341,325,381"/>
+<area shape="poly" id="edge8_Node000000_Node000007" title=" " alt="" coords="52,248,79,289,97,310,117,327,147,342,144,347,115,332,93,314,75,293,48,251"/>
+<area shape="rect" id="Node000011" href="$classfeedforward__closedloop__learning_1_1SwigPyIterator.html" title=" " alt="" coords="145,405,326,445"/>
+<area shape="poly" id="edge12_Node000000_Node000011" title=" " alt="" coords="46,251,54,283,69,321,89,359,118,391,145,408,143,412,114,395,85,362,64,324,49,285,40,252"/>
+<area shape="rect" id="Node000005" href="$classfeedforward__closedloop__learning_1_1FeedforwardClosedloopLearningWithFilterbank.html" title=" " alt="" coords="403,198,641,253"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="369,223,402,223,402,228,369,228"/>
+<area shape="rect" id="Node000008" href="$classfeedforward__closedloop__learning_1_1CalcOutputThread.html" title=" " alt="" coords="421,277,623,317"/>
+<area shape="poly" id="edge9_Node000007_Node000008" title=" " alt="" coords="338,336,431,315,432,320,339,341"/>
+<area shape="rect" id="Node000009" href="$classfeedforward__closedloop__learning_1_1LearningThread.html" title=" " alt="" coords="429,341,615,381"/>
+<area shape="poly" id="edge10_Node000007_Node000009" title=" " alt="" coords="339,359,428,359,428,364,339,364"/>
+<area shape="rect" id="Node000010" href="$classfeedforward__closedloop__learning_1_1MaxDetThread.html" title=" " alt="" coords="431,405,613,445"/>
+<area shape="poly" id="edge11_Node000007_Node000010" title=" " alt="" coords="339,382,432,403,431,408,338,387"/>
+</map>

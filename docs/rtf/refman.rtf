@@ -137,18 +137,32 @@ Version \par\page\page\vertalt
 Feedforward Closedloop Learning (FCL)\par \pard\plain 
 {\tc\tcl1 \v Feedforward Closedloop Learning (FCL)}
 {\xe \v Feedforward Closedloop Learning (FCL)}
-{\bkmkstart AAAAAAAAEO}
-{\bkmkend AAAAAAAAEO}
+{\bkmkstart AAAAAAAANE}
+{\bkmkend AAAAAAAANE}
 {
 \pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
-{\bkmkstart AAAAAAAAEP}
-{\bkmkend AAAAAAAAEP}
+{\bkmkstart AAAAAAAANF}
+{\bkmkend AAAAAAAANF}
  {\f2 Forward propagation closed loop learning Bernd Porr, Paul Miller. Adaptive Behaviour 2019.}\par
 {\f2 Submission version}\par
 For an autonomous agent, the inputs are the sensory data that inform the agent of the state of the world, and the outputs are their actions, which act on the world and consequently produce new sensory inputs. The agent only knows of its own actions via their effect on future inputs; therefore desired states, and error signals, are most naturally defined in terms of the inputs. Most machine learning algorithms, however, operate in terms of desired outputs. For example, backpropagation takes target output values and propagates the corresponding error backwards through the network in order to change the weights. In closed loop settings, it is far more obvious how to define desired sensory inputs than desired actions, however. To train a deep network using errors defined in the input space would call for an algorithm that can propagate those errors forwards through the network, from input layer to output layer, in much the same way that activations are propagated.\par
 {\f2 Github project page} \par
 }}
 
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Index\par \pard\plain 
+{\tc \v Namespace Index}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Namespace List\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Here is a list of all documented namespaces with brief descriptions:}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b feedforward_closedloop_learning} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
 \pard\plain \sect\sbkpage
 \s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
 Hierarchical Index\par \pard\plain 
@@ -173,6 +187,46 @@ FeedforwardClosedloopLearning\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADP
 FeedforwardClosedloopLearningWithFilterbank\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEI \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
 }\par
+object
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+feedforward_closedloop_learning.DoubleVector\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEZ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+feedforward_closedloop_learning.FCLLayer\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGI \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+feedforward_closedloop_learning.FCLNeuron\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+feedforward_closedloop_learning.FeedforwardClosedloopLearning\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAJQ \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAKL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+feedforward_closedloop_learning.IntVector\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAKP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+feedforward_closedloop_learning.LayerThread\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEY \\*MERGEFORMAT}{\fldrslt pagenum}}
+{
+\par
+\pard\plain \s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+feedforward_closedloop_learning.CalcOutputThread\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEV \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+feedforward_closedloop_learning.LearningThread\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAME \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+feedforward_closedloop_learning.MaxDetThread\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAMH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+feedforward_closedloop_learning.SwigPyIterator\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAMK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+type
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+feedforward_closedloop_learning._SwigNonDynamicMeta\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
 }
 \pard\plain \sect\sbkpage
 \s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
@@ -185,20 +239,44 @@ Class List\par \pard\plain
 {
 \par
 \pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b feedforward_closedloop_learning._SwigNonDynamicMeta} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEU \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b feedforward_closedloop_learning.CalcOutputThread} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEV \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b feedforward_closedloop_learning.DoubleVector} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEZ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
 {\b {\b FCLLayer} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Layer which contains the neurons of one layer })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b feedforward_closedloop_learning.FCLLayer} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAGI \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
 {\b {\b FCLNeuron} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Neuron which calculates the output and performs learning })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABL \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
+{\b {\b feedforward_closedloop_learning.FCLNeuron} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAHR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
 {\b {\b FCLTrace} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Creates memory traces at specified length })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b feedforward_closedloop_learning.FeedforwardClosedloopLearning} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAJQ \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
 {\b {\b FeedforwardClosedloopLearning} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Main class of Feedforward Closed Loop Learning })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAADP \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
+{\b {\b feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAKL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
 {\b {\b FeedforwardClosedloopLearningWithFilterbank} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Derived classes of the {\b FeedforwardClosedloopLearning} class for special functionality })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEI \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b feedforward_closedloop_learning.IntVector} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAKP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b feedforward_closedloop_learning.LayerThread} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEY \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b feedforward_closedloop_learning.LearningThread} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAME \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b feedforward_closedloop_learning.MaxDetThread} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAMH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b feedforward_closedloop_learning.SwigPyIterator} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAMK \\*MERGEFORMAT}{\fldrslt pagenum}}
 \par
 \par}
 \pard\plain \sect\sbkpage
@@ -227,8 +305,448 @@ File List\par \pard\plain
 \par}
 \pard\plain \sect\sbkpage
 \s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Namespace Documentation\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+feedforward_closedloop_learning Namespace Reference\par \pard\plain 
+{\tc\tcl2 \v feedforward_closedloop_learning}
+{\xe \v feedforward_closedloop_learning}
+{\bkmkstart AAAAAAAAEO}
+{\bkmkend AAAAAAAAEO}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b _SwigNonDynamicMeta}\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b CalcOutputThread}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b DoubleVector}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b FCLLayer}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b FCLNeuron}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b FeedforwardClosedloopLearning}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b FeedforwardClosedloopLearningWithFilterbank}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b IntVector}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b LayerThread}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b LearningThread}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b MaxDetThread}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b SwigPyIterator}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b _swig_repr} (self){\bkmkstart AAAAAAAAEP}
+{\bkmkend AAAAAAAAEP}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b _swig_setattr_nondynamic_instance_variable} (set){\bkmkstart AAAAAAAAEQ}
+{\bkmkend AAAAAAAAEQ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b _swig_setattr_nondynamic_class_variable} (set){\bkmkstart AAAAAAAAER}
+{\bkmkend AAAAAAAAER}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b _swig_add_metaclass} (metaclass)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Variables\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b NUM_THREADS} = _feedforward_closedloop_learning.NUM_THREADS{\bkmkstart AAAAAAAAES}
+{\bkmkend AAAAAAAAES}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid Feedforward Closedloop Learning}
+ \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Function Documentation\par
+\pard\plain 
+{\xe \v _swig_add_metaclass\:feedforward_closedloop_learning}
+{\xe \v feedforward_closedloop_learning\:_swig_add_metaclass}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning._swig_add_metaclass (  {\i metaclass}){\f2 [protected]}}}
+\par
+{\bkmkstart AAAAAAAAET}
+{\bkmkend AAAAAAAAET}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid Class decorator for adding a metaclass to a SWIG wrapped class - a slimmed down version of six.add_metaclass}
+ \par
+}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
 Class Documentation{\tc \v Class Documentation}
 \par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+feedforward_closedloop_learning._SwigNonDynamicMeta Class Reference\par \pard\plain 
+{\tc\tcl2 \v feedforward_closedloop_learning._SwigNonDynamicMeta}
+{\xe \v feedforward_closedloop_learning._SwigNonDynamicMeta}
+{\bkmkstart AAAAAAAAEU}
+{\bkmkend AAAAAAAAEU}
+Inheritance diagram for feedforward_closedloop_learning._SwigNonDynamicMeta:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1__SwigNonDynamicMeta__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for feedforward_closedloop_learning._SwigNonDynamicMeta:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1__SwigNonDynamicMeta__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid Meta class to enforce nondynamic attributes (no new attributes) for a class}
+ \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+feedforward_closedloop_learning.py\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+feedforward_closedloop_learning.CalcOutputThread Class Reference\par \pard\plain 
+{\tc\tcl2 \v feedforward_closedloop_learning.CalcOutputThread}
+{\xe \v feedforward_closedloop_learning.CalcOutputThread}
+{\bkmkstart AAAAAAAAEV}
+{\bkmkend AAAAAAAAEV}
+Inheritance diagram for feedforward_closedloop_learning.CalcOutputThread:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1CalcOutputThread__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for feedforward_closedloop_learning.CalcOutputThread:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1CalcOutputThread__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b __init__} (self, *args, **kwargs)\par
+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Public Member Functions inherited from {\b feedforward_closedloop_learning.LayerThread}\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b addNeuron} (self, neuron)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b start} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b join} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b run} (self)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b thisown} = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag"){\bkmkstart AAAAAAAAEW}
+{\bkmkend AAAAAAAAEW}
+\par
+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Properties inherited from {\b feedforward_closedloop_learning.LayerThread}\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b thisown} = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid Proxy of C++ CalcOutputThread class.}
+ \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v __init__\:feedforward_closedloop_learning.CalcOutputThread}
+{\xe \v feedforward_closedloop_learning.CalcOutputThread\:__init__}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.CalcOutputThread.__init__ (  {\i self}, *  {\i args}, **  {\i kwargs})}}
+\par
+{\bkmkstart AAAAAAAAEX}
+{\bkmkend AAAAAAAAEX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Reimplemented from {\b feedforward_closedloop_learning.LayerThread} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEY \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+feedforward_closedloop_learning.py\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+feedforward_closedloop_learning.DoubleVector Class Reference\par \pard\plain 
+{\tc\tcl2 \v feedforward_closedloop_learning.DoubleVector}
+{\xe \v feedforward_closedloop_learning.DoubleVector}
+{\bkmkstart AAAAAAAAEZ}
+{\bkmkend AAAAAAAAEZ}
+Inheritance diagram for feedforward_closedloop_learning.DoubleVector:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1DoubleVector__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for feedforward_closedloop_learning.DoubleVector:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1DoubleVector__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b iterator} (self){\bkmkstart AAAAAAAAFA}
+{\bkmkend AAAAAAAAFA}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __iter__} (self){\bkmkstart AAAAAAAAFB}
+{\bkmkend AAAAAAAAFB}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __nonzero__} (self){\bkmkstart AAAAAAAAFC}
+{\bkmkend AAAAAAAAFC}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __bool__} (self){\bkmkstart AAAAAAAAFD}
+{\bkmkend AAAAAAAAFD}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __len__} (self){\bkmkstart AAAAAAAAFE}
+{\bkmkend AAAAAAAAFE}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __getslice__} (self, i, j){\bkmkstart AAAAAAAAFF}
+{\bkmkend AAAAAAAAFF}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __setslice__} (self, *args){\bkmkstart AAAAAAAAFG}
+{\bkmkend AAAAAAAAFG}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __delslice__} (self, i, j){\bkmkstart AAAAAAAAFH}
+{\bkmkend AAAAAAAAFH}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __delitem__} (self, *args){\bkmkstart AAAAAAAAFI}
+{\bkmkend AAAAAAAAFI}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __getitem__} (self, *args){\bkmkstart AAAAAAAAFJ}
+{\bkmkend AAAAAAAAFJ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __setitem__} (self, *args){\bkmkstart AAAAAAAAFK}
+{\bkmkend AAAAAAAAFK}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b pop} (self){\bkmkstart AAAAAAAAFL}
+{\bkmkend AAAAAAAAFL}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b append} (self, x){\bkmkstart AAAAAAAAFM}
+{\bkmkend AAAAAAAAFM}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b empty} (self){\bkmkstart AAAAAAAAFN}
+{\bkmkend AAAAAAAAFN}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b size} (self){\bkmkstart AAAAAAAAFO}
+{\bkmkend AAAAAAAAFO}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b swap} (self, v){\bkmkstart AAAAAAAAFP}
+{\bkmkend AAAAAAAAFP}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b begin} (self){\bkmkstart AAAAAAAAFQ}
+{\bkmkend AAAAAAAAFQ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b end} (self){\bkmkstart AAAAAAAAFR}
+{\bkmkend AAAAAAAAFR}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b rbegin} (self){\bkmkstart AAAAAAAAFS}
+{\bkmkend AAAAAAAAFS}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b rend} (self){\bkmkstart AAAAAAAAFT}
+{\bkmkend AAAAAAAAFT}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b clear} (self){\bkmkstart AAAAAAAAFU}
+{\bkmkend AAAAAAAAFU}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b get_allocator} (self){\bkmkstart AAAAAAAAFV}
+{\bkmkend AAAAAAAAFV}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b pop_back} (self){\bkmkstart AAAAAAAAFW}
+{\bkmkend AAAAAAAAFW}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b erase} (self, *args){\bkmkstart AAAAAAAAFX}
+{\bkmkend AAAAAAAAFX}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __init__} (self, *args){\bkmkstart AAAAAAAAFY}
+{\bkmkend AAAAAAAAFY}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b push_back} (self, x){\bkmkstart AAAAAAAAFZ}
+{\bkmkend AAAAAAAAFZ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b front} (self){\bkmkstart AAAAAAAAGA}
+{\bkmkend AAAAAAAAGA}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b back} (self){\bkmkstart AAAAAAAAGB}
+{\bkmkend AAAAAAAAGB}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b assign} (self, n, x){\bkmkstart AAAAAAAAGC}
+{\bkmkend AAAAAAAAGC}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b resize} (self, *args){\bkmkstart AAAAAAAAGD}
+{\bkmkend AAAAAAAAGD}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b insert} (self, *args){\bkmkstart AAAAAAAAGE}
+{\bkmkend AAAAAAAAGE}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b reserve} (self, n){\bkmkstart AAAAAAAAGF}
+{\bkmkend AAAAAAAAGF}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b capacity} (self){\bkmkstart AAAAAAAAGG}
+{\bkmkend AAAAAAAAGG}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b thisown} = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag"){\bkmkstart AAAAAAAAGH}
+{\bkmkend AAAAAAAAGH}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+feedforward_closedloop_learning.py\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
 \pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
 FCLLayer Class Reference\par \pard\plain 
 {\tc\tcl2 \v FCLLayer}
@@ -1192,6 +1710,673 @@ The documentation for this class was generated from the following files:{\par
 layer.h\par
 \pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 layer.cpp\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+feedforward_closedloop_learning.FCLLayer Class Reference\par \pard\plain 
+{\tc\tcl2 \v feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer}
+{\bkmkstart AAAAAAAAGI}
+{\bkmkend AAAAAAAAGI}
+Inheritance diagram for feedforward_closedloop_learning.FCLLayer:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1FCLLayer__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for feedforward_closedloop_learning.FCLLayer:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1FCLLayer__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b __init__} (self, _nNeurons, _nInputs)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b calcOutputs} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b doLearning} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setError} (self, *args)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setErrors} (self, _errors)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getError} (self, i)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setBias} (self, _bias)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setInput} (self, inputIndex, input)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setInputs} (self, _inputs)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setLearningRate} (self, _learningRate)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setActivationFunction} (self, _activationFunction)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setDecay} (self, _decay)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b initWeights} (self, *args)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getOutput} (self, index)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getNeuron} (self, index)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getNneurons} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getNinputs} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setConvolution} (self, *args)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setMaxDetLayer} (self, _m)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setNormaliseWeights} (self, _normaliseWeights)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setDebugInfo} (self, layerIndex)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setStep} (self, step)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getWeightDistanceFromInitialWeights} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b doNormaliseWeights} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setUseThreads} (self, _useThreads)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b saveWeightMatrix} (self, filename)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Static Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b WEIGHT_NORM_NONE} = _feedforward_closedloop_learning.FCLLayer_WEIGHT_NORM_NONE{\bkmkstart AAAAAAAAGJ}
+{\bkmkend AAAAAAAAGJ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b WEIGHT_NORM_LAYER_EUCLEDIAN} = _feedforward_closedloop_learning.FCLLayer_WEIGHT_NORM_LAYER_EUCLEDIAN{\bkmkstart AAAAAAAAGK}
+{\bkmkend AAAAAAAAGK}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b WEIGHT_NORM_NEURON_EUCLEDIAN} = _feedforward_closedloop_learning.FCLLayer_WEIGHT_NORM_NEURON_EUCLEDIAN{\bkmkstart AAAAAAAAGL}
+{\bkmkend AAAAAAAAGL}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b WEIGHT_NORM_LAYER_MANHATTAN} = _feedforward_closedloop_learning.FCLLayer_WEIGHT_NORM_LAYER_MANHATTAN{\bkmkstart AAAAAAAAGM}
+{\bkmkend AAAAAAAAGM}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b WEIGHT_NORM_NEURON_MANHATTAN} = _feedforward_closedloop_learning.FCLLayer_WEIGHT_NORM_NEURON_MANHATTAN{\bkmkstart AAAAAAAAGN}
+{\bkmkend AAAAAAAAGN}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b WEIGHT_NORM_LAYER_INFINITY} = _feedforward_closedloop_learning.FCLLayer_WEIGHT_NORM_LAYER_INFINITY{\bkmkstart AAAAAAAAGO}
+{\bkmkend AAAAAAAAGO}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b WEIGHT_NORM_NEURON_INFINITY} = _feedforward_closedloop_learning.FCLLayer_WEIGHT_NORM_NEURON_INFINITY{\bkmkstart AAAAAAAAGP}
+{\bkmkend AAAAAAAAGP}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b thisown} = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag"){\bkmkstart AAAAAAAAGQ}
+{\bkmkend AAAAAAAAGQ}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid Proxy of C++ FCLLayer class.}
+ \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v __init__\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:__init__}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.__init__ (  {\i self},   {\i _nNeurons},   {\i _nInputs})}}
+\par
+{\bkmkstart AAAAAAAAGR}
+{\bkmkend AAAAAAAAGR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     __init__(FCLLayer self, int _nNeurons, int _nInputs) -> FCLLayer\par
+\par
+    Parameters\par
+    ----------\par
+    _nNeurons: int\par
+    _nInputs: int}
+ \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v calcOutputs\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:calcOutputs}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.calcOutputs (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAGS}
+{\bkmkend AAAAAAAAGS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid calcOutputs(FCLLayer self)}
+ \par
+}}
+{\xe \v doLearning\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:doLearning}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.doLearning (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAGT}
+{\bkmkend AAAAAAAAGT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid doLearning(FCLLayer self)}
+ \par
+}}
+{\xe \v doNormaliseWeights\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:doNormaliseWeights}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.doNormaliseWeights (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAGU}
+{\bkmkend AAAAAAAAGU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid doNormaliseWeights(FCLLayer self)}
+ \par
+}}
+{\xe \v getError\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:getError}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.getError (  {\i self},   {\i i})}}
+\par
+{\bkmkstart AAAAAAAAGV}
+{\bkmkend AAAAAAAAGV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     getError(FCLLayer self, int i) -> double\par
+\par
+    Parameters\par
+    ----------\par
+    i: int}
+ \par
+}}
+{\xe \v getNeuron\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:getNeuron}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.getNeuron (  {\i self},   {\i index})}}
+\par
+{\bkmkstart AAAAAAAAGW}
+{\bkmkend AAAAAAAAGW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     getNeuron(FCLLayer self, int index) -> FCLNeuron\par
+\par
+    Parameters\par
+    ----------\par
+    index: int}
+ \par
+}}
+{\xe \v getNinputs\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:getNinputs}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.getNinputs (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAGX}
+{\bkmkend AAAAAAAAGX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getNinputs(FCLLayer self) -> int}
+ \par
+}}
+{\xe \v getNneurons\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:getNneurons}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.getNneurons (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAGY}
+{\bkmkend AAAAAAAAGY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getNneurons(FCLLayer self) -> int}
+ \par
+}}
+{\xe \v getOutput\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:getOutput}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.getOutput (  {\i self},   {\i index})}}
+\par
+{\bkmkstart AAAAAAAAGZ}
+{\bkmkend AAAAAAAAGZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     getOutput(FCLLayer self, int index) -> double\par
+\par
+    Parameters\par
+    ----------\par
+    index: int}
+ \par
+}}
+{\xe \v getWeightDistanceFromInitialWeights\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:getWeightDistanceFromInitialWeights}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.getWeightDistanceFromInitialWeights (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAHA}
+{\bkmkend AAAAAAAAHA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getWeightDistanceFromInitialWeights(FCLLayer self) -> double}
+ \par
+}}
+{\xe \v initWeights\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:initWeights}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.initWeights (  {\i self}, *  {\i args})}}
+\par
+{\bkmkstart AAAAAAAAHB}
+{\bkmkend AAAAAAAAHB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     initWeights(FCLLayer self, double _max=1, int initBiasWeight=1, FCLNeuron::WeightInitMethod weightInitMethod=MAX_OUTPUT_RANDOM)\par
+\par
+    Parameters\par
+    ----------\par
+    _max: double\par
+    initBiasWeight: int\par
+    weightInitMethod: enum FCLNeuron::WeightInitMethod}
+ \par
+}}
+{\xe \v saveWeightMatrix\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:saveWeightMatrix}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.saveWeightMatrix (  {\i self},   {\i filename})}}
+\par
+{\bkmkstart AAAAAAAAHC}
+{\bkmkend AAAAAAAAHC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     saveWeightMatrix(FCLLayer self, char * filename) -> int\par
+\par
+    Parameters\par
+    ----------\par
+    filename: char *}
+ \par
+}}
+{\xe \v setActivationFunction\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:setActivationFunction}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.setActivationFunction (  {\i self},   {\i _activationFunction})}}
+\par
+{\bkmkstart AAAAAAAAHD}
+{\bkmkend AAAAAAAAHD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setActivationFunction(FCLLayer self, FCLNeuron::ActivationFunction _activationFunction)\par
+\par
+    Parameters\par
+    ----------\par
+    _activationFunction: enum FCLNeuron::ActivationFunction}
+ \par
+}}
+{\xe \v setBias\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:setBias}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.setBias (  {\i self},   {\i _bias})}}
+\par
+{\bkmkstart AAAAAAAAHE}
+{\bkmkend AAAAAAAAHE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setBias(FCLLayer self, double _bias)\par
+\par
+    Parameters\par
+    ----------\par
+    _bias: double}
+ \par
+}}
+{\xe \v setConvolution\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:setConvolution}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.setConvolution (  {\i self}, *  {\i args})}}
+\par
+{\bkmkstart AAAAAAAAHF}
+{\bkmkend AAAAAAAAHF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setConvolution(FCLLayer self, int width, int height)\par
+\par
+    Parameters\par
+    ----------\par
+    width: int\par
+    height: int\par
+\par
+    setConvolution(FCLLayer self, int width)\par
+\par
+    Parameters\par
+    ----------\par
+    width: int}
+ \par
+}}
+{\xe \v setDebugInfo\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:setDebugInfo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.setDebugInfo (  {\i self},   {\i layerIndex})}}
+\par
+{\bkmkstart AAAAAAAAHG}
+{\bkmkend AAAAAAAAHG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setDebugInfo(FCLLayer self, int layerIndex)\par
+\par
+    Parameters\par
+    ----------\par
+    layerIndex: int}
+ \par
+}}
+{\xe \v setDecay\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:setDecay}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.setDecay (  {\i self},   {\i _decay})}}
+\par
+{\bkmkstart AAAAAAAAHH}
+{\bkmkend AAAAAAAAHH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setDecay(FCLLayer self, double _decay)\par
+\par
+    Parameters\par
+    ----------\par
+    _decay: double}
+ \par
+}}
+{\xe \v setError\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:setError}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.setError (  {\i self}, *  {\i args})}}
+\par
+{\bkmkstart AAAAAAAAHI}
+{\bkmkend AAAAAAAAHI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setError(FCLLayer self, double _error)\par
+\par
+    Parameters\par
+    ----------\par
+    _error: double\par
+\par
+    setError(FCLLayer self, int i, double _error)\par
+\par
+    Parameters\par
+    ----------\par
+    i: int\par
+    _error: double}
+ \par
+}}
+{\xe \v setErrors\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:setErrors}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.setErrors (  {\i self},   {\i _errors})}}
+\par
+{\bkmkstart AAAAAAAAHJ}
+{\bkmkend AAAAAAAAHJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setErrors(FCLLayer self, double * _errors)\par
+\par
+    Parameters\par
+    ----------\par
+    _errors: double *}
+ \par
+}}
+{\xe \v setInput\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:setInput}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.setInput (  {\i self},   {\i inputIndex},   {\i input})}}
+\par
+{\bkmkstart AAAAAAAAHK}
+{\bkmkend AAAAAAAAHK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setInput(FCLLayer self, int inputIndex, double input)\par
+\par
+    Parameters\par
+    ----------\par
+    inputIndex: int\par
+    input: double}
+ \par
+}}
+{\xe \v setInputs\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:setInputs}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.setInputs (  {\i self},   {\i _inputs})}}
+\par
+{\bkmkstart AAAAAAAAHL}
+{\bkmkend AAAAAAAAHL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setInputs(FCLLayer self, double const * _inputs)\par
+\par
+    Parameters\par
+    ----------\par
+    _inputs: double const *}
+ \par
+}}
+{\xe \v setLearningRate\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:setLearningRate}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.setLearningRate (  {\i self},   {\i _learningRate})}}
+\par
+{\bkmkstart AAAAAAAAHM}
+{\bkmkend AAAAAAAAHM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setLearningRate(FCLLayer self, double _learningRate)\par
+\par
+    Parameters\par
+    ----------\par
+    _learningRate: double}
+ \par
+}}
+{\xe \v setMaxDetLayer\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:setMaxDetLayer}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.setMaxDetLayer (  {\i self},   {\i _m})}}
+\par
+{\bkmkstart AAAAAAAAHN}
+{\bkmkend AAAAAAAAHN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setMaxDetLayer(FCLLayer self, int _m)\par
+\par
+    Parameters\par
+    ----------\par
+    _m: int}
+ \par
+}}
+{\xe \v setNormaliseWeights\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:setNormaliseWeights}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.setNormaliseWeights (  {\i self},   {\i _normaliseWeights})}}
+\par
+{\bkmkstart AAAAAAAAHO}
+{\bkmkend AAAAAAAAHO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setNormaliseWeights(FCLLayer self, FCLLayer::WeightNormalisation _normaliseWeights)\par
+\par
+    Parameters\par
+    ----------\par
+    _normaliseWeights: enum FCLLayer::WeightNormalisation}
+ \par
+}}
+{\xe \v setStep\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:setStep}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.setStep (  {\i self},   {\i step})}}
+\par
+{\bkmkstart AAAAAAAAHP}
+{\bkmkend AAAAAAAAHP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setStep(FCLLayer self, long step)\par
+\par
+    Parameters\par
+    ----------\par
+    step: long}
+ \par
+}}
+{\xe \v setUseThreads\:feedforward_closedloop_learning.FCLLayer}
+{\xe \v feedforward_closedloop_learning.FCLLayer\:setUseThreads}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLLayer.setUseThreads (  {\i self},   {\i _useThreads})}}
+\par
+{\bkmkstart AAAAAAAAHQ}
+{\bkmkend AAAAAAAAHQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setUseThreads(FCLLayer self, int _useThreads)\par
+\par
+    Parameters\par
+    ----------\par
+    _useThreads: int}
+ \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+feedforward_closedloop_learning.py\par
 }\par \pard\plain 
 
 \pard\plain \sect\sbkpage
@@ -2520,6 +3705,955 @@ neuron.cpp\par
 \pard\plain \sect\sbkpage
 \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
 \pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+feedforward_closedloop_learning.FCLNeuron Class Reference\par \pard\plain 
+{\tc\tcl2 \v feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron}
+{\bkmkstart AAAAAAAAHR}
+{\bkmkend AAAAAAAAHR}
+Inheritance diagram for feedforward_closedloop_learning.FCLNeuron:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1FCLNeuron__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for feedforward_closedloop_learning.FCLNeuron:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1FCLNeuron__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b __init__} (self, _nInputs)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b calcOutput} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b doLearning} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b doMaxDet} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b initWeights} (self, *args)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setActivationFunction} (self, _activationFunction)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b dActivation} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getMinWeightValue} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getMaxWeightValue} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getWeightDistanceFromInitialWeights} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getOutput} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getSum} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getWeight} (self, _index)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setWeight} (self, _index, _weight)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setError} (self, _error)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getError} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setInput} (self, _index, _value)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getInput} (self, _index)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getBiasWeight} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setBiasWeight} (self, _biasweight)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setBias} (self, _bias)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setLearningRate} (self, _learningrate)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setDecay} (self, _decay)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getDecay} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getNinputs} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setGeometry} (self, _width, _height)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setMask} (self, *args)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getMask} (self, *args)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getSumOfSquaredWeightVector} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getEuclideanNormOfWeightVector} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getManhattanNormOfWeightVector} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getInfinityNormOfWeightVector} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getAverageOfWeightVector} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b normaliseWeights} (self, norm)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b saveInitialWeights} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setDebugInfo} (self, _layerIndex, _neuronIndex)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setStep} (self, _step)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Static Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b calcOutputThread} (object)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b doLearningThread} (object)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b doMaxDetThread} (object)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Static Public Attributes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b MAX_OUTPUT_RANDOM} = _feedforward_closedloop_learning.FCLNeuron_MAX_OUTPUT_RANDOM{\bkmkstart AAAAAAAAHS}
+{\bkmkend AAAAAAAAHS}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b MAX_WEIGHT_RANDOM} = _feedforward_closedloop_learning.FCLNeuron_MAX_WEIGHT_RANDOM{\bkmkstart AAAAAAAAHT}
+{\bkmkend AAAAAAAAHT}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b MAX_OUTPUT_CONST} = _feedforward_closedloop_learning.FCLNeuron_MAX_OUTPUT_CONST{\bkmkstart AAAAAAAAHU}
+{\bkmkend AAAAAAAAHU}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b CONST_WEIGHTS} = _feedforward_closedloop_learning.FCLNeuron_CONST_WEIGHTS{\bkmkstart AAAAAAAAHV}
+{\bkmkend AAAAAAAAHV}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b LINEAR} = _feedforward_closedloop_learning.FCLNeuron_LINEAR{\bkmkstart AAAAAAAAHW}
+{\bkmkend AAAAAAAAHW}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b TANH} = _feedforward_closedloop_learning.FCLNeuron_TANH{\bkmkstart AAAAAAAAHX}
+{\bkmkend AAAAAAAAHX}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b RELU} = _feedforward_closedloop_learning.FCLNeuron_RELU{\bkmkstart AAAAAAAAHY}
+{\bkmkend AAAAAAAAHY}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b REMAXLU} = _feedforward_closedloop_learning.FCLNeuron_REMAXLU{\bkmkstart AAAAAAAAHZ}
+{\bkmkend AAAAAAAAHZ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b TANHLIMIT} = _feedforward_closedloop_learning.FCLNeuron_TANHLIMIT{\bkmkstart AAAAAAAAIA}
+{\bkmkend AAAAAAAAIA}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b thisown} = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag"){\bkmkstart AAAAAAAAIB}
+{\bkmkend AAAAAAAAIB}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid Proxy of C++ FCLNeuron class.}
+ \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v __init__\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:__init__}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.__init__ (  {\i self},   {\i _nInputs})}}
+\par
+{\bkmkstart AAAAAAAAIC}
+{\bkmkend AAAAAAAAIC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     __init__(FCLNeuron self, int _nInputs) -> FCLNeuron\par
+\par
+    Parameters\par
+    ----------\par
+    _nInputs: int}
+ \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v calcOutput\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:calcOutput}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.calcOutput (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAID}
+{\bkmkend AAAAAAAAID}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid calcOutput(FCLNeuron self)}
+ \par
+}}
+{\xe \v calcOutputThread\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:calcOutputThread}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.calcOutputThread (  {\i object}){\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAIE}
+{\bkmkend AAAAAAAAIE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     calcOutputThread(void * object) -> void *\par
+\par
+    Parameters\par
+    ----------\par
+    object: void *}
+ \par
+}}
+{\xe \v dActivation\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:dActivation}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.dActivation (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAIF}
+{\bkmkend AAAAAAAAIF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid dActivation(FCLNeuron self) -> double}
+ \par
+}}
+{\xe \v doLearning\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:doLearning}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.doLearning (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAIG}
+{\bkmkend AAAAAAAAIG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid doLearning(FCLNeuron self)}
+ \par
+}}
+{\xe \v doLearningThread\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:doLearningThread}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.doLearningThread (  {\i object}){\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAIH}
+{\bkmkend AAAAAAAAIH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     doLearningThread(void * object) -> void *\par
+\par
+    Parameters\par
+    ----------\par
+    object: void *}
+ \par
+}}
+{\xe \v doMaxDet\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:doMaxDet}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.doMaxDet (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAII}
+{\bkmkend AAAAAAAAII}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid doMaxDet(FCLNeuron self)}
+ \par
+}}
+{\xe \v doMaxDetThread\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:doMaxDetThread}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.doMaxDetThread (  {\i object}){\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAIJ}
+{\bkmkend AAAAAAAAIJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     doMaxDetThread(void * object) -> void *\par
+\par
+    Parameters\par
+    ----------\par
+    object: void *}
+ \par
+}}
+{\xe \v getAverageOfWeightVector\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:getAverageOfWeightVector}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.getAverageOfWeightVector (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAIK}
+{\bkmkend AAAAAAAAIK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getAverageOfWeightVector(FCLNeuron self) -> double}
+ \par
+}}
+{\xe \v getBiasWeight\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:getBiasWeight}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.getBiasWeight (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAIL}
+{\bkmkend AAAAAAAAIL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getBiasWeight(FCLNeuron self) -> double}
+ \par
+}}
+{\xe \v getDecay\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:getDecay}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.getDecay (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAIM}
+{\bkmkend AAAAAAAAIM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getDecay(FCLNeuron self) -> double}
+ \par
+}}
+{\xe \v getError\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:getError}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.getError (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAIN}
+{\bkmkend AAAAAAAAIN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getError(FCLNeuron self) -> double}
+ \par
+}}
+{\xe \v getEuclideanNormOfWeightVector\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:getEuclideanNormOfWeightVector}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.getEuclideanNormOfWeightVector (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAIO}
+{\bkmkend AAAAAAAAIO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getEuclideanNormOfWeightVector(FCLNeuron self) -> double}
+ \par
+}}
+{\xe \v getInfinityNormOfWeightVector\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:getInfinityNormOfWeightVector}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.getInfinityNormOfWeightVector (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAIP}
+{\bkmkend AAAAAAAAIP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getInfinityNormOfWeightVector(FCLNeuron self) -> double}
+ \par
+}}
+{\xe \v getInput\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:getInput}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.getInput (  {\i self},   {\i _index})}}
+\par
+{\bkmkstart AAAAAAAAIQ}
+{\bkmkend AAAAAAAAIQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     getInput(FCLNeuron self, int _index) -> double\par
+\par
+    Parameters\par
+    ----------\par
+    _index: int}
+ \par
+}}
+{\xe \v getManhattanNormOfWeightVector\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:getManhattanNormOfWeightVector}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.getManhattanNormOfWeightVector (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAIR}
+{\bkmkend AAAAAAAAIR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getManhattanNormOfWeightVector(FCLNeuron self) -> double}
+ \par
+}}
+{\xe \v getMask\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:getMask}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.getMask (  {\i self}, *  {\i args})}}
+\par
+{\bkmkstart AAAAAAAAIS}
+{\bkmkend AAAAAAAAIS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     getMask(FCLNeuron self, int x, int y) -> unsigned char\par
+\par
+    Parameters\par
+    ----------\par
+    x: int\par
+    y: int\par
+\par
+    getMask(FCLNeuron self, int index) -> unsigned char\par
+\par
+    Parameters\par
+    ----------\par
+    index: int}
+ \par
+}}
+{\xe \v getMaxWeightValue\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:getMaxWeightValue}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.getMaxWeightValue (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAIT}
+{\bkmkend AAAAAAAAIT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getMaxWeightValue(FCLNeuron self) -> double}
+ \par
+}}
+{\xe \v getMinWeightValue\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:getMinWeightValue}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.getMinWeightValue (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAIU}
+{\bkmkend AAAAAAAAIU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getMinWeightValue(FCLNeuron self) -> double}
+ \par
+}}
+{\xe \v getNinputs\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:getNinputs}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.getNinputs (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAIV}
+{\bkmkend AAAAAAAAIV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getNinputs(FCLNeuron self) -> int}
+ \par
+}}
+{\xe \v getOutput\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:getOutput}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.getOutput (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAIW}
+{\bkmkend AAAAAAAAIW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getOutput(FCLNeuron self) -> double}
+ \par
+}}
+{\xe \v getSum\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:getSum}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.getSum (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAIX}
+{\bkmkend AAAAAAAAIX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getSum(FCLNeuron self) -> double}
+ \par
+}}
+{\xe \v getSumOfSquaredWeightVector\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:getSumOfSquaredWeightVector}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.getSumOfSquaredWeightVector (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAIY}
+{\bkmkend AAAAAAAAIY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getSumOfSquaredWeightVector(FCLNeuron self) -> double}
+ \par
+}}
+{\xe \v getWeight\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:getWeight}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.getWeight (  {\i self},   {\i _index})}}
+\par
+{\bkmkstart AAAAAAAAIZ}
+{\bkmkend AAAAAAAAIZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     getWeight(FCLNeuron self, int _index) -> double\par
+\par
+    Parameters\par
+    ----------\par
+    _index: int}
+ \par
+}}
+{\xe \v getWeightDistanceFromInitialWeights\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:getWeightDistanceFromInitialWeights}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.getWeightDistanceFromInitialWeights (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAJA}
+{\bkmkend AAAAAAAAJA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getWeightDistanceFromInitialWeights(FCLNeuron self) -> double}
+ \par
+}}
+{\xe \v initWeights\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:initWeights}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.initWeights (  {\i self}, *  {\i args})}}
+\par
+{\bkmkstart AAAAAAAAJB}
+{\bkmkend AAAAAAAAJB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     initWeights(FCLNeuron self, double _max=1, int initBias=1, FCLNeuron::WeightInitMethod _wm=MAX_OUTPUT_RANDOM)\par
+\par
+    Parameters\par
+    ----------\par
+    _max: double\par
+    initBias: int\par
+    _wm: enum FCLNeuron::WeightInitMethod}
+ \par
+}}
+{\xe \v normaliseWeights\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:normaliseWeights}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.normaliseWeights (  {\i self},   {\i norm})}}
+\par
+{\bkmkstart AAAAAAAAJC}
+{\bkmkend AAAAAAAAJC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     normaliseWeights(FCLNeuron self, double norm)\par
+\par
+    Parameters\par
+    ----------\par
+    norm: double}
+ \par
+}}
+{\xe \v saveInitialWeights\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:saveInitialWeights}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.saveInitialWeights (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAJD}
+{\bkmkend AAAAAAAAJD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid saveInitialWeights(FCLNeuron self)}
+ \par
+}}
+{\xe \v setActivationFunction\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:setActivationFunction}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.setActivationFunction (  {\i self},   {\i _activationFunction})}}
+\par
+{\bkmkstart AAAAAAAAJE}
+{\bkmkend AAAAAAAAJE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setActivationFunction(FCLNeuron self, FCLNeuron::ActivationFunction _activationFunction)\par
+\par
+    Parameters\par
+    ----------\par
+    _activationFunction: enum FCLNeuron::ActivationFunction}
+ \par
+}}
+{\xe \v setBias\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:setBias}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.setBias (  {\i self},   {\i _bias})}}
+\par
+{\bkmkstart AAAAAAAAJF}
+{\bkmkend AAAAAAAAJF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setBias(FCLNeuron self, double _bias)\par
+\par
+    Parameters\par
+    ----------\par
+    _bias: double}
+ \par
+}}
+{\xe \v setBiasWeight\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:setBiasWeight}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.setBiasWeight (  {\i self},   {\i _biasweight})}}
+\par
+{\bkmkstart AAAAAAAAJG}
+{\bkmkend AAAAAAAAJG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setBiasWeight(FCLNeuron self, double _biasweight)\par
+\par
+    Parameters\par
+    ----------\par
+    _biasweight: double}
+ \par
+}}
+{\xe \v setDebugInfo\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:setDebugInfo}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.setDebugInfo (  {\i self},   {\i _layerIndex},   {\i _neuronIndex})}}
+\par
+{\bkmkstart AAAAAAAAJH}
+{\bkmkend AAAAAAAAJH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setDebugInfo(FCLNeuron self, int _layerIndex, int _neuronIndex)\par
+\par
+    Parameters\par
+    ----------\par
+    _layerIndex: int\par
+    _neuronIndex: int}
+ \par
+}}
+{\xe \v setDecay\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:setDecay}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.setDecay (  {\i self},   {\i _decay})}}
+\par
+{\bkmkstart AAAAAAAAJI}
+{\bkmkend AAAAAAAAJI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setDecay(FCLNeuron self, double _decay)\par
+\par
+    Parameters\par
+    ----------\par
+    _decay: double}
+ \par
+}}
+{\xe \v setError\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:setError}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.setError (  {\i self},   {\i _error})}}
+\par
+{\bkmkstart AAAAAAAAJJ}
+{\bkmkend AAAAAAAAJJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setError(FCLNeuron self, double _error)\par
+\par
+    Parameters\par
+    ----------\par
+    _error: double}
+ \par
+}}
+{\xe \v setGeometry\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:setGeometry}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.setGeometry (  {\i self},   {\i _width},   {\i _height})}}
+\par
+{\bkmkstart AAAAAAAAJK}
+{\bkmkend AAAAAAAAJK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setGeometry(FCLNeuron self, int _width, int _height)\par
+\par
+    Parameters\par
+    ----------\par
+    _width: int\par
+    _height: int}
+ \par
+}}
+{\xe \v setInput\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:setInput}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.setInput (  {\i self},   {\i _index},   {\i _value})}}
+\par
+{\bkmkstart AAAAAAAAJL}
+{\bkmkend AAAAAAAAJL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setInput(FCLNeuron self, int _index, double _value)\par
+\par
+    Parameters\par
+    ----------\par
+    _index: int\par
+    _value: double}
+ \par
+}}
+{\xe \v setLearningRate\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:setLearningRate}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.setLearningRate (  {\i self},   {\i _learningrate})}}
+\par
+{\bkmkstart AAAAAAAAJM}
+{\bkmkend AAAAAAAAJM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setLearningRate(FCLNeuron self, double _learningrate)\par
+\par
+    Parameters\par
+    ----------\par
+    _learningrate: double}
+ \par
+}}
+{\xe \v setMask\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:setMask}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.setMask (  {\i self}, *  {\i args})}}
+\par
+{\bkmkstart AAAAAAAAJN}
+{\bkmkend AAAAAAAAJN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setMask(FCLNeuron self, int x, int y, unsigned char c)\par
+\par
+    Parameters\par
+    ----------\par
+    x: int\par
+    y: int\par
+    c: unsigned char\par
+\par
+    setMask(FCLNeuron self, int const x, unsigned char const c)\par
+\par
+    Parameters\par
+    ----------\par
+    x: int const\par
+    c: unsigned char const\par
+\par
+    setMask(FCLNeuron self, unsigned char c)\par
+\par
+    Parameters\par
+    ----------\par
+    c: unsigned char}
+ \par
+}}
+{\xe \v setStep\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:setStep}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.setStep (  {\i self},   {\i _step})}}
+\par
+{\bkmkstart AAAAAAAAJO}
+{\bkmkend AAAAAAAAJO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setStep(FCLNeuron self, long _step)\par
+\par
+    Parameters\par
+    ----------\par
+    _step: long}
+ \par
+}}
+{\xe \v setWeight\:feedforward_closedloop_learning.FCLNeuron}
+{\xe \v feedforward_closedloop_learning.FCLNeuron\:setWeight}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FCLNeuron.setWeight (  {\i self},   {\i _index},   {\i _weight})}}
+\par
+{\bkmkstart AAAAAAAAJP}
+{\bkmkend AAAAAAAAJP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setWeight(FCLNeuron self, int _index, double _weight)\par
+\par
+    Parameters\par
+    ----------\par
+    _index: int\par
+    _weight: double}
+ \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+feedforward_closedloop_learning.py\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
 FCLTrace Class Reference\par \pard\plain 
 {\tc\tcl2 \v FCLTrace}
 {\xe \v FCLTrace}
@@ -2658,6 +4792,432 @@ trace.cpp\par
 \pard\plain \sect\sbkpage
 \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
 \pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+feedforward_closedloop_learning.FeedforwardClosedloopLearning Class Reference\par \pard\plain 
+{\tc\tcl2 \v feedforward_closedloop_learning.FeedforwardClosedloopLearning}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearning}
+{\bkmkstart AAAAAAAAJQ}
+{\bkmkend AAAAAAAAJQ}
+Inheritance diagram for feedforward_closedloop_learning.FeedforwardClosedloopLearning:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1FeedforwardClosedloopLearning__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for feedforward_closedloop_learning.FeedforwardClosedloopLearning:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1FeedforwardClosedloopLearning__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b __init__} (self, num_input, num_of_neurons_per_layer)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b doStep} (self, input, error)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getOutput} (self, index)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setLearningRate} (self, learningRate)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setLearningRateDiscountFactor} (self, _learningRateDiscountFactor)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setDecay} (self, decay)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setActivationFunction} (self, _activationFunction)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b initWeights} (self, *args)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b seedRandom} (self, s)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setBias} (self, _bias)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getNumLayers} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getLayer} (self, i)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getOutputLayer} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getNumInputs} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getLayers} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b saveModel} (self, name)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b loadModel} (self, name)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b thisown} = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag"){\bkmkstart AAAAAAAAJR}
+{\bkmkend AAAAAAAAJR}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid Proxy of C++ FeedforwardClosedloopLearning class.}
+ \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v __init__\:feedforward_closedloop_learning.FeedforwardClosedloopLearning}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearning\:__init__}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearning.__init__ (  {\i self},   {\i num_input},   {\i num_of_neurons_per_layer})}}
+\par
+{\bkmkstart AAAAAAAAJS}
+{\bkmkend AAAAAAAAJS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     __init__(FeedforwardClosedloopLearning self, int const num_input, IntVector num_of_neurons_per_layer) -> FeedforwardClosedloopLearning\par
+\par
+    Parameters\par
+    ----------\par
+    num_input: int const\par
+    num_of_neurons_per_layer: std::vector< int,std::allocator< int > > const &}
+ \par
+}{
+Reimplemented in {\b feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAJT \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v doStep\:feedforward_closedloop_learning.FeedforwardClosedloopLearning}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearning\:doStep}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearning.doStep (  {\i self},   {\i input},   {\i error})}}
+\par
+{\bkmkstart AAAAAAAAJU}
+{\bkmkend AAAAAAAAJU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     doStep(FeedforwardClosedloopLearning self, DoubleVector input, DoubleVector error)\par
+\par
+    Parameters\par
+    ----------\par
+    input: std::vector< double,std::allocator< double > > const &\par
+    error: std::vector< double,std::allocator< double > > const &}
+ \par
+}{
+Reimplemented in {\b feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAJV \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\xe \v getLayer\:feedforward_closedloop_learning.FeedforwardClosedloopLearning}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearning\:getLayer}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearning.getLayer (  {\i self},   {\i i})}}
+\par
+{\bkmkstart AAAAAAAAJW}
+{\bkmkend AAAAAAAAJW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     getLayer(FeedforwardClosedloopLearning self, unsigned int i) -> FCLLayer\par
+\par
+    Parameters\par
+    ----------\par
+    i: unsigned int}
+ \par
+}}
+{\xe \v getLayers\:feedforward_closedloop_learning.FeedforwardClosedloopLearning}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearning\:getLayers}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearning.getLayers (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAJX}
+{\bkmkend AAAAAAAAJX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getLayers(FeedforwardClosedloopLearning self) -> FCLLayer **}
+ \par
+}}
+{\xe \v getNumInputs\:feedforward_closedloop_learning.FeedforwardClosedloopLearning}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearning\:getNumInputs}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearning.getNumInputs (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAJY}
+{\bkmkend AAAAAAAAJY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getNumInputs(FeedforwardClosedloopLearning self) -> int}
+ \par
+}}
+{\xe \v getNumLayers\:feedforward_closedloop_learning.FeedforwardClosedloopLearning}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearning\:getNumLayers}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearning.getNumLayers (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAJZ}
+{\bkmkend AAAAAAAAJZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getNumLayers(FeedforwardClosedloopLearning self) -> int}
+ \par
+}}
+{\xe \v getOutput\:feedforward_closedloop_learning.FeedforwardClosedloopLearning}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearning\:getOutput}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearning.getOutput (  {\i self},   {\i index})}}
+\par
+{\bkmkstart AAAAAAAAKA}
+{\bkmkend AAAAAAAAKA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     getOutput(FeedforwardClosedloopLearning self, int index) -> double\par
+\par
+    Parameters\par
+    ----------\par
+    index: int}
+ \par
+}}
+{\xe \v getOutputLayer\:feedforward_closedloop_learning.FeedforwardClosedloopLearning}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearning\:getOutputLayer}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearning.getOutputLayer (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAKB}
+{\bkmkend AAAAAAAAKB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getOutputLayer(FeedforwardClosedloopLearning self) -> FCLLayer}
+ \par
+}}
+{\xe \v initWeights\:feedforward_closedloop_learning.FeedforwardClosedloopLearning}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearning\:initWeights}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearning.initWeights (  {\i self}, *  {\i args})}}
+\par
+{\bkmkstart AAAAAAAAKC}
+{\bkmkend AAAAAAAAKC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     initWeights(FeedforwardClosedloopLearning self, double max=0.001, int initBias=1, FCLNeuron::WeightInitMethod weightInitMethod=MAX_OUTPUT_RANDOM)\par
+\par
+    Parameters\par
+    ----------\par
+    max: double\par
+    initBias: int\par
+    weightInitMethod: enum FCLNeuron::WeightInitMethod}
+ \par
+}}
+{\xe \v loadModel\:feedforward_closedloop_learning.FeedforwardClosedloopLearning}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearning\:loadModel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearning.loadModel (  {\i self},   {\i name})}}
+\par
+{\bkmkstart AAAAAAAAKD}
+{\bkmkend AAAAAAAAKD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     loadModel(FeedforwardClosedloopLearning self, char const * name) -> bool\par
+\par
+    Parameters\par
+    ----------\par
+    name: char const *}
+ \par
+}}
+{\xe \v saveModel\:feedforward_closedloop_learning.FeedforwardClosedloopLearning}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearning\:saveModel}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearning.saveModel (  {\i self},   {\i name})}}
+\par
+{\bkmkstart AAAAAAAAKE}
+{\bkmkend AAAAAAAAKE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     saveModel(FeedforwardClosedloopLearning self, char const * name) -> bool\par
+\par
+    Parameters\par
+    ----------\par
+    name: char const *}
+ \par
+}}
+{\xe \v seedRandom\:feedforward_closedloop_learning.FeedforwardClosedloopLearning}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearning\:seedRandom}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearning.seedRandom (  {\i self},   {\i s})}}
+\par
+{\bkmkstart AAAAAAAAKF}
+{\bkmkend AAAAAAAAKF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     seedRandom(FeedforwardClosedloopLearning self, unsigned int s)\par
+\par
+    Parameters\par
+    ----------\par
+    s: unsigned int}
+ \par
+}}
+{\xe \v setActivationFunction\:feedforward_closedloop_learning.FeedforwardClosedloopLearning}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearning\:setActivationFunction}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearning.setActivationFunction (  {\i self},   {\i _activationFunction})}}
+\par
+{\bkmkstart AAAAAAAAKG}
+{\bkmkend AAAAAAAAKG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setActivationFunction(FeedforwardClosedloopLearning self, FCLNeuron::ActivationFunction _activationFunction)\par
+\par
+    Parameters\par
+    ----------\par
+    _activationFunction: enum FCLNeuron::ActivationFunction}
+ \par
+}}
+{\xe \v setBias\:feedforward_closedloop_learning.FeedforwardClosedloopLearning}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearning\:setBias}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearning.setBias (  {\i self},   {\i _bias})}}
+\par
+{\bkmkstart AAAAAAAAKH}
+{\bkmkend AAAAAAAAKH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setBias(FeedforwardClosedloopLearning self, double _bias)\par
+\par
+    Parameters\par
+    ----------\par
+    _bias: double}
+ \par
+}}
+{\xe \v setDecay\:feedforward_closedloop_learning.FeedforwardClosedloopLearning}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearning\:setDecay}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearning.setDecay (  {\i self},   {\i decay})}}
+\par
+{\bkmkstart AAAAAAAAKI}
+{\bkmkend AAAAAAAAKI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setDecay(FeedforwardClosedloopLearning self, double decay)\par
+\par
+    Parameters\par
+    ----------\par
+    decay: double}
+ \par
+}}
+{\xe \v setLearningRate\:feedforward_closedloop_learning.FeedforwardClosedloopLearning}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearning\:setLearningRate}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearning.setLearningRate (  {\i self},   {\i learningRate})}}
+\par
+{\bkmkstart AAAAAAAAKJ}
+{\bkmkend AAAAAAAAKJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setLearningRate(FeedforwardClosedloopLearning self, double learningRate)\par
+\par
+    Parameters\par
+    ----------\par
+    learningRate: double}
+ \par
+}}
+{\xe \v setLearningRateDiscountFactor\:feedforward_closedloop_learning.FeedforwardClosedloopLearning}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearning\:setLearningRateDiscountFactor}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearning.setLearningRateDiscountFactor (  {\i self},   {\i _learningRateDiscountFactor})}}
+\par
+{\bkmkstart AAAAAAAAKK}
+{\bkmkend AAAAAAAAKK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     setLearningRateDiscountFactor(FeedforwardClosedloopLearning self, double _learningRateDiscountFactor)\par
+\par
+    Parameters\par
+    ----------\par
+    _learningRateDiscountFactor: double}
+ \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+feedforward_closedloop_learning.py\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
 FeedforwardClosedloopLearning Class Reference\par \pard\plain 
 {\tc\tcl2 \v FeedforwardClosedloopLearning}
 {\xe \v FeedforwardClosedloopLearning}
@@ -2749,7 +5309,7 @@ Inits the weights in all layers. }{
 }\par
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-void {\b seedRandom} (int s)\par
+void {\b seedRandom} (unsigned int s)\par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Seeds the random number generator. }{
@@ -2823,7 +5383,7 @@ Main class of Feedforward Closed Loop Learning. \par
 
 {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Create an instance of this class to do the learning. It will create the whole network with an input layer, layers and an output layer. Learning is done iterative by first setting the input values and errors and then calling {\b doStep()}.\par
-(C) 2017,2018-2022, Bernd Porr {\f2 bernd@glasgowneuro.tech} (C) 2017,2018, Paul Miller {\f2 paul@glasgowneuro.tech}\par
+(C) 2017,2018-2026, Bernd Porr {\f2 mail@berndporr.me.uk} (C) 2017,2018, Paul Miller (C) 2025 Suraj Naranatt\par
 GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 \par
 }}
 {\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
@@ -3136,7 +5696,7 @@ Parameters\par}
 {\xe \v FeedforwardClosedloopLearning\:seedRandom}
 \pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
 {\b 
-void FeedforwardClosedloopLearning::seedRandom (int  {\i s}){\f2 [inline]}}}
+void FeedforwardClosedloopLearning::seedRandom (unsigned int  {\i s}){\f2 [inline]}}}
 \par
 {\bkmkstart AAAAAAAAED}
 {\bkmkend AAAAAAAAED}
@@ -3266,6 +5826,205 @@ Parameters\par}
 The documentation for this class was generated from the following file:{\par
 \pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 fcl.h\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank Class Reference\par \pard\plain 
+{\tc\tcl2 \v feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank}
+{\bkmkstart AAAAAAAAKL}
+{\bkmkend AAAAAAAAKL}
+Inheritance diagram for feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1FeedforwardClosedloopLearningWithFilterbank__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1FeedforwardClosedloopLearningWithFilterbank__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b __init__} (self, num_of_inputs, num_of_neurons_per_layer, num_filtersInput, minT, maxT)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b doStep} (self, input, error)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getFilterOutput} (self, inputIdx, filterIdx)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getNFiltersPerInput} (self)\par
+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Public Member Functions inherited from {\b feedforward_closedloop_learning.FeedforwardClosedloopLearning}\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getOutput} (self, index)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setLearningRate} (self, learningRate)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setLearningRateDiscountFactor} (self, _learningRateDiscountFactor)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setDecay} (self, decay)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setActivationFunction} (self, _activationFunction)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b initWeights} (self, *args)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b seedRandom} (self, s)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b setBias} (self, _bias)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getNumLayers} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getLayer} (self, i)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getOutputLayer} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getNumInputs} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b getLayers} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b saveModel} (self, name)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b loadModel} (self, name)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b thisown} = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag"){\bkmkstart AAAAAAAAKM}
+{\bkmkend AAAAAAAAKM}
+\par
+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Properties inherited from {\b feedforward_closedloop_learning.FeedforwardClosedloopLearning}\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b thisown} = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid Proxy of C++ FeedforwardClosedloopLearningWithFilterbank class.}
+ \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v __init__\:feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank\:__init__}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank.__init__ (  {\i self},   {\i num_of_inputs},   {\i num_of_neurons_per_layer},   {\i num_filtersInput},   {\i minT},   {\i maxT})}}
+\par
+{\bkmkstart AAAAAAAAJT}
+{\bkmkend AAAAAAAAJT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     __init__(FeedforwardClosedloopLearningWithFilterbank self, int const num_of_inputs, IntVector num_of_neurons_per_layer, int const num_filtersInput, double const minT, double const maxT) -> FeedforwardClosedloopLearningWithFilterbank\par
+\par
+    Parameters\par
+    ----------\par
+    num_of_inputs: int const\par
+    num_of_neurons_per_layer: std::vector< int,std::allocator< int > > const &\par
+    num_filtersInput: int const\par
+    minT: double const\par
+    maxT: double const}
+ \par
+}{
+Reimplemented from {\b feedforward_closedloop_learning.FeedforwardClosedloopLearning} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAJS \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v doStep\:feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank\:doStep}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank.doStep (  {\i self},   {\i input},   {\i error})}}
+\par
+{\bkmkstart AAAAAAAAJV}
+{\bkmkend AAAAAAAAJV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     doStep(FeedforwardClosedloopLearningWithFilterbank self, DoubleVector input, DoubleVector error)\par
+\par
+    Parameters\par
+    ----------\par
+    input: std::vector< double,std::allocator< double > > const &\par
+    error: std::vector< double,std::allocator< double > > const &}
+ \par
+}{
+Reimplemented from {\b feedforward_closedloop_learning.FeedforwardClosedloopLearning} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAJU \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\xe \v getFilterOutput\:feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank\:getFilterOutput}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank.getFilterOutput (  {\i self},   {\i inputIdx},   {\i filterIdx})}}
+\par
+{\bkmkstart AAAAAAAAKN}
+{\bkmkend AAAAAAAAKN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     getFilterOutput(FeedforwardClosedloopLearningWithFilterbank self, int inputIdx, int filterIdx) -> double\par
+\par
+    Parameters\par
+    ----------\par
+    inputIdx: int\par
+    filterIdx: int}
+ \par
+}}
+{\xe \v getNFiltersPerInput\:feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank}
+{\xe \v feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank\:getNFiltersPerInput}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.FeedforwardClosedloopLearningWithFilterbank.getNFiltersPerInput (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAKO}
+{\bkmkend AAAAAAAAKO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid getNFiltersPerInput(FeedforwardClosedloopLearningWithFilterbank self) -> int}
+ \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+feedforward_closedloop_learning.py\par
 }\par \pard\plain 
 
 \pard\plain \sect\sbkpage
@@ -3403,7 +6162,7 @@ Inits the weights in all layers. }{
 }\par
 }\par}
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-void {\b seedRandom} (int s)\par
+void {\b seedRandom} (unsigned int s)\par
 {
 \pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
 Seeds the random number generator. }{
@@ -3574,6 +6333,670 @@ Parameters\par}
 The documentation for this class was generated from the following file:{\par
 \pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
 fcl_util.h\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+feedforward_closedloop_learning.IntVector Class Reference\par \pard\plain 
+{\tc\tcl2 \v feedforward_closedloop_learning.IntVector}
+{\xe \v feedforward_closedloop_learning.IntVector}
+{\bkmkstart AAAAAAAAKP}
+{\bkmkend AAAAAAAAKP}
+Inheritance diagram for feedforward_closedloop_learning.IntVector:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1IntVector__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for feedforward_closedloop_learning.IntVector:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1IntVector__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b iterator} (self){\bkmkstart AAAAAAAAKQ}
+{\bkmkend AAAAAAAAKQ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __iter__} (self){\bkmkstart AAAAAAAAKR}
+{\bkmkend AAAAAAAAKR}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __nonzero__} (self){\bkmkstart AAAAAAAAKS}
+{\bkmkend AAAAAAAAKS}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __bool__} (self){\bkmkstart AAAAAAAAKT}
+{\bkmkend AAAAAAAAKT}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __len__} (self){\bkmkstart AAAAAAAAKU}
+{\bkmkend AAAAAAAAKU}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __getslice__} (self, i, j){\bkmkstart AAAAAAAAKV}
+{\bkmkend AAAAAAAAKV}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __setslice__} (self, *args){\bkmkstart AAAAAAAAKW}
+{\bkmkend AAAAAAAAKW}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __delslice__} (self, i, j){\bkmkstart AAAAAAAAKX}
+{\bkmkend AAAAAAAAKX}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __delitem__} (self, *args){\bkmkstart AAAAAAAAKY}
+{\bkmkend AAAAAAAAKY}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __getitem__} (self, *args){\bkmkstart AAAAAAAAKZ}
+{\bkmkend AAAAAAAAKZ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __setitem__} (self, *args){\bkmkstart AAAAAAAALA}
+{\bkmkend AAAAAAAALA}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b pop} (self){\bkmkstart AAAAAAAALB}
+{\bkmkend AAAAAAAALB}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b append} (self, x){\bkmkstart AAAAAAAALC}
+{\bkmkend AAAAAAAALC}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b empty} (self){\bkmkstart AAAAAAAALD}
+{\bkmkend AAAAAAAALD}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b size} (self){\bkmkstart AAAAAAAALE}
+{\bkmkend AAAAAAAALE}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b swap} (self, v){\bkmkstart AAAAAAAALF}
+{\bkmkend AAAAAAAALF}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b begin} (self){\bkmkstart AAAAAAAALG}
+{\bkmkend AAAAAAAALG}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b end} (self){\bkmkstart AAAAAAAALH}
+{\bkmkend AAAAAAAALH}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b rbegin} (self){\bkmkstart AAAAAAAALI}
+{\bkmkend AAAAAAAALI}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b rend} (self){\bkmkstart AAAAAAAALJ}
+{\bkmkend AAAAAAAALJ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b clear} (self){\bkmkstart AAAAAAAALK}
+{\bkmkend AAAAAAAALK}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b get_allocator} (self){\bkmkstart AAAAAAAALL}
+{\bkmkend AAAAAAAALL}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b pop_back} (self){\bkmkstart AAAAAAAALM}
+{\bkmkend AAAAAAAALM}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b erase} (self, *args){\bkmkstart AAAAAAAALN}
+{\bkmkend AAAAAAAALN}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __init__} (self, *args){\bkmkstart AAAAAAAALO}
+{\bkmkend AAAAAAAALO}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b push_back} (self, x){\bkmkstart AAAAAAAALP}
+{\bkmkend AAAAAAAALP}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b front} (self){\bkmkstart AAAAAAAALQ}
+{\bkmkend AAAAAAAALQ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b back} (self){\bkmkstart AAAAAAAALR}
+{\bkmkend AAAAAAAALR}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b assign} (self, n, x){\bkmkstart AAAAAAAALS}
+{\bkmkend AAAAAAAALS}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b resize} (self, *args){\bkmkstart AAAAAAAALT}
+{\bkmkend AAAAAAAALT}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b insert} (self, *args){\bkmkstart AAAAAAAALU}
+{\bkmkend AAAAAAAALU}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b reserve} (self, n){\bkmkstart AAAAAAAALV}
+{\bkmkend AAAAAAAALV}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b capacity} (self){\bkmkstart AAAAAAAALW}
+{\bkmkend AAAAAAAALW}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b thisown} = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag"){\bkmkstart AAAAAAAALX}
+{\bkmkend AAAAAAAALX}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+feedforward_closedloop_learning.py\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+feedforward_closedloop_learning.LayerThread Class Reference\par \pard\plain 
+{\tc\tcl2 \v feedforward_closedloop_learning.LayerThread}
+{\xe \v feedforward_closedloop_learning.LayerThread}
+{\bkmkstart AAAAAAAAEY}
+{\bkmkend AAAAAAAAEY}
+Inheritance diagram for feedforward_closedloop_learning.LayerThread:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1LayerThread__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for feedforward_closedloop_learning.LayerThread:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1LayerThread__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __init__} (self, *args, **kwargs){\bkmkstart AAAAAAAALY}
+{\bkmkend AAAAAAAALY}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b addNeuron} (self, neuron)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b start} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b join} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b run} (self)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b thisown} = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag"){\bkmkstart AAAAAAAALZ}
+{\bkmkend AAAAAAAALZ}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid Proxy of C++ LayerThread class.}
+ \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Member Function Documentation\par
+\pard\plain 
+{\xe \v addNeuron\:feedforward_closedloop_learning.LayerThread}
+{\xe \v feedforward_closedloop_learning.LayerThread\:addNeuron}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.LayerThread.addNeuron (  {\i self},   {\i neuron})}}
+\par
+{\bkmkstart AAAAAAAAMA}
+{\bkmkend AAAAAAAAMA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid     addNeuron(LayerThread self, FCLNeuron neuron)\par
+\par
+    Parameters\par
+    ----------\par
+    neuron: FCLNeuron *}
+ \par
+}}
+{\xe \v join\:feedforward_closedloop_learning.LayerThread}
+{\xe \v feedforward_closedloop_learning.LayerThread\:join}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.LayerThread.join (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAMB}
+{\bkmkend AAAAAAAAMB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid join(LayerThread self)}
+ \par
+}}
+{\xe \v run\:feedforward_closedloop_learning.LayerThread}
+{\xe \v feedforward_closedloop_learning.LayerThread\:run}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.LayerThread.run (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAMC}
+{\bkmkend AAAAAAAAMC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid run(LayerThread self)}
+ \par
+}}
+{\xe \v start\:feedforward_closedloop_learning.LayerThread}
+{\xe \v feedforward_closedloop_learning.LayerThread\:start}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.LayerThread.start (  {\i self})}}
+\par
+{\bkmkstart AAAAAAAAMD}
+{\bkmkend AAAAAAAAMD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid start(LayerThread self)}
+ \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+feedforward_closedloop_learning.py\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+feedforward_closedloop_learning.LearningThread Class Reference\par \pard\plain 
+{\tc\tcl2 \v feedforward_closedloop_learning.LearningThread}
+{\xe \v feedforward_closedloop_learning.LearningThread}
+{\bkmkstart AAAAAAAAME}
+{\bkmkend AAAAAAAAME}
+Inheritance diagram for feedforward_closedloop_learning.LearningThread:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1LearningThread__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for feedforward_closedloop_learning.LearningThread:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1LearningThread__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b __init__} (self, *args, **kwargs)\par
+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Public Member Functions inherited from {\b feedforward_closedloop_learning.LayerThread}\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b addNeuron} (self, neuron)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b start} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b join} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b run} (self)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b thisown} = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag"){\bkmkstart AAAAAAAAMF}
+{\bkmkend AAAAAAAAMF}
+\par
+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Properties inherited from {\b feedforward_closedloop_learning.LayerThread}\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b thisown} = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid Proxy of C++ LearningThread class.}
+ \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v __init__\:feedforward_closedloop_learning.LearningThread}
+{\xe \v feedforward_closedloop_learning.LearningThread\:__init__}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.LearningThread.__init__ (  {\i self}, *  {\i args}, **  {\i kwargs})}}
+\par
+{\bkmkstart AAAAAAAAMG}
+{\bkmkend AAAAAAAAMG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Reimplemented from {\b feedforward_closedloop_learning.LayerThread} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEY \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+feedforward_closedloop_learning.py\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+feedforward_closedloop_learning.MaxDetThread Class Reference\par \pard\plain 
+{\tc\tcl2 \v feedforward_closedloop_learning.MaxDetThread}
+{\xe \v feedforward_closedloop_learning.MaxDetThread}
+{\bkmkstart AAAAAAAAMH}
+{\bkmkend AAAAAAAAMH}
+Inheritance diagram for feedforward_closedloop_learning.MaxDetThread:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1MaxDetThread__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for feedforward_closedloop_learning.MaxDetThread:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1MaxDetThread__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b __init__} (self, *args, **kwargs)\par
+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Public Member Functions inherited from {\b feedforward_closedloop_learning.LayerThread}\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b addNeuron} (self, neuron)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b start} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b join} (self)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b run} (self)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b thisown} = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag"){\bkmkstart AAAAAAAAMI}
+{\bkmkend AAAAAAAAMI}
+\par
+}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Properties inherited from {\b feedforward_closedloop_learning.LayerThread}\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b thisown} = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag")\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Detailed Description\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid Proxy of C++ MaxDetThread class.}
+ \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Constructor & Destructor Documentation\par
+\pard\plain 
+{\xe \v __init__\:feedforward_closedloop_learning.MaxDetThread}
+{\xe \v feedforward_closedloop_learning.MaxDetThread\:__init__}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+feedforward_closedloop_learning.MaxDetThread.__init__ (  {\i self}, *  {\i args}, **  {\i kwargs})}}
+\par
+{\bkmkstart AAAAAAAAMJ}
+{\bkmkend AAAAAAAAMJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+Reimplemented from {\b feedforward_closedloop_learning.LayerThread} ({\i p.{\field\fldedit {\*\fldinst PAGEREF AAAAAAAAEY \\*MERGEFORMAT}{\fldrslt pagenum}}}).}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+feedforward_closedloop_learning.py\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+feedforward_closedloop_learning.SwigPyIterator Class Reference\par \pard\plain 
+{\tc\tcl2 \v feedforward_closedloop_learning.SwigPyIterator}
+{\xe \v feedforward_closedloop_learning.SwigPyIterator}
+{\bkmkstart AAAAAAAAMK}
+{\bkmkend AAAAAAAAMK}
+Inheritance diagram for feedforward_closedloop_learning.SwigPyIterator:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1SwigPyIterator__inherit__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+Collaboration diagram for feedforward_closedloop_learning.SwigPyIterator:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classfeedforward__closedloop__learning_1_1SwigPyIterator__coll__graph.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Public Member Functions\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __init__} (self, *args, **kwargs){\bkmkstart AAAAAAAAML}
+{\bkmkend AAAAAAAAML}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b value} (self){\bkmkstart AAAAAAAAMM}
+{\bkmkend AAAAAAAAMM}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b incr} (self, n=1){\bkmkstart AAAAAAAAMN}
+{\bkmkend AAAAAAAAMN}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b decr} (self, n=1){\bkmkstart AAAAAAAAMO}
+{\bkmkend AAAAAAAAMO}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b distance} (self, x){\bkmkstart AAAAAAAAMP}
+{\bkmkend AAAAAAAAMP}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b equal} (self, x){\bkmkstart AAAAAAAAMQ}
+{\bkmkend AAAAAAAAMQ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b copy} (self){\bkmkstart AAAAAAAAMR}
+{\bkmkend AAAAAAAAMR}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b next} (self){\bkmkstart AAAAAAAAMS}
+{\bkmkend AAAAAAAAMS}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __next__} (self){\bkmkstart AAAAAAAAMT}
+{\bkmkend AAAAAAAAMT}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b previous} (self){\bkmkstart AAAAAAAAMU}
+{\bkmkend AAAAAAAAMU}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b advance} (self, n){\bkmkstart AAAAAAAAMV}
+{\bkmkend AAAAAAAAMV}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __eq__} (self, x){\bkmkstart AAAAAAAAMW}
+{\bkmkend AAAAAAAAMW}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __ne__} (self, x){\bkmkstart AAAAAAAAMX}
+{\bkmkend AAAAAAAAMX}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __iadd__} (self, n){\bkmkstart AAAAAAAAMY}
+{\bkmkend AAAAAAAAMY}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __isub__} (self, n){\bkmkstart AAAAAAAAMZ}
+{\bkmkend AAAAAAAAMZ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __add__} (self, n){\bkmkstart AAAAAAAANA}
+{\bkmkend AAAAAAAANA}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __sub__} (self, *args){\bkmkstart AAAAAAAANB}
+{\bkmkend AAAAAAAANB}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b __iter__} (self){\bkmkstart AAAAAAAANC}
+{\bkmkend AAAAAAAANC}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Properties\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b thisown} = property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc="The membership flag"){\bkmkstart AAAAAAAAND}
+{\bkmkend AAAAAAAAND}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+The documentation for this class was generated from the following file:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+feedforward_closedloop_learning.py\par
 }
 \pard\plain \sect\sbkpage
 \s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
@@ -3587,86 +7010,84 @@ fcl.h\par \pard\plain
 \pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #ifndef __FEEDFORWARD_CLOSEDLOOP_LEARNING_H_}\par
 2 {\cf21 #define __FEEDFORWARD_CLOSEDLOOP_LEARNING_H_}\par
 3 \par
-4 {\cf21 #include "fcl/globals.h"}\par
-5 {\cf21 #include "fcl/layer.h"}\par
-6 {\cf21 #include "fcl/neuron.h"}\par
-7 {\cf21 #include "fcl/trace.h"}\par
-8 \par
-9 {\cf21 #include <stdio.h>}\par
-10 {\cf21 #include <stdlib.h>}\par
-11 {\cf21 #include <math.h>}\par
-12 {\cf21 #include <assert.h>}\par
-13 {\cf21 #include <vector>}\par
-14 \par
-30 {\cf17 class }FeedforwardClosedloopLearning \{\par
-31 \par
-32 {\cf17 public}:\par
-33     \par
-39     FeedforwardClosedloopLearning(\par
-40         {\cf17 const} {\cf18 int} num_input, \par
-41         {\cf17 const} std::vector<int> &num_of_neurons_per_layer\par
-42     );\par
-43 \par
-47     ~FeedforwardClosedloopLearning();\par
-48 \par
-53     {\cf18 void} doStep({\cf17 const} std::vector<double> &input, {\cf17 const} std::vector<double> &error);\par
-54 \par
-59     {\cf18 double} getOutput({\cf18 int} index) \{\par
-60         {\cf19 return} layers[n_neurons_per_layer.size()-1]->getOutput(index);\par
-61     \}\par
-62 \par
-66     {\cf18 void} setLearningRate({\cf18 double} learningRate);\par
-67 \par
-71     {\cf18 void} setLearningRateDiscountFactor({\cf18 double} _learningRateDiscountFactor) \{\par
-72         learningRateDiscountFactor = _learningRateDiscountFactor;\par
-73     \}\par
-74 \par
-78     {\cf18 void} setDecay({\cf18 double} decay);\par
-79 \par
-82     {\cf18 void} setActivationFunction(FCLNeuron::ActivationFunction _activationFunction);\par
-83 \par
-89     {\cf18 void} initWeights({\cf18 double} max = 0.001,\par
-90              {\cf18 int} initBias = 1,\par
-91              FCLNeuron::WeightInitMethod weightInitMethod = FCLNeuron::MAX_OUTPUT_RANDOM);\par
-92 \par
-96     {\cf18 void} seedRandom({\cf18 int} s) \{ srand(s); \};\par
-97 \par
-101     {\cf18 void} setBias({\cf18 double} _bias);\par
-102 \par
-106     {\cf18 int} getNumLayers() \{{\cf19 return} ({\cf18 int})n_neurons_per_layer.size();\};\par
-107 \par
-112     FCLLayer* getLayer({\cf18 unsigned} i) \{assert (i<=n_neurons_per_layer.size()); {\cf19 return} layers[i];\};\par
-113 \par
-117     FCLLayer* getOutputLayer() \{{\cf19 return} layers[n_neurons_per_layer.size()-1];\};\par
-118 \par
-122     {\cf18 int} getNumInputs() \{{\cf19 return} ni;\}\par
-123 \par
-127     FCLLayer** getLayers() \{{\cf19 return} layers;\};\par
-128 \par
-132     {\cf18 bool} saveModel({\cf17 const} {\cf18 char}* name);\par
-133 \par
-137     {\cf18 bool} loadModel({\cf17 const} {\cf18 char}* name);\par
-138 \par
-139     \par
-140 \par
-141 {\cf17 private}:\par
-142     {\cf18 unsigned} ni;\par
-143     std::vector<int> n_neurons_per_layer;\par
-144 \par
-145     {\cf18 double} learningRateDiscountFactor = 1;\par
-146 \par
-147     {\cf18 long} {\cf18 int} step = 0;\par
-148 \par
-149     FCLLayer** layers;\par
-150 \par
-151     {\cf20 // should be called to relay layer index to the layer}\par
-152     {\cf18 void} setDebugInfo();\par
-153 \par
-154     {\cf18 void} doLearning();\par
-155     {\cf18 void} setStep();\par
-156 \par
-157 \};\par
-158 {\cf21 #endif}\par
+4 {\cf21 #include "fcl/layer.h"}\par
+5 {\cf21 #include "fcl/neuron.h"}\par
+6 {\cf21 #include "fcl/trace.h"}\par
+7 \par
+8 {\cf21 #include <stdlib.h>}\par
+9 {\cf21 #include <math.h>}\par
+10 {\cf21 #include <assert.h>}\par
+11 {\cf21 #include <vector>}\par
+12 \par
+29 {\cf17 class }FeedforwardClosedloopLearning \{\par
+30 \par
+31 {\cf17 public}:\par
+32     \par
+38     FeedforwardClosedloopLearning(\par
+39         {\cf17 const} {\cf18 int} num_input, \par
+40         {\cf17 const} std::vector<int> &num_of_neurons_per_layer\par
+41     );\par
+42 \par
+46     ~FeedforwardClosedloopLearning();\par
+47 \par
+52     {\cf18 void} doStep({\cf17 const} std::vector<double> &input, {\cf17 const} std::vector<double> &error);\par
+53 \par
+58     {\cf18 double} getOutput({\cf18 int} index) \{\par
+59         {\cf19 return} layers[n_neurons_per_layer.size()-1]->getOutput(index);\par
+60     \}\par
+61 \par
+65     {\cf18 void} setLearningRate({\cf18 double} learningRate);\par
+66 \par
+70     {\cf18 void} setLearningRateDiscountFactor({\cf18 double} _learningRateDiscountFactor) \{\par
+71         learningRateDiscountFactor = _learningRateDiscountFactor;\par
+72     \}\par
+73 \par
+77     {\cf18 void} setDecay({\cf18 double} decay);\par
+78 \par
+81     {\cf18 void} setActivationFunction(FCLNeuron::ActivationFunction _activationFunction);\par
+82 \par
+88     {\cf18 void} initWeights({\cf18 double} max = 0.001,\par
+89              {\cf18 int} initBias = 1,\par
+90              FCLNeuron::WeightInitMethod weightInitMethod = FCLNeuron::MAX_OUTPUT_RANDOM);\par
+91 \par
+95     {\cf18 void} seedRandom({\cf18 unsigned} {\cf18 int} s) \{ srand(s); \};\par
+96 \par
+100     {\cf18 void} setBias({\cf18 double} _bias);\par
+101 \par
+105     {\cf18 int} getNumLayers() \{{\cf19 return} ({\cf18 int})n_neurons_per_layer.size();\};\par
+106 \par
+111     FCLLayer* getLayer({\cf18 unsigned} i) \{assert (i<=n_neurons_per_layer.size()); {\cf19 return} layers[i];\};\par
+112 \par
+116     FCLLayer* getOutputLayer() \{{\cf19 return} layers[n_neurons_per_layer.size()-1];\};\par
+117 \par
+121     {\cf18 int} getNumInputs() \{{\cf19 return} ni;\}\par
+122 \par
+126     FCLLayer** getLayers() \{{\cf19 return} layers;\};\par
+127 \par
+131     {\cf18 bool} saveModel({\cf17 const} {\cf18 char}* name);\par
+132 \par
+136     {\cf18 bool} loadModel({\cf17 const} {\cf18 char}* name);\par
+137 \par
+138     \par
+139 \par
+140 {\cf17 private}:\par
+141     {\cf18 unsigned} ni;\par
+142     std::vector<int> n_neurons_per_layer;\par
+143 \par
+144     {\cf18 double} learningRateDiscountFactor = 1;\par
+145 \par
+146     {\cf18 long} {\cf18 int} step = 0;\par
+147 \par
+148     FCLLayer** layers;\par
+149 \par
+150     {\cf20 // should be called to relay layer index to the layer}\par
+151     {\cf18 void} setDebugInfo();\par
+152 \par
+153     {\cf18 void} doLearning();\par
+154     {\cf18 void} setStep();\par
+155 \par
+156 \};\par
+157 {\cf21 #endif}\par
 }
 \par \pard\plain 
 
@@ -3717,203 +7138,215 @@ layer.h\par \pard\plain
 \pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #ifndef __Layer_H_}\par
 2 {\cf21 #define __Layer_H_}\par
 3 \par
-12 {\cf21 #include "globals.h"}\par
-13 {\cf21 #include "neuron.h"}\par
-14 {\cf21 #include <stdlib.h>}\par
-15 {\cf21 #include <string.h>}\par
-16 {\cf21 #include <thread>}\par
+12 {\cf21 #include "neuron.h"}\par
+13 {\cf21 #include <stdlib.h>}\par
+14 {\cf21 #include <thread>}\par
+15 \par
+16 {\cf21 #define NUM_THREADS 12}\par
 17 \par
-18 {\cf21 #define NUM_THREADS 12}\par
+18 {\cf21 #ifndef DOXYGEN_SHOULD_SKIP_THIS}\par
 19 \par
-20 {\cf21 #ifndef DOXYGEN_SHOULD_SKIP_THIS}\par
-21 \par
-22 {\cf20 // abstract thread which contains the inner workings of the thread model}\par
-23 {\cf17 class }LayerThread \{\par
-24 \par
-25 {\cf17 protected}:\par
-26 \par
-27     FCLNeuron** neurons;\par
-28     {\cf18 int} nNeurons = 0;\par
-29     {\cf18 int} maxNeurons = 0;\par
+20 {\cf20 // abstract thread which contains the inner workings of the thread model}\par
+21 {\cf17 class }LayerThread\par
+22 \{\par
+23 \par
+24   {\cf17 protected}:\par
+25     FCLNeuron **neurons;\par
+26     {\cf18 int} nNeurons = 0;\par
+27     {\cf18 int} maxNeurons = 0;\par
+28 \par
+29     std::thread thr;\par
 30 \par
-31     std::thread thr;\par
-32 \par
-33 {\cf17 public}:\par
-34 \par
-35     LayerThread({\cf18 int} _maxNeurons) \{\par
-36         maxNeurons = _maxNeurons;\par
-37         neurons = {\cf17 new} FCLNeuron*[maxNeurons];\par
-38     \}\par
+31   {\cf17 public}:\par
+32     LayerThread ({\cf18 int} _maxNeurons)\par
+33     \{\par
+34         maxNeurons = _maxNeurons;\par
+35         neurons = {\cf17 new} FCLNeuron *[maxNeurons];\par
+36     \}\par
+37 \par
+38     {\cf17 virtual} ~LayerThread () \{ {\cf17 delete}[] neurons; \}\par
 39 \par
-40     {\cf17 virtual} ~LayerThread() \{\par
-41         {\cf17 delete} [] neurons;\par
-42     \}\par
-43     \par
-44     {\cf18 void} addNeuron(FCLNeuron* neuron) \{\par
-45         {\cf19 if} (nNeurons >= maxNeurons) \{\par
-46             fprintf(stderr,{\cf22 "Not enough memory for threads.\\n"});\par
-47             exit(1);\par
-48         \}\par
-49         neurons[nNeurons] = neuron;\par
-50         nNeurons++;\par
-51     \}\par
-52 \par
-53     {\cf18 void} start() \{\par
-54         {\cf19 if} (nNeurons == 0) \{\par
+40     {\cf18 void} addNeuron (FCLNeuron *neuron)\par
+41     \{\par
+42         {\cf19 if} (nNeurons >= maxNeurons)\par
+43         \{\par
+44             fprintf (stderr, {\cf22 "Not enough memory for threads.\\n"});\par
+45             exit (1);\par
+46         \}\par
+47         neurons[nNeurons] = neuron;\par
+48         nNeurons++;\par
+49     \}\par
+50 \par
+51     {\cf18 void} start ()\par
+52     \{\par
+53         {\cf19 if} (nNeurons == 0)\par
+54         \{\par
 55             {\cf19 return};\par
 56         \}\par
-57         thr = std::thread(&LayerThread::run,{\cf17 this});\par
+57         thr = std::thread (&LayerThread::run, {\cf17 this});\par
 58     \}\par
 59 \par
-60     {\cf18 void} join() \{\par
-61         {\cf19 if} (nNeurons == 0) \{\par
-62             {\cf19 return};\par
-63         \}\par
-64         {\cf19 if} (thr.joinable()) \{\par
-65             thr.join();\par
-66         \}\par
-67     \}\par
-68 \par
-69     {\cf20 // is implemented by its children to do the specfic task the thread}\par
-70     {\cf17 virtual} {\cf18 void} run() = 0;\par
-71 \};\par
-72 \par
-73 \par
-74 {\cf17 class }CalcOutputThread : {\cf17 public} LayerThread \{\par
-75     {\cf17 using }LayerThread::LayerThread;\par
-76     {\cf18 void} run() \{\par
-77         {\cf19 for} ({\cf18 int} i=0;i<nNeurons;i++) \{\par
-78             neurons[i]->calcOutput();\par
-79         \}\par
-80     \}\par
-81 \};\par
-82 \par
-83 \par
-84 {\cf17 class }LearningThread : {\cf17 public} LayerThread \{\par
-85     {\cf17 using }LayerThread::LayerThread;\par
-86     {\cf18 void} run() \{\par
-87         {\cf19 for} ({\cf18 int} i=0;i<nNeurons;i++) \{\par
-88             neurons[i]->doLearning();\par
-89         \}\par
-90     \}\par
-91 \};\par
-92 \par
-93 \par
-94 {\cf17 class }MaxDetThread : {\cf17 public} LayerThread \{\par
-95     {\cf17 using }LayerThread::LayerThread;\par
-96     {\cf18 void} run() \{\par
-97         {\cf19 for} ({\cf18 int} i=0;i<nNeurons;i++) \{\par
-98             neurons[i]->doMaxDet();\par
-99         \}\par
-100     \}\par
-101 \};\par
-102 \par
-103 \par
-104 {\cf21 #endif }{\cf20 /* DOXYGEN_SHOULD_SKIP_THIS */}{\cf21 }\par
-105 \par
-106 \par
-114 {\cf17 class }FCLLayer \{\par
-115     \par
-116 {\cf17 public}:\par
-124     FCLLayer({\cf18 int} _nNeurons, {\cf18 int} _nInputs);\par
-125 \par
-129     ~FCLLayer();\par
-130 \par
-135     {\cf17 enum} WeightNormalisation \{\par
-136         WEIGHT_NORM_NONE = 0,\par
-137         WEIGHT_NORM_LAYER_EUCLEDIAN = 1,\par
-138         WEIGHT_NORM_NEURON_EUCLEDIAN = 2,\par
-139         WEIGHT_NORM_LAYER_MANHATTAN = 3,\par
-140         WEIGHT_NORM_NEURON_MANHATTAN = 4,\par
-141         WEIGHT_NORM_LAYER_INFINITY = 5,\par
-142         WEIGHT_NORM_NEURON_INFINITY = 6\par
-143     \};\par
-144 \par
-147     {\cf18 void} calcOutputs();\par
-148 \par
-151     {\cf18 void} doLearning();\par
-152 \par
-156     {\cf18 void} setError( {\cf18 double} _error);\par
+60     {\cf18 void} join ()\par
+61     \{\par
+62         {\cf19 if} (nNeurons == 0)\par
+63         \{\par
+64             {\cf19 return};\par
+65         \}\par
+66         {\cf19 if} (thr.joinable ())\par
+67         \{\par
+68             thr.join ();\par
+69         \}\par
+70     \}\par
+71 \par
+72     {\cf20 // is implemented by its children to do the specfic task the thread}\par
+73     {\cf17 virtual} {\cf18 void} run () = 0;\par
+74 \};\par
+75 \par
+76 {\cf17 class }CalcOutputThread : {\cf17 public} LayerThread\par
+77 \{\par
+78     {\cf17 using }LayerThread::LayerThread;\par
+79     {\cf18 void} run ()\par
+80     \{\par
+81         {\cf19 for} ({\cf18 int} i = 0; i < nNeurons; i++)\par
+82         \{\par
+83             neurons[i]->calcOutput ();\par
+84         \}\par
+85     \}\par
+86 \};\par
+87 \par
+88 {\cf17 class }LearningThread : {\cf17 public} LayerThread\par
+89 \{\par
+90     {\cf17 using }LayerThread::LayerThread;\par
+91     {\cf18 void} run ()\par
+92     \{\par
+93         {\cf19 for} ({\cf18 int} i = 0; i < nNeurons; i++)\par
+94         \{\par
+95             neurons[i]->doLearning ();\par
+96         \}\par
+97     \}\par
+98 \};\par
+99 \par
+100 {\cf17 class }MaxDetThread : {\cf17 public} LayerThread\par
+101 \{\par
+102     {\cf17 using }LayerThread::LayerThread;\par
+103     {\cf18 void} run ()\par
+104     \{\par
+105         {\cf19 for} ({\cf18 int} i = 0; i < nNeurons; i++)\par
+106         \{\par
+107             neurons[i]->doMaxDet ();\par
+108         \}\par
+109     \}\par
+110 \};\par
+111 \par
+112 {\cf21 #endif }{\cf20 /* DOXYGEN_SHOULD_SKIP_THIS */}{\cf21 }\par
+113 \par
+121 {\cf17 class }FCLLayer\par
+122 \{\par
+123 \par
+124   {\cf17 public}:\par
+132     FCLLayer ({\cf18 int} _nNeurons, {\cf18 int} _nInputs);\par
+133 \par
+137     ~FCLLayer ();\par
+138 \par
+143     {\cf17 enum} WeightNormalisation\par
+144     \{\par
+145         WEIGHT_NORM_NONE = 0,\par
+146         WEIGHT_NORM_LAYER_EUCLEDIAN = 1,\par
+147         WEIGHT_NORM_NEURON_EUCLEDIAN = 2,\par
+148         WEIGHT_NORM_LAYER_MANHATTAN = 3,\par
+149         WEIGHT_NORM_NEURON_MANHATTAN = 4,\par
+150         WEIGHT_NORM_LAYER_INFINITY = 5,\par
+151         WEIGHT_NORM_NEURON_INFINITY = 6\par
+152     \};\par
+153 \par
+156     {\cf18 void} calcOutputs ();\par
 157 \par
-162     {\cf18 void} setError( {\cf18 int} i,  {\cf18 double} _error);\par
-163 \par
-167     {\cf18 void} setErrors( {\cf18 double} *_errors);\par
-168 \par
-172     {\cf18 double} getError( {\cf18 int} i);\par
-173 \par
-177     {\cf18 void} setBias( {\cf18 double} _bias);\par
-178 \par
-183     {\cf18 void} setInput( {\cf18 int} inputIndex,  {\cf18 double} input);\par
-184 \par
-188     {\cf18 void} setInputs( {\cf17 const} {\cf18 double} * _inputs);\par
-189 \par
-193     {\cf18 void} setLearningRate( {\cf18 double} _learningRate);\par
-194 \par
-198     {\cf18 void} setActivationFunction(FCLNeuron::ActivationFunction _activationFunction);\par
-199 \par
-203     {\cf18 void} setDecay( {\cf18 double} _decay);\par
-204 \par
-210     {\cf18 void} initWeights( {\cf18 double} _max = 1,\par
-211               {\cf18 int} initBiasWeight = 1,\par
-212               FCLNeuron::WeightInitMethod weightInitMethod = FCLNeuron::MAX_OUTPUT_RANDOM);\par
-213     \par
-218     {\cf17 inline} {\cf18 double} getOutput( {\cf18 int} index) \{\par
-219         {\cf19 return} neurons[index]->getOutput();\par
-220     \}\par
-221 \par
-226     {\cf17 inline} FCLNeuron* getNeuron( {\cf18 int} index) \{\par
-227         assert(index < nNeurons);\par
-228         {\cf19 return} neurons[index];\par
-229     \}\par
-230 \par
-234     {\cf17 inline} {\cf18 int} getNneurons() \{ {\cf19 return} nNeurons;\}\par
-235 \par
-239     {\cf17 inline} {\cf18 int} getNinputs() \{ {\cf19 return} nInputs;\}\par
-240 \par
-245     {\cf18 void} setConvolution( {\cf18 int} width,  {\cf18 int} height);\par
-246 \par
-250     {\cf18 void} setConvolution( {\cf18 int} width );\par
-251 \par
-255     {\cf18 void} setMaxDetLayer({\cf18 int} _m) \{ maxDetLayer = _m; \};\par
-256 \par
-260     {\cf18 void} setNormaliseWeights(WeightNormalisation _normaliseWeights);\par
-261 \par
-265     {\cf18 void} setDebugInfo({\cf18 int} layerIndex);\par
-266 \par
-270     {\cf18 void} setStep({\cf18 long} {\cf18 int} step);\par
-271 \par
-275     {\cf18 double} getWeightDistanceFromInitialWeights();\par
-276 \par
-279     {\cf18 void} doNormaliseWeights();\par
-280 \par
-284     {\cf18 void} setUseThreads({\cf18 int} _useThreads) \{\par
-285         useThreads = _useThreads;\par
-286         {\cf19 if} (!useThreads) \{\par
-287             fprintf(stderr,{\cf22 "Thread execution if OFF\\n"});\par
-288         \}\par
-289     \};\par
-290 \par
-294     {\cf18 int} saveWeightMatrix({\cf18 char} *filename);\par
-295 \par
-296     \par
-297 {\cf17 private}:\par
-298 \par
-299     {\cf18 int} nNeurons;\par
-300     {\cf18 int} nInputs;\par
-301     FCLNeuron** neurons = 0;\par
-302     {\cf18 int} maxDetLayer = 0;\par
-303     WeightNormalisation normaliseWeights = WEIGHT_NORM_NONE;\par
-304     {\cf18 int} debugOutput = 0;\par
-305     {\cf20 // for debugging output}\par
-306     {\cf18 int} layerIndex = 0;\par
-307     {\cf18 long} {\cf18 int} step = 0;\par
-308     {\cf18 int} useThreads = 1;\par
-309     CalcOutputThread** calcOutputThread = {\cf17 nullptr};\par
-310     LearningThread** learningThread = {\cf17 nullptr};\par
-311     MaxDetThread** maxDetThread = {\cf17 nullptr};\par
-312 \};\par
-313 \par
-314 {\cf21 #endif}\par
+160     {\cf18 void} doLearning ();\par
+161 \par
+165     {\cf18 void} setError ({\cf18 double} _error);\par
+166 \par
+171     {\cf18 void} setError ({\cf18 int} i, {\cf18 double} _error);\par
+172 \par
+176     {\cf18 void} setErrors ({\cf18 double} *_errors);\par
+177 \par
+181     {\cf18 double} getError ({\cf18 int} i);\par
+182 \par
+186     {\cf18 void} setBias ({\cf18 double} _bias);\par
+187 \par
+192     {\cf18 void} setInput ({\cf18 int} inputIndex, {\cf18 double} input);\par
+193 \par
+197     {\cf18 void} setInputs ({\cf17 const} {\cf18 double} *_inputs);\par
+198 \par
+202     {\cf18 void} setLearningRate ({\cf18 double} _learningRate);\par
+203 \par
+207     {\cf18 void}\par
+208     setActivationFunction (FCLNeuron::ActivationFunction _activationFunction);\par
+209 \par
+213     {\cf18 void} setDecay ({\cf18 double} _decay);\par
+214 \par
+220     {\cf18 void} initWeights ({\cf18 double} _max = 1, {\cf18 int} initBiasWeight = 1,\par
+221                       FCLNeuron::WeightInitMethod weightInitMethod\par
+222                       = FCLNeuron::MAX_OUTPUT_RANDOM);\par
+223 \par
+228     {\cf17 inline} {\cf18 double} getOutput ({\cf18 int} index)\par
+229     \{\par
+230         {\cf19 return} neurons[index]->getOutput ();\par
+231     \}\par
+232 \par
+237     {\cf17 inline} FCLNeuron *getNeuron ({\cf18 int} index)\par
+238     \{\par
+239         assert (index < nNeurons);\par
+240         {\cf19 return} neurons[index];\par
+241     \}\par
+242 \par
+246     {\cf17 inline} {\cf18 int} getNneurons () \{ {\cf19 return} nNeurons; \}\par
+247 \par
+251     {\cf17 inline} {\cf18 int} getNinputs () \{ {\cf19 return} nInputs; \}\par
+252 \par
+257     {\cf18 void} setConvolution ({\cf18 int} width, {\cf18 int} height);\par
+258 \par
+262     {\cf18 void} setConvolution ({\cf18 int} width);\par
+263 \par
+267     {\cf18 void} setMaxDetLayer ({\cf18 int} _m) \{ maxDetLayer = _m; \};\par
+268 \par
+272     {\cf18 void} setNormaliseWeights (WeightNormalisation _normaliseWeights);\par
+273 \par
+277     {\cf18 void} setDebugInfo ({\cf18 int} layerIndex);\par
+278 \par
+282     {\cf18 void} setStep ({\cf18 long} {\cf18 int} step);\par
+283 \par
+287     {\cf18 double} getWeightDistanceFromInitialWeights ();\par
+288 \par
+291     {\cf18 void} doNormaliseWeights ();\par
+292 \par
+296     {\cf18 void} setUseThreads ({\cf18 int} _useThreads)\par
+297     \{\par
+298         useThreads = _useThreads;\par
+299         {\cf19 if} (!useThreads)\par
+300         \{\par
+301             fprintf (stderr, {\cf22 "Thread execution if OFF\\n"});\par
+302         \}\par
+303     \};\par
+304 \par
+308     {\cf18 int} saveWeightMatrix ({\cf18 char} *filename);\par
+309 \par
+310   {\cf17 private}:\par
+311     {\cf18 int} nNeurons;\par
+312     {\cf18 int} nInputs;\par
+313     FCLNeuron **neurons = 0;\par
+314     {\cf18 int} maxDetLayer = 0;\par
+315     WeightNormalisation normaliseWeights = WEIGHT_NORM_NONE;\par
+316     {\cf18 int} debugOutput = 0;\par
+317     {\cf20 // for debugging output}\par
+318     {\cf18 int} layerIndex = 0;\par
+319     {\cf18 long} {\cf18 int} step = 0;\par
+320     {\cf18 int} useThreads = 1;\par
+321     CalcOutputThread **calcOutputThread = {\cf17 nullptr};\par
+322     LearningThread **learningThread = {\cf17 nullptr};\par
+323     MaxDetThread **maxDetThread = {\cf17 nullptr};\par
+324 \};\par
+325 \par
+326 {\cf21 #endif}\par
 }
 \par \pard\plain 
 
@@ -3929,177 +7362,194 @@ neuron.h\par \pard\plain
 \pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #ifndef __Neuron_H_}\par
 2 {\cf21 #define __Neuron_H_}\par
 3 \par
-4 {\cf21 #include<math.h>}\par
-5 {\cf21 #include<stdio.h>}\par
-6 {\cf21 #include<assert.h>}\par
+4 {\cf21 #include <assert.h>}\par
+5 {\cf21 #include <math.h>}\par
+6 {\cf21 #include <stdio.h>}\par
 7 \par
-8 {\cf20 // bypasses the sigmoid function}\par
-9 {\cf20 // #define LINEAR_OUTPUT}\par
-10 \par
-11 {\cf20 // enables denbug output to sdt out}\par
-12 {\cf20 // #define DEBUG_NEURON}\par
+11 {\cf17 class }FCLNeuron\par
+12 \{\par
 13 \par
-14 {\cf21 #include "globals.h"}\par
-15 \par
-19 {\cf17 class }FCLNeuron \{\par
-20 \par
-21 {\cf17 public}:\par
-22 \par
-26     FCLNeuron({\cf18 int} _nInputs);\par
-27 \par
-31     ~FCLNeuron();\par
-32 \par
-36     {\cf18 void} calcOutput();\par
+14   {\cf17 public}:\par
+18     FCLNeuron ({\cf18 int} _nInputs);\par
+19 \par
+23     ~FCLNeuron ();\par
+24 \par
+28     {\cf18 void} calcOutput ();\par
+29 \par
+32     {\cf17 static} {\cf18 void} *calcOutputThread ({\cf18 void} *{\cf18 object})\par
+33     \{\par
+34         {\cf17 reinterpret_cast<}FCLNeuron *{\cf17 >} (object)->calcOutput ();\par
+35         {\cf19 return} NULL;\par
+36     \};\par
 37 \par
-40     {\cf17 static} {\cf18 void}* calcOutputThread({\cf18 void}* {\cf18 object}) \{\par
-41         {\cf17 reinterpret_cast<}FCLNeuron*{\cf17 >}(object)->calcOutput();\par
-42         {\cf19 return} NULL;\par
-43     \};\par
-44 \par
-48     {\cf18 void} doLearning();\par
-49 \par
-52     {\cf17 static} {\cf18 void}* doLearningThread({\cf18 void}* {\cf18 object}) \{\par
-53         {\cf17 reinterpret_cast<}FCLNeuron*{\cf17 >}(object)->doLearning();\par
-54         {\cf19 return} NULL;\par
-55     \};\par
-56 \par
-60     {\cf18 void} doMaxDet();\par
-61 \par
-64     {\cf17 static} {\cf18 void}* doMaxDetThread({\cf18 void}* {\cf18 object}) \{\par
-65         {\cf17 reinterpret_cast<}FCLNeuron*{\cf17 >}(object)->doMaxDet();\par
-66         {\cf19 return} NULL;\par
-67     \};\par
-68 \par
-71     {\cf17 enum} WeightInitMethod \{ MAX_OUTPUT_RANDOM = 0, MAX_WEIGHT_RANDOM = 1, MAX_OUTPUT_CONST = 2, CONST_WEIGHTS = 3\};\par
-72 \par
-78     {\cf18 void} initWeights({\cf18 double} _max = 1, {\cf18 int} initBias = 1, WeightInitMethod _wm = MAX_OUTPUT_RANDOM);\par
-79 \par
-86     {\cf17 enum} ActivationFunction \{ LINEAR = 0, TANH = 1, RELU = 2, REMAXLU = 3, TANHLIMIT = 4\};\par
-87 \par
-91     {\cf18 void} setActivationFunction(ActivationFunction _activationFunction) \{\par
-92         activationFunction = _activationFunction;\par
-93     \}\par
-94 \par
-98     {\cf18 double} dActivation();\par
-99 \par
-103     {\cf18 double} getMinWeightValue();\par
+41     {\cf18 void} doLearning ();\par
+42 \par
+45     {\cf17 static} {\cf18 void} *doLearningThread ({\cf18 void} *{\cf18 object})\par
+46     \{\par
+47         {\cf17 reinterpret_cast<}FCLNeuron *{\cf17 >} (object)->doLearning ();\par
+48         {\cf19 return} NULL;\par
+49     \};\par
+50 \par
+54     {\cf18 void} doMaxDet ();\par
+55 \par
+58     {\cf17 static} {\cf18 void} *doMaxDetThread ({\cf18 void} *{\cf18 object})\par
+59     \{\par
+60         {\cf17 reinterpret_cast<}FCLNeuron *{\cf17 >} (object)->doMaxDet ();\par
+61         {\cf19 return} NULL;\par
+62     \};\par
+63 \par
+66     {\cf17 enum} WeightInitMethod\par
+67     \{\par
+68         MAX_OUTPUT_RANDOM = 0,\par
+69         MAX_WEIGHT_RANDOM = 1,\par
+70         MAX_OUTPUT_CONST = 2,\par
+71         CONST_WEIGHTS = 3\par
+72     \};\par
+73 \par
+79     {\cf18 void} initWeights ({\cf18 double} _max = 1, {\cf18 int} initBias = 1,\par
+80                       WeightInitMethod _wm = MAX_OUTPUT_RANDOM);\par
+81 \par
+88     {\cf17 enum} ActivationFunction\par
+89     \{\par
+90         LINEAR = 0,\par
+91         TANH = 1,\par
+92         RELU = 2,\par
+93         REMAXLU = 3,\par
+94         TANHLIMIT = 4\par
+95     \};\par
+96 \par
+100     {\cf18 void} setActivationFunction (ActivationFunction _activationFunction)\par
+101     \{\par
+102         activationFunction = _activationFunction;\par
+103     \}\par
 104 \par
-108     {\cf18 double} getMaxWeightValue();\par
+108     {\cf18 double} dActivation ();\par
 109 \par
-113     {\cf18 double} getWeightDistanceFromInitialWeights();\par
+113     {\cf18 double} getMinWeightValue ();\par
 114 \par
-118     {\cf17 inline} {\cf18 double} getOutput() \{ {\cf19 return} output; \};\par
+118     {\cf18 double} getMaxWeightValue ();\par
 119 \par
-123     {\cf17 inline} {\cf18 double} getSum() \{ {\cf19 return} sum; \};\par
+123     {\cf18 double} getWeightDistanceFromInitialWeights ();\par
 124 \par
-129     {\cf17 inline} {\cf18 double} getWeight( {\cf18 int} _index) \{\par
-130         assert((_index>=0)&&(_index<nInputs));\par
-131         {\cf19 return} mask[_index] ? weights[_index] : 0;\par
-132     \};\par
-133 \par
-138     {\cf17 inline} {\cf18 void} setWeight( {\cf18 int} _index,  {\cf18 double} _weight) \{\par
-139         assert((_index>=0)&&(_index<nInputs));\par
-140         weights[_index]=_weight;\par
-141     \};\par
-142 \par
-147     {\cf18 void} setError({\cf18 double} _error);\par
-148 \par
-152     {\cf17 inline} {\cf18 double} getError() \{ {\cf19 return} error; \};\par
-153 \par
-158     {\cf17 inline} {\cf18 void} setInput( {\cf18 int} _index,  {\cf18 double} _value) \{\par
-159         assert((_index>=0)&&(_index<nInputs));\par
-160         inputs[_index] = _value;\par
-161     \};\par
-162 \par
-167     {\cf17 inline} {\cf18 double} getInput( {\cf18 int} _index) \{\par
-168         assert((_index>=0)&&(_index<nInputs));\par
-169         {\cf19 return} inputs[_index];\par
-170     \};\par
-171 \par
-175     {\cf17 inline} {\cf18 double} getBiasWeight() \{{\cf19 return} biasweight; \};\par
-176 \par
-180     {\cf17 inline} {\cf18 void} setBiasWeight({\cf18 double} _biasweight) \{ biasweight=_biasweight; \};\par
-181 \par
-185     {\cf17 inline} {\cf18 void} setBias( {\cf18 double} _bias) \{ bias=_bias; \};\par
-186 \par
-190     {\cf17 inline} {\cf18 void} setLearningRate( {\cf18 double} _learningrate) \{ learningRate = _learningrate; \};\par
-191 \par
-195     {\cf17 inline} {\cf18 void} setDecay({\cf18 double} _decay) \{\par
-196         decay = _decay;\par
-197     \}\par
+128     {\cf17 inline} {\cf18 double} getOutput () \{ {\cf19 return} output; \};\par
+129 \par
+133     {\cf17 inline} {\cf18 double} getSum () \{ {\cf19 return} sum; \};\par
+134 \par
+139     {\cf17 inline} {\cf18 double} getWeight ({\cf18 int} _index)\par
+140     \{\par
+141         assert ((_index >= 0) && (_index < nInputs));\par
+142         {\cf19 return} mask[_index] ? weights[_index] : 0;\par
+143     \};\par
+144 \par
+149     {\cf17 inline} {\cf18 void} setWeight ({\cf18 int} _index, {\cf18 double} _weight)\par
+150     \{\par
+151         assert ((_index >= 0) && (_index < nInputs));\par
+152         weights[_index] = _weight;\par
+153     \};\par
+154 \par
+159     {\cf18 void} setError ({\cf18 double} _error);\par
+160 \par
+164     {\cf17 inline} {\cf18 double} getError () \{ {\cf19 return} error; \};\par
+165 \par
+170     {\cf17 inline} {\cf18 void} setInput ({\cf18 int} _index, {\cf18 double} _value)\par
+171     \{\par
+172         assert ((_index >= 0) && (_index < nInputs));\par
+173         inputs[_index] = _value;\par
+174     \};\par
+175 \par
+180     {\cf17 inline} {\cf18 double} getInput ({\cf18 int} _index)\par
+181     \{\par
+182         assert ((_index >= 0) && (_index < nInputs));\par
+183         {\cf19 return} inputs[_index];\par
+184     \};\par
+185 \par
+189     {\cf17 inline} {\cf18 double} getBiasWeight () \{ {\cf19 return} biasweight; \};\par
+190 \par
+194     {\cf17 inline} {\cf18 void} setBiasWeight ({\cf18 double} _biasweight)\par
+195     \{\par
+196         biasweight = _biasweight;\par
+197     \};\par
 198 \par
-202     {\cf17 inline} {\cf18 double} getDecay() \{\par
-203         {\cf19 return} decay;\par
-204     \}\par
-205 \par
-209     {\cf17 inline} {\cf18 int} getNinputs() \{ {\cf19 return} nInputs; \};\par
-210 \par
-219     {\cf18 void} setGeometry( {\cf18 int} _width,  {\cf18 int} _height) \{\par
-220         assert((_width*_height)==nInputs);\par
-221             width = _width;\par
-222             height = _height;\par
-223     \}\par
-224     \par
-231     {\cf18 void} setMask( {\cf18 int} x, {\cf18 int} y, {\cf18 unsigned} {\cf18 char} c);\par
-232     \par
-237     {\cf18 void} setMask( {\cf17 const} {\cf18 int} x, {\cf17 const} {\cf18 unsigned} {\cf18 char} c);\par
-238     \par
-242     {\cf18 void} setMask( {\cf18 unsigned} {\cf18 char} c);\par
-243     \par
-249     {\cf18 unsigned} {\cf18 char} getMask( {\cf18 int} x, {\cf18 int} y);\par
-250 \par
-255     {\cf18 unsigned} {\cf18 char} getMask({\cf18 int} index) \{ {\cf19 return} mask[index]; \};\par
-256 \par
-260     {\cf18 double} getSumOfSquaredWeightVector();\par
-261 \par
-265     {\cf18 double} getEuclideanNormOfWeightVector() \{\par
-266         {\cf19 return} sqrt(getSumOfSquaredWeightVector());\par
-267     \}\par
-268 \par
-272     {\cf18 double} getManhattanNormOfWeightVector();\par
+202     {\cf17 inline} {\cf18 void} setBias ({\cf18 double} _bias) \{ bias = _bias; \};\par
+203 \par
+207     {\cf17 inline} {\cf18 void} setLearningRate ({\cf18 double} _learningrate)\par
+208     \{\par
+209         learningRate = _learningrate;\par
+210     \};\par
+211 \par
+215     {\cf17 inline} {\cf18 void} setDecay ({\cf18 double} _decay) \{ decay = _decay; \}\par
+216 \par
+220     {\cf17 inline} {\cf18 double} getDecay () \{ {\cf19 return} decay; \}\par
+221 \par
+225     {\cf17 inline} {\cf18 int} getNinputs () \{ {\cf19 return} nInputs; \};\par
+226 \par
+235     {\cf18 void} setGeometry ({\cf18 int} _width, {\cf18 int} _height)\par
+236     \{\par
+237         assert ((_width * _height) == nInputs);\par
+238         width = _width;\par
+239         height = _height;\par
+240     \}\par
+241 \par
+248     {\cf18 void} setMask ({\cf18 int} x, {\cf18 int} y, {\cf18 unsigned} {\cf18 char} c);\par
+249 \par
+254     {\cf18 void} setMask ({\cf17 const} {\cf18 int} x, {\cf17 const} {\cf18 unsigned} {\cf18 char} c);\par
+255 \par
+259     {\cf18 void} setMask ({\cf18 unsigned} {\cf18 char} c);\par
+260 \par
+266     {\cf18 unsigned} {\cf18 char} getMask ({\cf18 int} x, {\cf18 int} y);\par
+267 \par
+272     {\cf18 unsigned} {\cf18 char} getMask ({\cf18 int} index) \{ {\cf19 return} mask[index]; \};\par
 273 \par
-277     {\cf18 double} getInfinityNormOfWeightVector();\par
+277     {\cf18 double} getSumOfSquaredWeightVector ();\par
 278 \par
-282     {\cf18 double} getAverageOfWeightVector();\par
-283 \par
-287     {\cf18 void} normaliseWeights({\cf18 double} norm);\par
-288 \par
-292     {\cf18 void} saveInitialWeights();\par
-293 \par
-298     {\cf18 void} setDebugInfo({\cf18 int} _layerIndex, {\cf18 int} _neuronIndex) \{\par
-299         layerIndex = _layerIndex;\par
-300         neuronIndex = _neuronIndex;\par
-301     \}\par
-302 \par
-306     {\cf17 inline} {\cf18 void} setStep({\cf18 long} {\cf18 int} _step) \{\par
-307         step = _step;\par
-308     \}\par
-309 \par
-310 {\cf17 private}:\par
-311     {\cf18 int} nInputs;\par
-312     {\cf18 unsigned} {\cf18 char}* mask = 0;\par
-313     {\cf18 double}* weights = 0;\par
-314     {\cf18 double}* initialWeights = 0;\par
-315     {\cf18 double} decay = 0;\par
-316     {\cf18 double} biasweight = 0;\par
-317     {\cf18 double} biasweightChange = 0;\par
-318     {\cf18 double} bias = 0;\par
-319     {\cf18 double}* inputs = 0;\par
-320     {\cf18 double} output = 0;\par
-321     {\cf18 double} sum = 0;\par
-322     {\cf18 double} error = 0;\par
-323     {\cf18 double} learningRate = 0;\par
-324     {\cf18 double} learningRateFactor = 1;\par
-325     {\cf18 int} width = 0;\par
-326     {\cf18 int} height = 0;\par
-327     {\cf18 int} maxDet = 0;\par
-328     {\cf18 int} layerIndex = 0;\par
-329     {\cf18 int} neuronIndex = 0;\par
-330     {\cf18 long} {\cf18 int} step = 0;\par
-331     ActivationFunction activationFunction = TANH;\par
-332 \};\par
-333 \par
-334 {\cf21 #endif}\par
+282     {\cf18 double} getEuclideanNormOfWeightVector ()\par
+283     \{\par
+284         {\cf19 return} sqrt (getSumOfSquaredWeightVector ());\par
+285     \}\par
+286 \par
+290     {\cf18 double} getManhattanNormOfWeightVector ();\par
+291 \par
+295     {\cf18 double} getInfinityNormOfWeightVector ();\par
+296 \par
+300     {\cf18 double} getAverageOfWeightVector ();\par
+301 \par
+305     {\cf18 void} normaliseWeights ({\cf18 double} norm);\par
+306 \par
+310     {\cf18 void} saveInitialWeights ();\par
+311 \par
+316     {\cf18 void} setDebugInfo ({\cf18 int} _layerIndex, {\cf18 int} _neuronIndex)\par
+317     \{\par
+318         layerIndex = _layerIndex;\par
+319         neuronIndex = _neuronIndex;\par
+320     \}\par
+321 \par
+325     {\cf17 inline} {\cf18 void} setStep ({\cf18 long} {\cf18 int} _step) \{ step = _step; \}\par
+326 \par
+327   {\cf17 private}:\par
+328     {\cf18 int} nInputs;\par
+329     {\cf18 unsigned} {\cf18 char} *mask = 0;\par
+330     {\cf18 double} *weights = 0;\par
+331     {\cf18 double} *initialWeights = 0;\par
+332     {\cf18 double} decay = 0;\par
+333     {\cf18 double} biasweight = 0;\par
+334     {\cf18 double} biasweightChange = 0;\par
+335     {\cf18 double} bias = 0;\par
+336     {\cf18 double} *inputs = 0;\par
+337     {\cf18 double} output = 0;\par
+338     {\cf18 double} sum = 0;\par
+339     {\cf18 double} error = 0;\par
+340     {\cf18 double} learningRate = 0;\par
+341     {\cf18 double} learningRateFactor = 1;\par
+342     {\cf18 int} width = 0;\par
+343     {\cf18 int} height = 0;\par
+344     {\cf18 int} maxDet = 0;\par
+345     {\cf18 int} layerIndex = 0;\par
+346     {\cf18 int} neuronIndex = 0;\par
+347     {\cf18 long} {\cf18 int} step = 0;\par
+348     ActivationFunction activationFunction = TANH;\par
+349 \};\par
+350 \par
+351 {\cf21 #endif}\par
 }
 \par \pard\plain 
 
@@ -4119,26 +7569,26 @@ trace.h\par \pard\plain
 5 \par
 6 {\cf21 #include <assert.h>}\par
 7 \par
-11 {\cf17 class }FCLTrace \{\par
-12 {\cf17 public}:\par
-16     FCLTrace();\par
-17     \par
-21     {\cf18 double} filter({\cf18 double} v);\par
-22 \par
-27     {\cf18 void} calcPolesZeros({\cf18 double} f,{\cf18 double} r);\par
-28 \par
-32     {\cf18 void} setParameters({\cf18 double} frequency, {\cf18 double} Qfactor);\par
-33 \par
-37     {\cf18 void} impulse({\cf17 const} {\cf18 char}* name);\par
-38 \par
-42     {\cf18 void} calcNorm({\cf18 double} f);\par
-43 \par
-48     {\cf17 inline} {\cf18 double} getOutput() \{{\cf19 return} actualOutput;\};\par
-49 \par
-53     {\cf18 void} reset();\par
-54 \par
-55 {\cf17 private}:\par
-56 \par
+11 {\cf17 class }FCLTrace\par
+12 \{\par
+13   {\cf17 public}:\par
+17     FCLTrace ();\par
+18 \par
+22     {\cf18 double} filter ({\cf18 double} v);\par
+23 \par
+28     {\cf18 void} calcPolesZeros ({\cf18 double} f, {\cf18 double} r);\par
+29 \par
+33     {\cf18 void} setParameters ({\cf18 double} frequency, {\cf18 double} Qfactor);\par
+34 \par
+38     {\cf18 void} impulse ({\cf17 const} {\cf18 char} *name);\par
+39 \par
+43     {\cf18 void} calcNorm ({\cf18 double} f);\par
+44 \par
+49     {\cf17 inline} {\cf18 double} getOutput () \{ {\cf19 return} actualOutput; \};\par
+50 \par
+54     {\cf18 void} reset ();\par
+55 \par
+56   {\cf17 private}:\par
 60     {\cf18 double} norm;\par
 61 \par
 65     {\cf18 double} denominator0;\par
@@ -4170,46 +7620,46 @@ fcl_util.h\par \pard\plain
 \pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #ifndef __FEEDFORWARD_CLOSEDLOOP_LEARNING_UTIL_H_}\par
 2 {\cf21 #define __FEEDFORWARD_CLOSEDLOOP_LEARNING_UTIL_H_}\par
 3 \par
-4 {\cf21 #include "fcl/trace.h"}\par
-5 {\cf21 #include "fcl.h"}\par
+4 {\cf21 #include "fcl.h"}\par
+5 {\cf21 #include "fcl/trace.h"}\par
 6 \par
-7 {\cf21 #include <stdlib.h>}\par
+7 {\cf21 #include <assert.h>}\par
 8 {\cf21 #include <math.h>}\par
-9 {\cf21 #include <assert.h>}\par
+9 {\cf21 #include <stdlib.h>}\par
 10 \par
-17 {\cf17 class }FeedforwardClosedloopLearningWithFilterbank : {\cf17 public} FeedforwardClosedloopLearning \{\par
-21 {\cf17 public}:\par
-32     FeedforwardClosedloopLearningWithFilterbank(\par
-33             {\cf17 const} {\cf18 int} num_of_inputs,\par
-34             {\cf17 const} std::vector<int> &num_of_neurons_per_layer,\par
-35             {\cf17 const} {\cf18 int} num_filtersInput,\par
-36             {\cf17 const} {\cf18 double} minT,\par
-37             {\cf17 const} {\cf18 double} maxT);\par
-38 \par
-42     ~FeedforwardClosedloopLearningWithFilterbank();\par
-43 \par
-48     {\cf18 void} doStep({\cf17 const} std::vector<double> &input, {\cf17 const} std::vector<double> &error);\par
+16 {\cf17 class }FeedforwardClosedloopLearningWithFilterbank\par
+17     : {\cf17 public} FeedforwardClosedloopLearning\par
+18 \{\par
+22   {\cf17 public}:\par
+33     FeedforwardClosedloopLearningWithFilterbank (\par
+34         {\cf17 const} {\cf18 int} num_of_inputs,\par
+35         {\cf17 const} std::vector<int> &num_of_neurons_per_layer,\par
+36         {\cf17 const} {\cf18 int} num_filtersInput, {\cf17 const} {\cf18 double} minT, {\cf17 const} {\cf18 double} maxT);\par
+37 \par
+41     ~FeedforwardClosedloopLearningWithFilterbank ();\par
+42 \par
+47     {\cf18 void} doStep ({\cf17 const} std::vector<double> &input,\par
+48                  {\cf17 const} std::vector<double> &error);\par
 49 \par
-50     {\cf18 double} getFilterOutput({\cf18 int} inputIdx, {\cf18 int} filterIdx) \{\par
-51         {\cf17 const} {\cf18 int} idx = inputIdx * nFiltersPerInput + filterIdx;\par
-52         assert((idx >= 0) || (idx < (nFiltersPerInput * nInputs)));\par
-53         {\cf19 return} filterbankOutputs[(unsigned)idx];\par
-54     \}\par
-55 \par
-56     {\cf18 int} getNFiltersPerInput() \{\par
-57         {\cf19 return} nFiltersPerInput;\par
-58     \}\par
-59 \par
-60 {\cf17 private}:\par
-61     {\cf17 const} {\cf18 double} dampingCoeff = 0.51;\par
-62     FCLTrace ***fclTrace = 0;\par
-63     std::vector<double> errors;\par
-64     std::vector<double> filterbankOutputs;\par
-65     {\cf18 int} nFiltersPerInput = 0;\par
-66     {\cf18 int} nInputs = 0;\par
-67 \};\par
-68 \par
-69 {\cf21 #endif}\par
+50     {\cf18 double} getFilterOutput ({\cf18 int} inputIdx, {\cf18 int} filterIdx)\par
+51     \{\par
+52         {\cf17 const} {\cf18 int} idx = inputIdx * nFiltersPerInput + filterIdx;\par
+53         assert ((idx >= 0) || (idx < (nFiltersPerInput * nInputs)));\par
+54         {\cf19 return} filterbankOutputs[(unsigned)idx];\par
+55     \}\par
+56 \par
+57     {\cf18 int} getNFiltersPerInput () \{ {\cf19 return} nFiltersPerInput; \}\par
+58 \par
+59   {\cf17 private}:\par
+60     {\cf17 const} {\cf18 double} dampingCoeff = 0.51;\par
+61     FCLTrace ***fclTrace = 0;\par
+62     std::vector<double> errors;\par
+63     std::vector<double> filterbankOutputs;\par
+64     {\cf18 int} nFiltersPerInput = 0;\par
+65     {\cf18 int} nInputs = 0;\par
+66 \};\par
+67 \par
+68 {\cf21 #endif}\par
 }
 
 \pard\plain \sect\sbkpage

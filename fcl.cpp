@@ -5,8 +5,9 @@
  * GNU GENERAL PUBLIC LICENSE
  * Version 3, 29 June 2007
  *
- * (C) 2017-2022, Bernd Porr <bernd@glasgowneuro.tech>
- * (C) 2017, Paul Miller <paul@glasgowneuro.tech>
+ * (C) 2017,2018-2026, Bernd Porr <mail@berndporr.me.uk>
+ * (C) 2017,2018, Paul Miller
+ * (C) 2025 Suraj Naranatt
  **/
 
 FeedforwardClosedloopLearning::FeedforwardClosedloopLearning (

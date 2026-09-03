@@ -26,6 +26,13 @@ var NAVTREE =
 [
   [ "Feedforward Closedloop Learning", "index.html", [
     [ "Feedforward Closedloop Learning (FCL)", "index.html", null ],
+    [ "Namespaces", "namespaces.html", [
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Functions", "namespacemembers_func.html", null ]
+      ] ]
+    ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
@@ -44,7 +51,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"classfeedforward__closedloop__learning_1_1FCLNeuron.html#aec5be3d6f6d7a03f36dce7f4c9bc97cc"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
