@@ -66,4 +66,4 @@ Version 3, 29 June 2007
 
 ## DOI of the Code
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7451257.svg)](https://doi.org/10.5281/zenodo.7451257)
+[![DOI](https://zenodo.org/badge/1111346593.svg)](https://doi.org/10.5281/zenodo.22287811)
