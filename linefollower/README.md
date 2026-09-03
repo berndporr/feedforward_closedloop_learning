@@ -20,13 +20,14 @@ of sensors in front of the robot.
 
 `cmake .` and `make` to compile it.
 
-## Running the line follower
-
+## Single run
 The line follower has two modes: single run or stats run.
 In the single run mode it runs until the squared average of the
-error signal is below a certain threshold (SQ_ERROR_THRES).
-In the stats run it performs a logarithmic sweep of different
-learning rates and counts the simulation steps till success.
+error signal is below a certain threshold (SQ_ERROR_THRES):
+```
+./linefollower 0
+```
+![alt tag](viewer.png)
 
 ## Data logging
 
@@ -53,3 +54,17 @@ the line follower is running.
 
 Run the script `plotweights.py` which plots the weights while
 the line follower is running.
+
+### Stats run
+In the stats run it performs a logarithmic sweep of different
+learning rates and counts the simulation steps till success:
+```
+./linefollower 1
+```
+fire up gnuplot and type:
+```
+gnuplot> set logscale x
+gnuplot> set logscale y
+gnuplot> plot "stats.dat"
+```
+![alt tag](stats.png)

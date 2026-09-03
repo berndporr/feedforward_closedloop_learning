@@ -32,7 +32,7 @@ const double maxy = 300;
 #define STEPS_BELOW_ERR_THRESHOLD 500
 
 // max number of steps to terminate
-#define MAX_STEPS 50000
+#define MAX_STEPS 200000
 
 // terminates if the agent won't turn after these steps
 #define STEPS_OFF_TRACK 1000

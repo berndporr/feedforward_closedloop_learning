@@ -313,7 +313,8 @@ void statsRun ()
          learningRate = learningRate * 1.1f)
     {
         fprintf (stderr, "Learning rate = %f\n", learningRate);
-        for (unsigned int seed = 42; seed <= (42 * 2); seed = seed * 2)
+	const std::vector<unsigned int> seeds = {1,42};
+        for(auto const seed:seeds)
         {
             srandom (seed);
             fprintf (stderr, "Seed = %u\n", seed);
