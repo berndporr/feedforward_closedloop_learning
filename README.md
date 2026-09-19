@@ -1,7 +1,7 @@
 # Feedforward Closedloop Learning (FCL)
 
 [Forward propagation closed loop learning
-Bernd Porr, Paul Miller. Adaptive Behaviour 2019.](https://journals.sagepub.com/doi/10.1177/1059712319851070)
+Bernd Porr, Paul Miller. Adaptive Behaviour 2020](https://journals.sagepub.com/doi/10.1177/1059712319851070)
 
 [Submission version](https://www.berndporr.me.uk/Porr_Miller_FCL_2019_Adaptive_Behaviour.pdf)
 
