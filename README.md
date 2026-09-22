@@ -18,7 +18,7 @@ Comparison between FCL, backprop and ICO learning:
 ![alt tag](learning_units_comparison.png)
 
 Note that the code here evolved from the original publication. In order
-to ensure stability the Oja rule is being applied on neuron level.
+to ensure stability a weight decay proportial to |error| has been applied.
 
 ## Prerequisites (Linux)
 
