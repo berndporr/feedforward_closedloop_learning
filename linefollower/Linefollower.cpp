@@ -41,9 +41,12 @@ class LineFollower
 
     int trackCompletedCtr = 5000;
 
+    bool stopIfBelowAvgErr = true;
+
   public:
-    LineFollower (World &world)
+    LineFollower (World &world, bool _stopIfBelowAvgErr = true)
     {
+        stopIfBelowAvgErr = _stopIfBelowAvgErr;
 
         flog = fopen ("flog.tsv", "wt");
         fcoord = fopen ("coord.tsv", "wt");
@@ -118,7 +121,11 @@ class LineFollower
         if (trackCompletedCtr < 1)
         {
             // been off the track for a long time!
-            step = 0;
+            if (stopIfBelowAvgErr)
+            {
+                // indicating off piste!
+                step = 0;
+            }
             simulationRunning = false;
             fprintf (stderr, "Off track!     \n");
         }
@@ -196,7 +203,7 @@ class LineFollower
         {
             successCtr++;
         }
-        if (successCtr > STEPS_BELOW_ERR_THRESHOLD)
+        if ((successCtr > STEPS_BELOW_ERR_THRESHOLD) && stopIfBelowAvgErr)
         {
             simulationRunning = false;
         }
@@ -234,7 +241,10 @@ class LineFollower
 class QTSimulator : public ViewerWidget, public LineFollower
 {
   public:
-    QTSimulator (Enki::World &w) : ViewerWidget (&w), LineFollower (w) {}
+    QTSimulator (Enki::World &w, bool _stopIfBelowAvgErr = true)
+        : ViewerWidget (&w), LineFollower (w, _stopIfBelowAvgErr)
+    {
+    }
     virtual void sceneCompletedHook () override
     {
         sceneCompleted ();
@@ -248,7 +258,10 @@ class QTSimulator : public ViewerWidget, public LineFollower
 class HeadlessSimulator : public LineFollower
 {
   public:
-    HeadlessSimulator (Enki::World &w) : LineFollower (w), world(w) {}
+    HeadlessSimulator (Enki::World &w, bool _stopIfBelowAvgErr = true)
+        : LineFollower (w, _stopIfBelowAvgErr), world (w)
+    {
+    }
 
     void run ()
     {
@@ -297,6 +310,28 @@ void singleRun (int argc, char *argv[], float learningrate)
     fprintf (stderr, "Finished.\n");
 }
 
+void longRun (int argc, char *argv[], float learningrate)
+{
+    QApplication app (argc, argv);
+    QString filename ("loop.png");
+    QImage loopImage;
+    loopImage = QGLWidget::convertToGLFormat (QImage (filename));
+    if (loopImage.isNull ())
+    {
+        fprintf (stderr, "Racetrack file not found\n");
+        exit (1);
+    }
+    const uint32_t *bitmap = (const uint32_t *)loopImage.constBits ();
+    World world (maxx, maxy, Color (1000, 1000, 100),
+                 World::GroundTexture ((unsigned)loopImage.width (),
+                                       (unsigned)loopImage.height (), bitmap));
+    QTSimulator linefollower (world, false);
+    linefollower.setLearningRate (learningrate);
+    linefollower.show ();
+    app.exec ();
+    fprintf (stderr, "Finished.\n");
+}
+
 void statsRun ()
 {
     QString filename ("loop.png");
@@ -313,8 +348,8 @@ void statsRun ()
          learningRate = learningRate * 1.1f)
     {
         fprintf (stderr, "Learning rate = %f\n", learningRate);
-	const std::vector<unsigned int> seeds = {1,42};
-        for(auto const seed:seeds)
+        const std::vector<unsigned int> seeds = { 1, 42 };
+        for (auto const seed : seeds)
         {
             srandom (seed);
             fprintf (stderr, "Seed = %u\n", seed);
@@ -346,6 +381,7 @@ int main (int argc, char *argv[])
     {
         fprintf (stderr, "Single run: %s 0\n", argv[0]);
         fprintf (stderr, "Stats run: %s 1\n", argv[0]);
+        fprintf (stderr, "Long run: %s 2\n", argv[0]);
         return 0;
     }
     switch (n)
@@ -355,6 +391,9 @@ int main (int argc, char *argv[])
         break;
     case 1:
         statsRun ();
+        break;
+    case 2:
+        longRun (argc, argv, 0.01f);
         break;
     }
     return 0;
