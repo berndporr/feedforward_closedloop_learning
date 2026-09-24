@@ -189,7 +189,7 @@ void FCLNeuron::doLearning ()
             *weightsp
                 = *weightsp
                   + learningRate
-                        * ((*inputsp) * error - fabs(output) * (*weightsp));
+		* ((*inputsp) * error - (output*output) * (*weightsp));
 #ifdef DEBUG
             if (isnan (sum) || isnan (weights[i]) || isnan (inputs[i])
                 || (fabs (sum) > SUM_ERR_THRES))
