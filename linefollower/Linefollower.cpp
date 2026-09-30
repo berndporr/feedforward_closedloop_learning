@@ -393,7 +393,7 @@ int main (int argc, char *argv[])
         statsRun ();
         break;
     case 2:
-        longRun (argc, argv, 0.001f);
+        longRun (argc, argv, 0.01f);
         break;
     }
     return 0;
