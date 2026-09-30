@@ -167,7 +167,7 @@ class FCLLayer
 	    FCLNeuron **neuronsp = neurons;
 	    for (int i = 0; i < nNeurons; i++)
 	    {
-		(*neuronsp)->setWeight (j, dist(gen));
+		(*neuronsp)->setInitialWeight (j, dist(gen));
 		neuronsp++;
 	    }
 	}

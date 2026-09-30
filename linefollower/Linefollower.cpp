@@ -164,18 +164,18 @@ class LineFollower
         fcl->doStep (pred, err);
         float vL
             = (float)((fcl->getOutputLayer ()->getNeuron (0)->getOutput ())
-                          * 50
+                          * 10
                       + (fcl->getOutputLayer ()->getNeuron (1)->getOutput ())
-                            * 10
+                            * 5
                       + (fcl->getOutputLayer ()->getNeuron (2)->getOutput ())
-                            * 2);
+                            * 1);
         float vR
             = (float)((fcl->getOutputLayer ()->getNeuron (3)->getOutput ())
-                          * 50
+                          * 10
                       + (fcl->getOutputLayer ()->getNeuron (4)->getOutput ())
-                            * 10
+                            * 5
                       + (fcl->getOutputLayer ()->getNeuron (5)->getOutput ())
-                            * 2);
+                            * 1);
 
         double erroramp = error * fbgain;
         if (consoleDebug)
@@ -185,8 +185,8 @@ class LineFollower
             fprintf (stderr, "%e ", vR);
             fprintf (stderr, "\n");
         }
-        racer->leftSpeed = speed + erroramp + vL/5;
-        racer->rightSpeed = speed - erroramp + vR/5;
+        racer->leftSpeed = speed + erroramp + vL;
+        racer->rightSpeed = speed - erroramp + vR;
 
         // documenting
         // if the learning is off we set the error to zero which

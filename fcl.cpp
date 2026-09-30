@@ -167,7 +167,7 @@ void FeedforwardClosedloopLearning::doStep (const std::vector<double> &input,
                 }
 #endif
             }
-            err = err * learningRateDiscountFactor;
+            //            err = err * learningRateDiscountFactor;
             err = err * emitterLayer->getNneurons ();
             err = err * receiverLayer->getNeuron (i)->dActivation ();
             receiverLayer->getNeuron (i)->setError (err);

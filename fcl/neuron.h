@@ -152,6 +152,12 @@ class FCLNeuron
         weights[_index] = _weight;
     };
 
+    inline void setInitialWeight (int _index, double _weight)
+    {
+        setWeight (_index, _weight);
+        initialWeights[_index] = _weight;
+    }
+
     /** Sets the error in the neuron
          * If the derivative is activated then the derivative of the error is calculated.
          * \param _error Sets the error of the neuron.
