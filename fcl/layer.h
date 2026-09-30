@@ -12,6 +12,8 @@
 #include "neuron.h"
 #include <stdlib.h>
 #include <thread>
+#include <random>
+#include <cmath>
 
 #define NUM_THREADS 12
 
@@ -151,6 +153,26 @@ class FCLLayer
         WEIGHT_NORM_NEURON_INFINITY = 6
     };
 
+    void initXavierNormal() {
+	// 1. Calculate standard deviation
+	double stddev = std::sqrt(2.0 / (nInputs + nNeurons));
+	
+	// 2. Set up random number engine and normal distribution
+	std::random_device rd;
+	std::mt19937 gen(rd());
+	std::normal_distribution<double> dist(0.0, stddev);
+
+	for (int j = 0; j < nInputs; j++)
+	{
+	    FCLNeuron **neuronsp = neurons;
+	    for (int i = 0; i < nNeurons; i++)
+	    {
+		(*neuronsp)->setWeight (j, dist(gen));
+		neuronsp++;
+	    }
+	}
+    }
+    
     /** Calculates the output values in all neurons
          **/
     void calcOutputs ();

@@ -91,6 +91,13 @@ class FeedforwardClosedloopLearning
                       FCLNeuron::WeightInitMethod weightInitMethod
                       = FCLNeuron::MAX_OUTPUT_RANDOM);
 
+    void initXavierNormal() {
+	for (unsigned i = 0; i < n_neurons_per_layer.size (); i++)
+	{
+	    layers[i]->initXavierNormal();
+	}
+    }
+
     /** Seeds the random number generator
          * \param s An arbitratry number.
          **/

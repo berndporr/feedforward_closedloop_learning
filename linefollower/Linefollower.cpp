@@ -66,7 +66,7 @@ class LineFollower
         fcl = new FeedforwardClosedloopLearningWithFilterbank (
             nInputs, nNeuronsInLayers, nFiltersInput, minT, maxT);
 
-        fcl->initWeights (1, 0, FCLNeuron::MAX_OUTPUT_RANDOM);
+        fcl->initXavierNormal();
         fcl->setLearningRate (0);
         fcl->setLearningRateDiscountFactor (1);
         fcl->setBias (1);
@@ -185,8 +185,8 @@ class LineFollower
             fprintf (stderr, "%e ", vR);
             fprintf (stderr, "\n");
         }
-        racer->leftSpeed = speed + erroramp + vL;
-        racer->rightSpeed = speed - erroramp + vR;
+        racer->leftSpeed = speed + erroramp + vL/5;
+        racer->rightSpeed = speed - erroramp + vR/5;
 
         // documenting
         // if the learning is off we set the error to zero which
@@ -393,7 +393,7 @@ int main (int argc, char *argv[])
         statsRun ();
         break;
     case 2:
-        longRun (argc, argv, 0.01f);
+        longRun (argc, argv, 0.001f);
         break;
     }
     return 0;
