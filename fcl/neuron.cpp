@@ -186,10 +186,10 @@ void FCLNeuron::doLearning ()
         assert ((inputs + i) == inputsp);
         if (*maskp)
         {
-            *weightsp
-                = *weightsp
-                  + learningRate
-		* ((*inputsp) * error - (output*output) * (*weightsp));
+            *weightsp = *weightsp
+                        + learningRate
+                              * ((*inputsp) * error
+                                 - (output * output) * (*weightsp) * decay);
 #ifdef DEBUG
             if (isnan (sum) || isnan (weights[i]) || isnan (inputs[i])
                 || (fabs (sum) > SUM_ERR_THRES))
@@ -207,7 +207,7 @@ void FCLNeuron::doLearning ()
         weightsp++;
     }
     biasweight = biasweight + bias * error * learningRate
-                 - biasweight * decay * learningRate;
+                 - biasweight * output * output * learningRate * decay;
 }
 
 double FCLNeuron::getSumOfSquaredWeightVector ()

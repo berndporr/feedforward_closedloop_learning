@@ -329,7 +329,7 @@ class FCLNeuron
     unsigned char *mask = 0;
     double *weights = 0;
     double *initialWeights = 0;
-    double decay = 0;
+    double decay = 1;
     double biasweight = 0;
     double biasweightChange = 0;
     double bias = 0;
