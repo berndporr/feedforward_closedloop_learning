@@ -82,7 +82,7 @@ FeedforwardClosedloopLearningWithFilterbank::
 }
 
 void FeedforwardClosedloopLearningWithFilterbank::doStep (
-    const std::vector<double> &input, const std::vector<double> &error)
+    const std::vector<double> &input, double error)
 {
     if (input.size () != (unsigned)nInputs)
     {
@@ -94,26 +94,14 @@ void FeedforwardClosedloopLearningWithFilterbank::doStep (
 #endif
         throw tmp;
     }
-    if (error.size () != (unsigned)nInputs)
-    {
-        char tmp[256];
-        sprintf (tmp,
-                 "Error array dim mismatch: got: %ld, want: %d "
-                 "which is the number of inputs.",
-                 error.size (), nInputs);
-#ifdef DEBUG
-        fprintf (stderr, "%s\n", tmp);
-#endif
-        throw tmp;
-    }
     for (int i = 0; i < nInputs; i++)
     {
         for (int j = 0; j < nFiltersPerInput; j++)
         {
             filterbankOutputs[(unsigned)(i * nFiltersPerInput + j)]
                 = fclTrace[i][j]->filter (input[(unsigned)i]);
-            errors[(unsigned)(i * nFiltersPerInput + j)] = error[(unsigned)i];
+            errors[(unsigned)(i * nFiltersPerInput + j)] = error;
         }
     }
-    FeedforwardClosedloopLearning::doStep (filterbankOutputs, errors);
+    FeedforwardClosedloopLearning::doStep (filterbankOutputs, error);
 }

@@ -1,8 +1,6 @@
 #include "fcl_util.h"
 #include <stdio.h>
-#include <signal.h>
 #include <stdio.h>
-#include <signal.h>
 #ifdef __linux__
 #include <execinfo.h>
 #endif
@@ -24,7 +22,7 @@ void test_filters() {
 	FILE* f=fopen("test_filters.dat","wt");
 
 	std::vector<double> input = { 0,0 };
-	std::vector<double> error = { 0,0 };
+	double error = 0;
 
 	for(int n = 0; n < 10000;n++) {		
 		double stim = 0;
@@ -66,7 +64,6 @@ void test_learning_fcl_filters() {
 	FILE* f2=fopen("test_learning_fcl_filters2.dat","wt");
 
 	std::vector<double> input = { 0,0 };
-	std::vector<double> error = { 0,0 };
 
 	for(int n = 0; n < 10000;n++) {
 		double stim = 0;
@@ -81,16 +78,14 @@ void test_learning_fcl_filters() {
 		fprintf(f,"%f %f ",stim,err);
 
 		input[0] = stim;
-		error[0] = err;
-		error[1] = err;
 
-		fcl.doStep(input,error);
+		fcl.doStep(input,err);
 
 		for(int k=0; k<fcl.getNumLayers(); k++) {
-			for(int i=0;i<fcl.getLayer(k)->getNneurons();i++) {
-				for(int j=0;j<fcl.getLayer(k)->getNeuron(i)->getNinputs();j++) {
+			for(int i=0;i<fcl.getLayer((unsigned)k)->getNneurons();i++) {
+				for(int j=0;j<fcl.getLayer((unsigned)k)->getNeuron(i)->getNinputs();j++) {
 					fprintf(f, "%e ",
-						fcl.getLayer(k)->getNeuron(i)->getWeight(j));
+						fcl.getLayer((unsigned)k)->getNeuron(i)->getWeight(j));
 				}
 			}
 		}

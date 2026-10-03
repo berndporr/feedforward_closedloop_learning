@@ -1,8 +1,6 @@
 #include "fcl.h"
 #include<stdio.h>
-#include <signal.h>
 #include <stdio.h>
-#include <signal.h>
 #include <vector>
 #ifdef __linux__
 #include <execinfo.h>
@@ -23,7 +21,7 @@ void test_forward() {
 	fcl.initWeights(1, 0, FCLNeuron::MAX_OUTPUT_RANDOM);
 
 	std::vector<double> input = {0,0};
-	std::vector<double> error = {0,0};
+	double error = 0;
 
 	for(int n = 0; n < 100;n++) {
 
@@ -37,7 +35,7 @@ void test_forward() {
 
 		fcl.doStep(input,error);
 		for(int i=0; i<fcl.getNumLayers(); i++) {
-			fprintf(f,"%e ",fcl.getLayer(i)->getNeuron(0)->getSum());
+			fprintf(f,"%e ",fcl.getLayer((unsigned)i)->getNeuron(0)->getSum());
 		}
 		fprintf(f,"%e ",fcl.getOutputLayer()->getNeuron(0)->getOutput());
 		fprintf(f,"\n");
@@ -61,7 +59,6 @@ void test_learning_fcl() {
 	FILE* f=fopen("test_learning_fcl.dat","wt");
 
 	std::vector<double> input = { 0,0 };
-	std::vector<double> error = { 0,0 };
 	
 	for(int n = 0; n < 10000;n++) {
 		
@@ -77,16 +74,14 @@ void test_learning_fcl() {
 		fprintf(f,"%f %f ",stim,err);
 
 		input[0] = stim;
-		error[0] = err;
-		error[1] = err;
 
-		fcl.doStep(input,error);
+		fcl.doStep(input,err);
 
 		for(int k=0; k<fcl.getNumLayers(); k++) {
-			for(int i=0;i<fcl.getLayer(k)->getNneurons();i++) {
-				for(int j=0;j<fcl.getLayer(k)->getNeuron(i)->getNinputs();j++) {
+			for(int i=0;i<fcl.getLayer((unsigned)k)->getNneurons();i++) {
+				for(int j=0;j<fcl.getLayer((unsigned)k)->getNeuron(i)->getNinputs();j++) {
 					fprintf(f, "%e ",
-						fcl.getLayer(k)->getNeuron(i)->getWeight(j));
+						fcl.getLayer((unsigned)k)->getNeuron(i)->getWeight(j));
 				}
 			}
 		}

@@ -23,7 +23,6 @@ class LineFollower
     FeedforwardClosedloopLearningWithFilterbank *fcl = NULL;
 
     std::vector<double> pred;
-    std::vector<double> err;
 
     FILE *flog = NULL;
 
@@ -60,7 +59,6 @@ class LineFollower
         world.addObject (racer);
 
         pred.resize (nInputs);
-        err.resize (nInputs);
 
         // setting up deep feedforward learning
         fcl = new FeedforwardClosedloopLearningWithFilterbank (
@@ -156,12 +154,9 @@ class LineFollower
         }
         double error = (leftGround + leftGround2 * 2)
                        - (rightGround + rightGround2 * 2);
-        for (auto &e : err)
-        {
-            e = error;
-        }
+//        fcl->setDecay (d);
         // !!!!
-        fcl->doStep (pred, err);
+        fcl->doStep (pred, error);
         float vL
             = (float)((fcl->getOutputLayer ()->getNeuron (0)->getOutput ())
                           * 50
