@@ -2,7 +2,7 @@ var classFeedforwardClosedloopLearning =
 [
     [ "FeedforwardClosedloopLearning", "classFeedforwardClosedloopLearning.html#a4cfe39a5d2a897ab59c6625fd5e61371", null ],
     [ "~FeedforwardClosedloopLearning", "classFeedforwardClosedloopLearning.html#afba7d6121341599d66e89ee11c25b676", null ],
-    [ "doStep", "classFeedforwardClosedloopLearning.html#a03d39550cb770f69cef82d72f74fa6b9", null ],
+    [ "doStep", "classFeedforwardClosedloopLearning.html#a0a00bbd79429633b19df647486161cd1", null ],
     [ "getLayer", "classFeedforwardClosedloopLearning.html#ab2abdc1da477b74df4a2c4578f60a94e", null ],
     [ "getLayers", "classFeedforwardClosedloopLearning.html#aee518cba685323a45011d48ebce25f23", null ],
     [ "getNumInputs", "classFeedforwardClosedloopLearning.html#ad7e9ee35938e8221a4c33c4ea3cf1481", null ],

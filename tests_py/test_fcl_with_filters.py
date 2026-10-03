@@ -44,7 +44,7 @@ with open('test_fcl_filt_py.csv', 'ab') as csvfile:
         else :
             err= 0
         # print(inp,err)
-        net.doStep([inp,0],[err,err])
+        net.doStep([inp,0],err)
         # gets the output of the output neuron
         outp[i] = net.getOutput(0)
         a[i]=net.getLayer(0).getNeuron(0).getWeight(0)
