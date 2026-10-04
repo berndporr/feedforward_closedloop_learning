@@ -189,20 +189,18 @@ void FCLNeuron::calcErrorOutput ()
         // checking indexing
         assert ((mask + i) == maskp);
         assert ((weights + i) == weightsp);
-        assert ((inputs + i) == inputp);
         if (*maskp)
         {
             // checking values
             assert (weights[i] == (*weightsp));
-            assert (inputs[i] == (*inputp));
+            assert (inputs[i] == (*errorInputp));
             errorOutput = errorOutput + (*weightsp) * (*errorInputp);
         }
         weightsp++;
         errorInputp++;
         maskp++;
     }
-    errorOutput = errorOutput + biasweight * bias;
-    errorOutput = errorOutput * dActivation ();
+    errorOutput = errorOutput * dActivation () * (double)nInputs;
 }
 
 void FCLNeuron::doLearning ()
