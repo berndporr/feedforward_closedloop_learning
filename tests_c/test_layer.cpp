@@ -1,8 +1,7 @@
-#include "fcl.h"
+#include "layer.h"
+#include <cstdlib>
 #include<stdio.h>
-#include <signal.h>
 #include <stdio.h>
-#include <signal.h>
 #ifdef __linux__
 #include <execinfo.h>
 #endif
@@ -14,7 +13,7 @@ void runTest(int _useThreads) {
 	FCLLayer layer(nNeurons,nInputs);
 	layer.setUseThreads(_useThreads);
 	layer.initWeights(1, 0, FCLNeuron::MAX_OUTPUT_RANDOM);
-	layer.setError(0.1);
+	layer.setErrorOutputs(0.1);
 	layer.setInput(0,0.1);
 	layer.setInput(1,0.1);
 	layer.setLearningRate(1);

@@ -155,6 +155,10 @@ class FCLLayer
          **/
     void calcOutputs ();
 
+    /** Calculates the output values in all neurons
+         **/
+    void calcErrors ();
+
     /** Adjusts the weights
          **/
     void doLearning ();
@@ -162,18 +166,13 @@ class FCLLayer
     /** Sets the global error for all neurons
          * \param _error Sets the error in the whole layer
          **/
-    void setError (double _error);
+    void setErrorOutputs (double _error);
 
     /** sets the error individually
          * \param i Index of the neuron
          * \param _error The error to be set
          **/
-    void setError (int i, double _error);
-
-    /** Sets all errors from an input array
-         * \param _errors is an array of errors
-         **/
-    void setErrors (double *_errors);
+    void setErrorInput (int i, double _error);
 
     /** Retrieves the error
          * \param i Index of the neuron

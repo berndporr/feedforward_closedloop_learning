@@ -89,6 +89,14 @@ void FCLLayer::calcOutputs ()
     }
 }
 
+void FCLLayer::calcErrors ()
+{
+    for (int i = 0; i < nNeurons; i++)
+    {
+        neurons[i]->calcErrorOutput();
+    }
+}
+
 void FCLLayer::doNormaliseWeights ()
 {
     double norm = 0;
@@ -218,24 +226,11 @@ void FCLLayer::setNormaliseWeights (WeightNormalisation _normaliseWeights)
     }
 }
 
-void FCLLayer::setError (double _error)
+void FCLLayer::setErrorOutputs (double _error)
 {
     for (int i = 0; i < nNeurons; i++)
     {
-        neurons[i]->setError (_error);
-    }
-}
-
-void FCLLayer::setErrors (double *_errors)
-{
-    for (int i = 0; i < nNeurons; i++)
-    {
-        if (isnan (_errors[i]))
-        {
-            fprintf (stderr, "Layer::%s L=%d, errors[%d]=%f\n", __func__,
-                     layerIndex, i, _errors[i]);
-        }
-        neurons[i]->setError (_errors[i]);
+        neurons[i]->setErrorOutput (_error);
     }
 }
 
@@ -281,16 +276,19 @@ void FCLLayer::initWeights (double max, int initBias,
     }
 }
 
-void FCLLayer::setError (int i, double _error)
+void FCLLayer::setErrorInput (int inputIndex, double error)
 {
     assert (i < nNeurons);
-    neurons[i]->setError (_error);
+    for (int i = 0; i < nNeurons; i++)
+    {
+        neurons[i]->setErrorInput (inputIndex, error);
+    }
 }
 
 double FCLLayer::getError (int i)
 {
     assert (i < nNeurons);
-    return neurons[i]->getError ();
+    return neurons[i]->getErrorOutput();
 }
 
 // setting a single input to all neurons

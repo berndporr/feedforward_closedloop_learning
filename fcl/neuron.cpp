@@ -21,9 +21,10 @@ FCLNeuron::FCLNeuron (int _nInputs)
     weights = new double[(unsigned)nInputs];
     initialWeights = new double[(unsigned)nInputs];
     inputs = new double[(unsigned)nInputs];
+    errorInputs = new double[(unsigned)nInputs];
     sum = 0;
     output = 0;
-    error = 0;
+    errorOutput = 0;
     learningRate = 0;
     for (int i = 0; i < nInputs; i++)
     {
@@ -40,6 +41,7 @@ FCLNeuron::~FCLNeuron ()
     delete[] initialWeights;
     delete[] inputs;
     delete[] mask;
+    delete[] errorInputs;
 }
 
 void FCLNeuron::calcOutput ()
@@ -173,6 +175,36 @@ double FCLNeuron::dActivation ()
     }
 }
 
+void FCLNeuron::calcErrorOutput ()
+{
+    double *weightsp = weights;
+    double *errorInputp = errorInputs;
+    unsigned char *maskp = mask;
+
+    // global variable
+    errorOutput = 0;
+
+    for (int i = 0; i < nInputs; i++)
+    {
+        // checking indexing
+        assert ((mask + i) == maskp);
+        assert ((weights + i) == weightsp);
+        assert ((inputs + i) == inputp);
+        if (*maskp)
+        {
+            // checking values
+            assert (weights[i] == (*weightsp));
+            assert (inputs[i] == (*inputp));
+            errorOutput = errorOutput + (*weightsp) * (*errorInputp);
+        }
+        weightsp++;
+        errorInputp++;
+        maskp++;
+    }
+    errorOutput = errorOutput + biasweight * bias;
+    errorOutput = errorOutput * dActivation ();
+}
+
 void FCLNeuron::doLearning ()
 {
     double *inputsp = inputs;
@@ -188,7 +220,7 @@ void FCLNeuron::doLearning ()
         {
             *weightsp = *weightsp
                         + learningRate
-                              * ((*inputsp) * error
+                              * ((*inputsp) * errorOutput
                                  - (output * output) * (*weightsp) * decay);
 #ifdef DEBUG
             if (isnan (sum) || isnan (weights[i]) || isnan (inputs[i])
@@ -206,7 +238,7 @@ void FCLNeuron::doLearning ()
         maskp++;
         weightsp++;
     }
-    biasweight = biasweight + bias * error * learningRate
+    biasweight = biasweight + bias * errorOutput * learningRate
                  - biasweight * output * output * learningRate * decay;
 }
 
@@ -450,9 +482,9 @@ double FCLNeuron::getWeightDistanceFromInitialWeights ()
     return sqrt (distance);
 }
 
-void FCLNeuron::setError (double _error)
+void FCLNeuron::setErrorOutput (double _error)
 {
-    error = _error;
+    errorOutput = _error;
     assert (!isnan (_error));
 }
 

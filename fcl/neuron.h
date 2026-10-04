@@ -156,12 +156,14 @@ class FCLNeuron
          * If the derivative is activated then the derivative of the error is calculated.
          * \param _error Sets the error of the neuron.
          **/
-    void setError (double _error);
+    void setErrorOutput (double _error);
 
     /** Gets the error as set by setError
          * \return The error value stored in the neuron
          **/
-    inline double getError () { return error; };
+    inline double getErrorOutput () { return errorOutput; };
+
+    void calcErrorOutput ();
 
     /** Sets one input 
          * \param _index Index of the input.
@@ -172,6 +174,12 @@ class FCLNeuron
         assert ((_index >= 0) && (_index < nInputs));
         inputs[_index] = _value;
     };
+
+    inline void setErrorInput (int _index, double _value)
+    {
+        assert ((_index >= 0) && (_index < nInputs));
+        errorInputs[_index] = _value;
+    }
 
     /** Get the value at one input
          * \param _index Index of the input
@@ -336,7 +344,8 @@ class FCLNeuron
     double *inputs = 0;
     double output = 0;
     double sum = 0;
-    double error = 0;
+    double *errorInputs = 0;
+    double errorOutput = 0;
     double learningRate = 0;
     double learningRateFactor = 1;
     int width = 0;

@@ -102,6 +102,11 @@ void FeedforwardClosedloopLearning::doStep (const std::vector<double> &input,
     }
     // we set the input to the input layer
     layers[0]->setInputs (input.data ());
+    // the error is injected into the 1st layer!
+    for (int i = 0; i < (layers[0]->getNneurons ()); i++)
+    {
+        layers[0]->getNeuron (i)->setErrorOutput (error);
+    }
     // ..and calc its output
     layers[0]->calcOutputs ();
     // new lets calc the other outputs
@@ -118,48 +123,13 @@ void FeedforwardClosedloopLearning::doStep (const std::vector<double> &input,
             // set that output as an input to the next layer which
             // is distributed to all neurons
             receiverLayer->setInput (j, v);
+            // same for the error
+            double e = emitterLayer->getNeuron (j)->getErrorOutput();
+            receiverLayer->setErrorInput(j,e);
         }
-
         // now let's calc the output which can then be sent out
         receiverLayer->calcOutputs ();
-    }
-    // the error is injected into the 1st layer!
-    for (int i = 0; i < (layers[0]->getNneurons ()); i++)
-    {
-        layers[0]->getNeuron (i)->setError (error);
-    }
-    for (unsigned k = 1; k < n_neurons_per_layer.size (); k++)
-    {
-        FCLLayer *emitterLayer = layers[k - 1];
-        FCLLayer *receiverLayer = layers[k];
-        // Calculate the errors for the hidden layer
-        for (int i = 0; i < receiverLayer->getNneurons (); i++)
-        {
-            double err = 0;
-            for (int j = 0; j < emitterLayer->getNneurons (); j++)
-            {
-                err = err
-                      + receiverLayer->getNeuron (i)->getWeight (j)
-                            * emitterLayer->getNeuron (j)->getError ();
-#ifdef DEBUG
-                if (isnan (err) || (fabs (err) > 10000)
-                    || (fabs (emitterLayer->getNeuron (j)->getError ())
-                        > 10000))
-                {
-                    printf (
-                        "RANGE! FeedforwardClosedloopLearning::%s, step=%ld, "
-                        "j=%d, i=%d, hidLayerIndex=%d, "
-                        "err=%e, emitterLayer->getNeuron(j)->getError()=%e\n",
-                        __func__, step, j, i, k, err,
-                        emitterLayer->getNeuron (j)->getError ());
-                }
-#endif
-            }
-            err = err * learningRateDiscountFactor;
-            err = err * emitterLayer->getNneurons ();
-            err = err * receiverLayer->getNeuron (i)->dActivation ();
-            receiverLayer->getNeuron (i)->setError (err);
-        }
+        receiverLayer->calcErrors();
     }
     doLearning ();
     setStep ();
