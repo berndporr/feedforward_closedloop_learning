@@ -12,7 +12,7 @@ void runTest(int _useThreads) {
 	srand(1);
 	FCLLayer layer(nNeurons,nInputs);
 	layer.setUseThreads(_useThreads);
-	layer.initWeights(1, 0, FCLNeuron::MAX_OUTPUT_RANDOM);
+	layer.initWeights(1, FCLNeuron::MAX_OUTPUT_RANDOM);
 	layer.setErrorOutputs(0.1);
 	layer.setInput(0,0.1);
 	layer.setInput(1,0.1);

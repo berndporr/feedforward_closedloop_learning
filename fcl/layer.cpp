@@ -42,7 +42,7 @@ FCLLayer::FCLLayer (int _nNeurons, int _nInputs)
         maxDetThread[i % NUM_THREADS]->addNeuron (neurons[i]);
     }
 
-    initWeights (0, 0, FCLNeuron::CONST_WEIGHTS);
+    initWeights (0, FCLNeuron::CONST_WEIGHTS);
 }
 
 FCLLayer::~FCLLayer ()
@@ -234,14 +234,6 @@ void FCLLayer::setErrorOutputs (double _error)
     }
 }
 
-void FCLLayer::setBias (double _bias)
-{
-    for (int i = 0; i < nNeurons; i++)
-    {
-        neurons[i]->setBias (_bias);
-    }
-}
-
 void FCLLayer::setLearningRate (double _learningRate)
 {
     for (int i = 0; i < nNeurons; i++)
@@ -267,12 +259,12 @@ void FCLLayer::setDecay (double _decay)
     }
 }
 
-void FCLLayer::initWeights (double max, int initBias,
+void FCLLayer::initWeights (double max,
                             FCLNeuron::WeightInitMethod weightInitMethod)
 {
     for (int i = 0; i < nNeurons; i++)
     {
-        neurons[i]->initWeights (max, initBias, weightInitMethod);
+        neurons[i]->initWeights (max, weightInitMethod);
     }
 }
 

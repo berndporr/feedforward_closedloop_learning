@@ -15,9 +15,8 @@ void test_filters() {
 	FeedforwardClosedloopLearningWithFilterbank fcl(2,nNeur,nFiltersInput,minT,maxT);
 	fcl.seedRandom(1);
 	fcl.setLearningRate(0.001);
-	fcl.initWeights(1,0,FCLNeuron::MAX_OUTPUT_RANDOM);
+	fcl.initWeights(1,FCLNeuron::MAX_OUTPUT_RANDOM);
 	fcl.setLearningRateDiscountFactor(1);
-	fcl.setBias(0);
 	
 	FILE* f=fopen("test_filters.dat","wt");
 
@@ -56,9 +55,8 @@ void test_learning_fcl_filters() {
 	FeedforwardClosedloopLearningWithFilterbank fcl(2,nNeur,nFiltersInput,minT,maxT);
 	fcl.seedRandom(1);
 	fcl.setLearningRate(0.001);
-	fcl.initWeights(1,0,FCLNeuron::MAX_OUTPUT_RANDOM);
+	fcl.initWeights(1,FCLNeuron::MAX_OUTPUT_RANDOM);
 	fcl.setLearningRateDiscountFactor(1);
-	fcl.setBias(0);
 	
 	FILE* f=fopen("test_learning_fcl_filters.dat","wt");
 	FILE* f2=fopen("test_learning_fcl_filters2.dat","wt");

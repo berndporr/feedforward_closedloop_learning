@@ -76,7 +76,7 @@ class FCLNeuron
          * \param initBias If one also the bias weight is initialised.
          * \param _wm Method how to init the weights as defined by WeightInitMethod.
          **/
-    void initWeights (double _max = 1, int initBias = 1,
+    void initWeights (double _max = 1,
                       WeightInitMethod _wm = MAX_OUTPUT_RANDOM);
 
     /** Activation functions on offer
@@ -189,19 +189,6 @@ class FCLNeuron
     {
         assert ((_index >= 0) && (_index < nInputs));
         return inputs[_index];
-    };
-
-    /** Gets the bias weight
-         * \return Bias weight value
-         **/
-    inline double getBiasWeight () { return biasweight; };
-
-    /** Sets the bias weight.
-         * \param _biasweight Bias value.
-         **/
-    inline void setBiasWeight (double _biasweight)
-    {
-        biasweight = _biasweight;
     };
 
     /** Sets the bias input value.
@@ -332,19 +319,20 @@ class FCLNeuron
          **/
     inline void setStep (long int _step) { step = _step; }
 
+    void setErrorBiasInput (double e) { errorBiasInput = e; }
+
   private:
     int nInputs;
     unsigned char *mask = 0;
     double *weights = 0;
     double *initialWeights = 0;
     double decay = 1;
-    double biasweight = 0;
-    double biasweightChange = 0;
     double bias = 0;
     double *inputs = 0;
     double output = 0;
     double sum = 0;
     double *errorInputs = 0;
+    double errorBiasInput = 0;
     double errorOutput = 0;
     double learningRate = 0;
     double learningRateFactor = 1;

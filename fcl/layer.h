@@ -32,7 +32,7 @@ class LayerThread
     LayerThread (int _maxNeurons)
     {
         maxNeurons = _maxNeurons;
-        neurons = new FCLNeuron *[maxNeurons];
+        neurons = new FCLNeuron *[(unsigned)maxNeurons];
     }
 
     virtual ~LayerThread () { delete[] neurons; }
@@ -179,11 +179,6 @@ class FCLLayer
          **/
     double getError (int i);
 
-    /** Sets the global bias for all neurons
-         * \param _bias The bias for all neurons
-         **/
-    void setBias (double _bias);
-
     /** Set the input value of one input
          * \param inputIndex The index number of the input.
          * \param input The value of the input
@@ -213,10 +208,9 @@ class FCLLayer
 
     /** Inits the weights
          * \param _max Maximum value if using random init.
-         * \param initBiasWeight if one also the bias weight is initialised.
          * \param weightInitMethod The methid employed to init the weights.
          **/
-    void initWeights (double _max = 1, int initBiasWeight = 1,
+    void initWeights (double _max = 1,
                       FCLNeuron::WeightInitMethod weightInitMethod
                       = FCLNeuron::MAX_OUTPUT_RANDOM);
 

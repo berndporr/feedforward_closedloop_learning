@@ -64,10 +64,9 @@ class LineFollower
         fcl = new FeedforwardClosedloopLearningWithFilterbank (
             nInputs, nNeuronsInLayers, nFiltersInput, minT, maxT);
 
-        fcl->initWeights (1, 0, FCLNeuron::MAX_OUTPUT_RANDOM);
+        fcl->initWeights (1, FCLNeuron::MAX_OUTPUT_RANDOM);
         fcl->setLearningRate (0);
         fcl->setLearningRateDiscountFactor (1);
-        fcl->setBias (1);
         fcl->setActivationFunction (FCLNeuron::TANH);
     }
 

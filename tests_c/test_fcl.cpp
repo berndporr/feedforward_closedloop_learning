@@ -18,7 +18,7 @@ void test_forward() {
 	// no learning
 	fcl.setLearningRate(0.0);
 	// random init
-	fcl.initWeights(1, 0, FCLNeuron::MAX_OUTPUT_RANDOM);
+	fcl.initWeights(1, FCLNeuron::MAX_OUTPUT_RANDOM);
 
 	std::vector<double> input = {0,0};
 	double error = 0;
@@ -52,9 +52,8 @@ void test_learning_fcl() {
 	FeedforwardClosedloopLearning fcl(2,nNeur);
 	fcl.seedRandom(1);
 	fcl.setLearningRate(0.001);
-	fcl.initWeights(1,0,FCLNeuron::MAX_OUTPUT_RANDOM);
+	fcl.initWeights(1,FCLNeuron::MAX_OUTPUT_RANDOM);
 	fcl.setLearningRateDiscountFactor(1);
-	fcl.setBias(0);
 	
 	FILE* f=fopen("test_learning_fcl.dat","wt");
 

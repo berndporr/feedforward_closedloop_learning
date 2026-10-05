@@ -148,19 +148,11 @@ void FeedforwardClosedloopLearning::setLearningRate (double rate)
 }
 
 void FeedforwardClosedloopLearning::initWeights (
-    double max, int initBias, FCLNeuron::WeightInitMethod weightInitMethod)
+    double max, FCLNeuron::WeightInitMethod weightInitMethod)
 {
     for (unsigned i = 0; i < n_neurons_per_layer.size (); i++)
     {
-        layers[i]->initWeights (max, initBias, weightInitMethod);
-    }
-}
-
-void FeedforwardClosedloopLearning::setBias (double _bias)
-{
-    for (unsigned i = 0; i < n_neurons_per_layer.size (); i++)
-    {
-        layers[i]->setBias (_bias);
+        layers[i]->initWeights (max, weightInitMethod);
     }
 }
 
@@ -195,7 +187,6 @@ bool FeedforwardClosedloopLearning::saveModel (const char *name)
                         fprintf (f, "%.16lf ", neuron->getWeight (k));
                     }
                 }
-                fprintf (f, "%.16lf ", neuron->getBiasWeight ());
                 fprintf (f, "\n");
             }
             fprintf (f, "\n");
@@ -241,7 +232,6 @@ bool FeedforwardClosedloopLearning::loadModel (const char *name)
                 r = fscanf (f, "%lf", &weight);
                 if (r < 0)
                     return false;
-                neuron->setBiasWeight (weight);
                 r = fscanf (f, "%*c");
                 if (r < 0)
                     return false;

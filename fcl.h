@@ -84,10 +84,9 @@ class FeedforwardClosedloopLearning
 
     /** Inits the weights in all layers
          * \param max Maximum value of the weights.
-         * \param initBias If the bias also should be initialised.
          * \param weightInitMethod See Neuron::WeightInitMethod for the options.
          **/
-    void initWeights (double max = 0.001, int initBias = 1,
+    void initWeights (double max = 0.001,
                       FCLNeuron::WeightInitMethod weightInitMethod
                       = FCLNeuron::MAX_OUTPUT_RANDOM);
 
@@ -95,11 +94,6 @@ class FeedforwardClosedloopLearning
          * \param s An arbitratry number.
          **/
     void seedRandom (unsigned int s) { srand (s); };
-
-    /** Sets globally the bias
-         * \param _bias Sets globally the bias input to all neurons.
-         **/
-    void setBias (double _bias);
 
     /** Gets the total number of layers
          * \return The total number of all layers.

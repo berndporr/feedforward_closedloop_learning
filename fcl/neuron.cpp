@@ -81,7 +81,6 @@ void FCLNeuron::calcOutput ()
         inputp++;
         maskp++;
     }
-    sum = sum + biasweight * bias;
 
 #ifdef DEBUG
     if (fabs (sum) > SUM_ERR_THRES)
@@ -236,8 +235,6 @@ void FCLNeuron::doLearning ()
         maskp++;
         weightsp++;
     }
-    biasweight = biasweight + bias * errorOutput * learningRate
-                 - biasweight * output * output * learningRate * decay;
 }
 
 double FCLNeuron::getSumOfSquaredWeightVector ()
@@ -255,7 +252,6 @@ double FCLNeuron::getSumOfSquaredWeightVector ()
         maskp++;
         weightsp++;
     }
-    sq = sq + biasweight * biasweight;
     return sq;
 }
 
@@ -274,7 +270,6 @@ double FCLNeuron::getManhattanNormOfWeightVector ()
         maskp++;
         weightsp++;
     }
-    norm = norm + fabs (biasweight);
     return norm;
 }
 
@@ -294,9 +289,6 @@ double FCLNeuron::getInfinityNormOfWeightVector ()
         maskp++;
         weightsp++;
     }
-    const double b = fabs (biasweight);
-    if (b > norm)
-        norm = b;
     return norm;
 }
 
@@ -317,8 +309,6 @@ double FCLNeuron::getAverageOfWeightVector ()
         maskp++;
         weightsp++;
     }
-    norm = norm + fabs (biasweight);
-    n++;
     return norm / (double)n;
 }
 
@@ -369,24 +359,21 @@ void FCLNeuron::doMaxDet ()
     weights[maxInp] = 1;
 }
 
-void FCLNeuron::initWeights (double _max, int initBias,
+void FCLNeuron::initWeights (double _max,
                              WeightInitMethod weightInitMethod)
 {
     //fprintf(stderr,"Init Weights: max=%f\n",_max);
     double max = _max;
-    int nBias = 0;
-    if (initBias)
-        nBias++;
     switch (weightInitMethod)
     {
     case MAX_WEIGHT_RANDOM:
         max = fabs (_max);
         break;
     case MAX_OUTPUT_RANDOM:
-        max = fabs (_max) / ((double)(nInputs + nBias));
+        max = fabs (_max) / ((double)(nInputs));
         break;
     case MAX_OUTPUT_CONST:
-        max = _max / (nInputs + nBias);
+        max = _max / (double)(nInputs);
         break;
     case CONST_WEIGHTS:
         break;
@@ -406,21 +393,6 @@ void FCLNeuron::initWeights (double _max, int initBias,
             break;
         }
         initialWeights[i] = weights[i];
-    }
-    if (initBias)
-    {
-        switch (weightInitMethod)
-        {
-        case MAX_WEIGHT_RANDOM:
-        case MAX_OUTPUT_RANDOM:
-            biasweight
-                = (((double)rand () * 2) / ((double)RAND_MAX) * max) - max;
-            break;
-        case CONST_WEIGHTS:
-        case MAX_OUTPUT_CONST:
-            biasweight = max;
-            break;
-        }
     }
 }
 
@@ -444,8 +416,6 @@ double FCLNeuron::getMaxWeightValue ()
                 max = w;
         }
     }
-    if (biasweight > max)
-        max = biasweight;
     return max;
 }
 
@@ -461,8 +431,6 @@ double FCLNeuron::getMinWeightValue ()
                 min = w;
         }
     }
-    if (biasweight < min)
-        min = biasweight;
     return min;
 }
 
